@@ -216,6 +216,9 @@
     visibility: hidden;
     display: none;
   }
+  .brand-size {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -265,6 +268,9 @@
     visibility: hidden;
     display: none;
   }
+  .brand-size {
+    font-size: 2em;
+  }
 }
 
 /* Medium devices (desktops, 992px and up -> "col-md") */
@@ -299,6 +305,9 @@
     visibility: hidden;
     display: none;
   }
+  .brand-size {
+    font-size: 2em;
+  }
 }
 
 
@@ -328,6 +337,9 @@
   #class-content-small {
     visibility: hidden;
     display: none;
+  }
+  .brand-size {
+    font-size: 2em;
   }
 }
 
