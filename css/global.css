@@ -1,0 +1,356 @@
+.navbar-default, .navbar-nav, .navbar-header, #navbar .navbar-collapse.collapse {
+  /*background-color: rgba(243,243,243, 0.90);*/
+  background-color: #F3F3F3;
+  border-color: transparent;
+ /* background: -webkit-linear-gradient(left, rgba(221, 221, 221, 0.09), rgba(221, 221, 221, 1));*/ /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(255,0,0,0)); *//* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* Standard syntax (must be last) */
+}
+
+/* custom inclusion of right, left and below tabs */
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+/*.calendar {
+  margin-left: 5%;
+  margin-right: 5%;
+}*/
+
+
+/* Responsive iFrame */
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.lead2 {
+  font-size: 1.2em;
+}
+
+ /* MailChimp form style overrides */
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:70%;
+}
+.mail {
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+.social:hover, .social:focus {
+  background-color: rgba(135,234,243, 1);
+  opacity: .7
+}
+
+/* =============================== @Media Queries Start ============================= */
+
+/* Extra small devices (phones, less than 768px -> "col-xs") */
+/* No media query since this is the default in Bootstrap */
+@media (max-width: 767px) {
+  /*.navbar-brand {
+    visibility: hidden;
+    display: none;
+  }*/
+  #navbutton:before {
+    background-color: rgba(221, 221, 221, 1);
+  }
+  #myCarousel {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: visible;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+
+  }
+  .navbar-default {
+    background: rgba(221, 221, 221, 0);
+    /*text-align: right;*/
+  }
+  .nav.navbar-nav {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up -> "col-sm") */
+@media (min-width: 768px) and (max-width: 991px) {
+  /*.navbar-brand {
+    visibility: hidden;
+    display: none;
+  }*/
+  #navbutton:before {
+    background: rgba(221, 221, 221, 0.70);
+  }
+  #myCarousel {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: visible;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+
+  }
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 10%;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* Medium devices (desktops, 992px and up -> "col-md") */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*  .featurette-image {
+    visibility: hidden;
+    display: none;
+  }*/
+  #list-cal {
+    visibility: visible;
+    width: 90%;
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 10%;
+  }
+  #month-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #static-header {
+    visibility: hidden;
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+/* Large devices (large desktops, 1200px and up -> "col-lg") */
+@media (min-width: 1200px) {
+  #list-cal {
+    visibility: hidden;
+    display: none;
+  }
+  #month-cal {
+    visibility: visible;
+  }
+  #static-header {
+    visibility: hidden;
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #myCarousel .carousel-inner .item img {
+    width: 2560px;
+  }
+  #class-content-large{
+    visibility: visible;
+    display: block;
+  }
+  #class-content-small {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .caption-shrink h1 {
+    /*visibility: hidden;
+    display: none;*/
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 620px) {
+  #class-content-large{
+    visibility: hidden;
+    display: none;
+  }
+  #class-content-small {
+    visibility: visible;
+    display: block;
+  }
+}
+/* =============================== @Media Queries END ============================= */
+
+
+
