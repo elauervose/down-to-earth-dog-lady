@@ -1,0 +1,83 @@
+---
+layout: default-page
+---
+
+<!-- START THE TABS -->
+<div class="container">
+  <div class="row" id="class-content-large">
+    <div class="tabbable tabs-left">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs lead2 col-xs-5 col-sm-3 col-md-3 col-lg-3" role="tablist">
+        {% for post in site.categories.classes | limit:10 %}
+        <li role="presentation" class="active">
+          <a href="#{{ post.title }}" aria-controls="{{ post.title }}" role="tab" data-toggle="tab">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="tab-content" style="padding-left: 25%;">
+      {% for post in site.categories.classes | limit:10 %}
+      <div role="tabpanel" class="tab-pane fade in active" id="{{ post.title }}">
+        <div class="container">
+          <div style="display: block; padding-left: 15px;">
+            <h2 class="featurette-heading text-muted">{{ post.title }}</h2>
+          </div>
+          <div style="display: block;" class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+            <p class="lead2" >
+              {{ post.content }}
+            </p>
+          </div>
+          <div style="display: block;" class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
+            <img class="featurette-image img-responsive center-block" src="{{ post.image }}" alt="Generic placeholder image">
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- /END THE TABS -->
+
+  <!-- START THE ACCORDION -->
+  <div class="row" id="class-content-small">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Intro to Rally
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <h3 class="featurette-heading">Intro to <span class="text-muted">Rally </span></h3>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /END THE ACCORDION -->
+
+<hr style="margin-top: 4em; border-color: transparent;">
+
+<!-- START THE CALENDAR -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <!-- Responsive iFrame -->
+  <div id="month-cal" class="container calendar">
+    <div class="responsive-iframe-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=md7s2a1e9mukl8j378fjru0b28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+  <div id="list-cal" class="container calendar">
+    <div class="responsive-iframe-container">
+        <iframe src="https://calendar.google.com/calendar/embed?title=Classes&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=md7s2a1e9mukl8j378fjru0b28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</div>
+<!-- /END THE CALENDAR -->
