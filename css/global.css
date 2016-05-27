@@ -369,11 +369,11 @@
 
 @font-face{
   font-family: 'boogaloo';
-  src: url('fonts/boogaloo-fontface-webkit/boogaloo-regular.eot');
-  src: url('fonts/boogaloo-fontface-webkit/boogaloo-regular.eot?iefix') format('eot'),
-       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.woff') format('woff'),
-       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.ttf') format('truetype'),
-       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.svg#boogaloo-regular') format('svg');
+  src: url('fonts/boogaloo-webkit/boogaloo-regular.eot');
+  src: url('fonts/boogaloo-webkit/boogaloo-regular.eot?iefix') format('eot'),
+       url('fonts/boogaloo-webkit/boogaloo-regular.woff') format('woff'),
+       url('fonts/boogaloo-webkit/boogaloo-regular.ttf') format('truetype'),
+       url('fonts/boogaloo-webkit/boogaloo-regular.svg#boogaloo-regular') format('svg');
 }
 
 @font-face{
