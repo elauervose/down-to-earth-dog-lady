@@ -362,7 +362,45 @@
     display: block;
   }
 }
-/* =============================== @Media Queries END ============================= */
+/* =========================== @Media Queries END ========================= */
 
 
+/* =============================== @Font Face ============================= */
+
+@font-face{
+  font-family: 'boogaloo';
+  src: url('fonts/boogaloo-fontface-webkit/boogaloo-regular.eot');
+  src: url('fonts/boogaloo-fontface-webkit/boogaloo-regular.eot?iefix') format('eot'),
+       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.woff') format('woff'),
+       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.ttf') format('truetype'),
+       url('fonts/boogaloo-fontface-webkit/boogaloo-regular.svg#boogaloo-regular') format('svg');
+}
+
+@font-face{
+  font-family: 'GrutchShaded';
+  src: url('fonts/web_fonts/GrutchShaded-webfont.eot');
+  src: url('fonts/web_fonts/GrutchShaded-webfont.eot?iefix') format('eot'),
+       url('fonts/web_fonts/GrutchShaded-webfont.woff') format('woff'),
+       url('fonts/web_fonts/GrutchShaded-webfont.ttf') format('truetype'),
+       url('fonts/web_fonts/GrutchShaded-webfont.svg#GrutchShaded-webfont') format('svg');
+}
+
+.doglady1 {
+  font-family: 'boogaloo', regular, sans-serif;
+  font-size: 2em;
+  color: #777;
+  margin-top: 10px;
+}
+
+.doglady2 {
+  font-family: 'GrutchShaded', Arial, sans-serif;
+  font-size: 2em;
+  color: #777;
+}
+
+.navbar-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
 
