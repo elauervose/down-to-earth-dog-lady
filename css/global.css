@@ -8,60 +8,84 @@
 
 /* As hex codes */
 .color-block1 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
-  background-color: #C7E6FF;
+  /*background-color: #C7E6FF;*/ /*Logo Blue 1*/
+  background-color: #CCEBED; /*Logo Teal/Blue 2*/
+}
+.color-block2 {
+  width:140px;
+  height: 100px;
+  padding: 5px;
+  display: inline-block;
+  background-color: #9DD7DC; /*Highlight Teal/Blue 2*/
 }
 
 .color-block3 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
-  background-color: #5AB4FF;
+  /*background-color: #5AB4FF;*/ /*Link text*/
+  background-color: #6AC2C9; /*Link text Teal 2*/
 }
 
 .color-block5 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
-  color: #ffffff;
-  background-color: #027EE4;
+  /*color: #ffffff;*/
+  /*background-color: #027EE4;*/  /*Link HOVER text*/
+  background-color: #3EAFB7; /*Link HOVER text Teal 2*/
 }
 
 .color-block6 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
-  color: #ffffff;
-  background-color: #878C8F;
+  /*color: #ffffff;*/
+  /*background-color: #878C8F;*/ /*Muted Header*/
+  background-color: #f1f0ea; /*Medium Gray 2*/
 }
+
 .color-block7 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
-  background-color: #C9CBCD;
+  /*background-color: #C9CBCD;*/ /*Light Gray*/
+  background-color: #fafaf8; /*Light Gray 2*/
 }
 .color-block9 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
   color: #ffffff;
-  background-color: #003E71;
+  background-color: #888888; /*Title & Logo Text*/
 }
 .color-block10 {
-  width:100px;
+  width:140px;
   height: 100px;
   padding: 5px;
   display: inline-block;
   color: #ffffff;
-  background-color: #3d3f3f;
+  /*background-color: #3d3f3f;*/ /*Header Text*/
+  background-color: #222222;  /*Header Text 2*/
+}
+
+.color-block11 {
+  width:140px;
+  height: 100px;
+  padding: 5px;
+  display: inline-block;
+  color: #ffffff;
+  /*background-color: #3d3f3f;*/ /*Header Text*/
+  background-color: #444444;  /*Header Text 2*/
 }
 
 
@@ -92,40 +116,63 @@
 /* http://paletton.com */
 
 img.logo-nav {
-  max-height: 130px;
+  max-height: 100px;
   float: left;
-  margin-right: 10px;
-  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 30px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  margin-left: 10px;
 }
 
+#header {
+      margin: 0px 0px 0px 0px;
+      padding: 0px;
+      background: #f1f0ea url(/img/shadow_bg.png) repeat-x bottom;
+      z-index: 1000;
+  }
+
 body {
-  margin-top: 7em;
+  margin-top: 6em;
 }
+
+/*.container{
+  background-color: #fafaf8;
+  border-color:#888888;
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+.row {
+  margin: 0px;
+}*/
+
 p {
-  color: #292F34;
+  color: #888888;
 }
-h1, h2, h3, h4 {
-  color: #2c2c2c;
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
 }
 .text-muted {
-  color: #878C8F;
+  color: rgba(68, 68, 68, .7);
 }
 a {
-  color: #027EE4;
+  color: #37AFB8;
 }
 a:hover, a:focus {
-  color: #5AB4FF;
+  color: #6AC2C9;
 }
+
+
 
 .doglady1 {
   font-family: 'boogaloo', regular, sans-serif;
-  font-size: 3.5em;
-  color: #003E71;
-  padding-top: 62px;
+  font-size: 2.75em;
+  color: #444444;
+  padding-top: 30px;
   padding-bottom: 0px;
   margin-top:10px;
+  margin-bottom: 0px;
 }
 
 .doglady2 {
@@ -145,14 +192,22 @@ a:hover, a:focus {
 }
 
 
-.navbar-default, .navbar-nav, .navbar-header, #navbar .navbar-collapse.collapse {
+.navbar.navbar-default, .navbar-nav, .navbar-header, #navbar .navbar-collapse.collapse {
   /*background-color: rgba(243,243,243, 0.90);*/
-  background-color: #C7E6FF;
-  border-color: transparent;
- /* background: -webkit-linear-gradient(left, rgba(221, 221, 221, 0.09), rgba(221, 221, 221, 1));*/ /* For Safari 5.1 to 6.0 */
+  background-color: #f1f0ea;
+  /*border-color: #3d3f3f;*/
+  /*box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9)
+   background: -webkit-linear-gradient(left, rgba(61, 63, 63, 0.09), rgba(61, 63, 63, 1));*/ /* For Safari 5.1 to 6.0 */
   /*background: -o-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* For Opera 11.1 to 12.0 */
   /*background: -moz-linear-gradient(bottom, rgba(221, 221, 221, 1), rgba(255,0,0,0)); *//* For Firefox 3.6 to 15 */
   /*background: linear-gradient(to right, rgba(221, 221, 221, 1), rgba(221, 221, 221, 0));*/ /* Standard syntax (must be last) */
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #FFFFFF;
+  background-color:#3EAFB7;
+  margin-left: 9em;
+  padding-top: 2.5em;
+  padding-bottom: 1.9em;
 }
 
 /* custom inclusion of right, left and below tabs */
@@ -299,6 +354,7 @@ a:hover, a:focus {
   clear:left;
   font:14px Helvetica,Arial,sans-serif;
   width:70%;
+  color: #888888;
 }
 .mail {
   margin-left: 10%;
@@ -311,11 +367,11 @@ a:hover, a:focus {
 }
 
 #mc-embedded-subscribe.button {
-  background-color: #8CCCFF;
-  color: #3b454c;
+  background-color: #3EAFB7;
+  color: #FFFFFF;
 }
 #mc-embedded-subscribe.button:hover, #mc-embedded-subscribe.button:focus {
-  background-color: #2DA1FF;
+  background-color: #9DD7DC;
 }
 
 
@@ -376,7 +432,6 @@ a:hover, a:focus {
   .doglady1 {
     font-family: 'boogaloo', regular, sans-serif;
     font-size: 2em;
-    color: #003E71;
     padding-top: 10px;
     padding-bottom: 0px;
     margin-top:10px;
