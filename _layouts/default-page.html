@@ -3,33 +3,29 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="scroll-assist">
 
     {% include header.html %}
 
-    <div id="top" class="container">
-      <div class="container">
-        <hr style="margin-top: 4em; border-color: transparent;">
+    <div class="main-container">
 
-        {{ content }}
-
-      </div>
+      {{ content }}
 
       {% include footer.html %}
 
     </div>
-
-
-
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-      <script src="js/bootstrap.min.js"></script>
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
-   </body>
-
-  </html>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flickr.js"></script>
+    <script src="js/flexslider.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/twitterfetcher.min.js"></script>
+    <script src="js/spectragram.min.js"></script>
+    <script src="js/ytplayer.min.js"></script>
+    <script src="js/countdown.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
