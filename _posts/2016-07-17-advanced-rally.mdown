@@ -1,6 +1,6 @@
 ---
 layout: classes
-title:  How to play nicely in the park
+title:  Advanced Rally
 start-date: 2016-04-13 14:28:44 -0700
 end-date: 2016-04-13 14:28:44 -0700
 category: classes

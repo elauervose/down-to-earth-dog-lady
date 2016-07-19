@@ -1,0 +1,12 @@
+---
+layout: classes
+title:  Recall
+start-date: 2016-04-13 14:28:44 -0700
+end-date: 2016-04-13 14:28:44 -0700
+category: classes
+image: http://loremflickr.com/300/300
+---
+
+Have you called your dog's name multiple times at the dog park and then watched as your dog runs off in the opposite direction? Has your dog ever gotten off leash and run off on you?
+<br>
+I make recall work fun and exciting for you and your dog! We'll start working on leash and then practice off-leash in an enclosed area in a safe controlled way.

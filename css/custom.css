@@ -1,1 +1,22 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.hover-icon {
+  padding: 10px;
+  border-radius: 40px;
+}
+.hover-icon:hover, .hover-icon:focus  {
+  color: #f8f8f8;
+  background-color: #47b475;
+  -webkit-transition: all 0.5s ease;
+  padding: 10px;
+  border-radius: 40px;
+}
+.header-logo {
+  max-height: 10em;
+  opacity: .5;
+  margin-bottom: 2em;
+  margin-top: -2em;
+}
+li.active a{
+  color: white;
+}

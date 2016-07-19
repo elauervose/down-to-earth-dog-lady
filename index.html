@@ -2,10 +2,79 @@
 layout: default-page
 ---
 
-  <section class="image-bg overlay parallax">
-    <div class="background-image-holder">
+  <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+    <ul class="slides">
+      <li class="overlay image-bg">
+        <div class="background-image-holder">
+          <img alt="image" class="background-image" src="img/pack-hike-at-river.jpg" />
+        </div>
+        <div class="container v-align-transform">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <h1 class="mb40 mb-xs-16 large">Pack Hikes</h1>
+              <img class="header-logo" src="/img/white-logo-only.png">
+              <h6 class="uppercase mb16">An Adventure for your dog!</h6>
+              <p class="lead mb40">
+                Dogs run and play with a trusted pack in the
+                <br />beautiful landscape of the Pacific Northwest.
+              </p>
+              <a class="btn btn-lg btn-filled" href="/pack-hikes.html">Learn More</a>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </li>
+      <li class="overlay image-bg">
+        <div class="background-image-holder">
+          <img alt="image" class="background-image" src="img/training-downtown.jpg" />
+        </div>
+        <div class="container v-align-transform">
+          <div class="row">
+            <div class="col-sm-offset-1 text-center col-sm-10">
+              <h1 class="mb40 mb-xs-16 large">Training & Classes</h1>
+              <img class="header-logo" src="/img/white-logo-only.png">
+              <h6 class="uppercase mb16">in Small Groups or Private Lessons</h6>
+              <p class="lead mb40">
+                I offer Socialization & Behavior classes as well as
+                <br />some basic competitive obedience courses.
+              </p>
+              <a class="btn btn-lg btn-white" href="/training.html">Learn More</a>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </li>
+      <li class="overlay image-bg">
+        <div class="background-image-holder">
+          <img alt="image" class="background-image" src="img/pet-sitting.jpg" />
+        </div>
+        <div class="container v-align-transform">
+          <div class="row">
+            <div class="col-sm-offset-1 text-center col-sm-10">
+              <h1 class="mb40 mb-xs-16 large">Pet Sitting</h1>
+              <img class="header-logo" src="/img/white-logo-only.png">
+              <h6 class="uppercase mb16">My home is your dog's home!</h6>
+              <p class="lead mb40">
+                When your dog joins my pack, my priority is to
+                <br />ensure they feel loved and comfortable.
+              </p>
+              <a class="btn btn-lg btn-white" href="/pet-sitting.html">Learn More</a>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </li>
+    </ul>
+  </section>
+
+  <!-- BEGIN icon boxes -->
+  <section>
+    <!-- <div class="background-image-holder">
       <img alt="Background" class="background-image" src="img/skully-dahlia-oatis.jpg" />
-    </div>
+    </div> -->
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
@@ -20,11 +89,13 @@ layout: default-page
         <div class="col-sm-4">
           <div class="feature feature-1 boxed">
             <div class="text-center">
-              <i class="ti-image icon"></i>
-              <h5 class="uppercase">Pack Hikes</h5>
+              <a href="/pack-hikes.html">
+                <i class="ti-image icon hover-icon"></i>
+                <h5 class="uppercase">Pack Hikes</h5>
+              </a>
             </div>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+              A pack hike is an alternative way to exercise and socialize your dog. Dogs get the freedom to run and play with a trusted pack. These hikes will leave your dog happy, tired, and well trained!
             </p>
           </div>
           <!--end of feature-->
@@ -32,11 +103,13 @@ layout: default-page
         <div class="col-sm-4">
           <div class="feature feature-1 boxed">
             <div class="text-center">
-              <i class="ti-medall icon"></i>
-              <h5 class="uppercase">Training</h5>
+              <a href="/training.html">
+                <i class="ti-medall icon hover-icon"></i>
+                <h5 class="uppercase">Training</h5>
+              </a>
             </div>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+              I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. Visit the training page to see a list of classes offered!
             </p>
           </div>
           <!--end of feature-->
@@ -44,11 +117,13 @@ layout: default-page
         <div class="col-sm-4">
           <div class="feature feature-1 boxed">
             <div class="text-center">
-              <i class="ti-home icon"></i>
-              <h5 class="uppercase">Pet Sitting</h5>
+              <a href="/pet-sitting.html">
+                <i class="ti-home icon hover-icon"></i>
+                <h5 class="uppercase">Pet Sitting</h5>
+              </a>
             </div>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+              When your dog joins my pack, my priority is to ensure they feel loved and comfortable. I have experience with a wide range of dog breeds, ages, and backgrounds.
             </p>
           </div>
           <!--end of feature-->
@@ -62,6 +137,7 @@ layout: default-page
 
   <hr style="margin-top: 2em; border-color: transparent;">
 
+  <!-- BEGIN MAILCHIMP Sign-up form -->
   <section>
     <div class="container">
       <div class="col-md-6" style="margin-left: 25%;">
@@ -103,7 +179,6 @@ layout: default-page
         <!--End mc_embed_signup-->
       </div>
     </div>
-
   </section>
 
 
