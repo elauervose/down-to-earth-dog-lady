@@ -6,14 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: The Down to Earth Dog Lady
+email: erin@downtoearthdoglady.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Down to Earth Dog Lady is a local Portland, Oregon dog trainer providing adventure pack hikes, walks, and dog training! Erin is a CPDT-KA , KPCTP certified dog trainer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://downtoearthdoglady.com" # the base hostname & protocol for your site
+permalink: /404.html
 twitter_username: jekyllrb
 github_username:  jekyll
 
