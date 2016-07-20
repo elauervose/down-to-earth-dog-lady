@@ -20,3 +20,6 @@
 li.active a{
   color: white;
 }
+.tab-content-training {
+  margin-left: 6em;
+}
