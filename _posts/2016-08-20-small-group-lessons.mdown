@@ -1,0 +1,49 @@
+---
+layout: classes
+title:  Small Group Lessons
+start-date: 2016-04-13 14:28:44 -0700
+end-date: 2016-04-13 14:28:44 -0700
+category: classes
+image: img/training/pet-care-walk-in-park-small.jpg
+---
+
+<p>
+  Do you need a refresh on some of your dog's commands? Has your dog recently developed a naughty behavior that you don't understand and need help with? You're probably not alone!
+</p>
+<p>
+  Small group lessons are the perfect place to work on problems in a supportive setting where you can get feed-back and moral support from other dog owners. Each week we'll work through several different training strategies and activities to find something that is fun and works well for you and your dog.
+</p>
+<p>
+  Small group lessons are typically offered in 3-week series on specific topics. You can register to attend one, two, or all three lessons in the series or attend a single topic multiple times as it is offered.
+</p>
+
+<h5 style="margin-bottom: 10px; font-weight: 500;">Week 1: Impulse Control</h5>
+<p>
+  This lesson covers the potentially life-saving "Leave It" command as well as longer, stronger sit/stays, and recall.
+</p>
+
+<h5 style="margin-bottom: 10px; font-weight: 500;">Week 2: Social Behaviors</h5>
+<p>
+  This lesson covers such critical social behaviors as greeting strangers (or just walking past) calmly, appropriate dog park play, and excessive barking or jumping behavior.
+</p>
+
+<h5 style="margin-bottom: 10px; font-weight: 500;">Week 3: Real-World Proofing</h5>
+<p>
+  "Proofing" in dog training means making sure that your dog can follow your commands even if you aren't at home in a perfectly distraction-free environment.
+<br>
+  This lesson takes the skills of the previous weeks to the next level. We might meet as a group in a new, near-by location or at a busier time of day or week to test and strengthen yours and your dogs skills.
+</p>
+
+<p>
+  <strong><em>For small group lesson dates and times, see the <a href="#calendar">calendar</a> below. If no small group lessons are currently being offered, <a href="mailto:downtoearthdoglady@gmail.com">email me</a> to let me know you are interested.</em></strong>
+</p>
+
+<h5 style="margin-bottom: 10px; font-weight: 500;">Pricing:</h5>
+<ul data-bullet="ti-star">
+  <li><strong>Single Small group lesson: $25</strong></li>
+  <li><strong>Package of 3 Small group lessons: $60</strong>
+    <div class="icon-container list-group-item">
+      <span class="ti-alert green"></span><span class="icon-name"><em>Small group packages expire 3 months after date of purchase</em></span>
+    </div>
+  </li>
+</ul>

@@ -4,8 +4,13 @@ title:  Advanced Rally
 start-date: 2016-04-13 14:28:44 -0700
 end-date: 2016-04-13 14:28:44 -0700
 category: classes
-image: http://loremflickr.com/300/300
+image: img/training/erin-dahlia-2nd-place-rally-small.jpg
 ---
 
 
-Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+<p>
+  This is a drop-in class for students who have taken the "Intro to Rally" class or have permission to join. Email Erin directly to find out when and where this class meets.
+</p>
+<p>
+  This class meets weekly in a few different locations to practice running course, learning new signs, fine-tuning execution, and watching each other run courses to better understand the courses and help each other by giving feedback.
+</p>

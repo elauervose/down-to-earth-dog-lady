@@ -1,106 +1,28 @@
 ---
 layout: default-page
 ---
-<section class="page-title page-title-4 bg-secondary">
-  <div class="container" style="margin-top: 50px;">
-    <div class="row">
-      <div class="col-md-8">
-        <h3 class="uppercase mb0">Training & Classes</h3>
-        <h5 style="margin-top: .5em; opacity: .5;"><em>I offer a wide range of training & services. If you don't see what you are looking for, email me!</em></h5>
-      </div>
-    </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
-</section>
 
-<section class="pb0">
+<!-- BEGIN HEADER -->
+<section class="pt120 pb120 image-bg overlay">
+  <div class="background-image-holder">
+    <img alt="Background" class="background-image" src="img/training/otis-reads-header.png" />
+  </div>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="feature feature-3 mb-xs-24 mb64">
-          <div class="left">
-            <i class="ti-user icon-sm"></i>
-          </div>
-          <div class="right">
-            <h5 class="uppercase mb16">Private Lessons</h5>
-            <p>
-              Whether you need to work on new skill, refresh an old one, or solve a behavior problem, private lessons are the perfect place to work with me and your dog in a highly focused and personalized way.
-            </p>
-            <p>
-              I can meet you downtown, at your house, or at a location you choose. We'll start with a consultation and from that, I'll create a personalized training plan for you and your dog. Then we'll work together to meet your training goals!
-            </p>
-            <p>Contact me directly to schedule a private lesson.</p>
-            <p>
-              <strong>Consultation:</strong><br>
-              I like to start with a consultation to get to know you and your dog. We'll go over my training methods and begin to construct a training plan together!
-            </p>
-            <p><strong>Pricing:</strong></p>
-            <ul data-bullet="ti-star">
-              <li><strong>30 min. consultation: </strong>$</li>
-              <li><strong>30 min. lesson: </strong>$</li>
-              <li><strong>60 min. lesson: </strong>$</li>
-            </ul>
-          </div>
-        </div>
-        <!--end of feature-->
+    <div class="row v-align-children">
+      <div class="col-sm-8 mb-xs-80">
+        <h2 class="mb16">Training & Classes</h2>
+        <h4 class="mb32">Small Groups & Private Lessons; Socialization & Behavior classes as well as introductory competitive obedience courses.</h4>
+
+        <!-- <a class="btn btn-filled btn-lg mb0" href="#meet-the-pack">Register for Classes</a> -->
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="feature feature-3 mb-xs-24 mb64">
-          <div class="left">
-            <i class="ti-info-alt icon-sm"></i>
-          </div>
-          <div class="right">
-            <h5 class="uppercase mb16">Drop-In Classes</h5>
-            <p>
-              Do you need a refresh on some of your dog's commands? Has your dog recently developed a naughty behavior that you don't understand and need help with? You're probably not alone!
-            </p>
-            <p>
-              Drop-in classes are the perfect place to work on problems in a small group setting where you can get feed-back and moral support from other dog owners
-            </p>
-            <p>
-              Drop-In lessons are 45 minutes in length and are typically offered on a weekly basis.
-            </p>
-            <p>
-              <strong>For drop-in dates and times, see the <a href="#class-description">class descriptions</a> & <a href="#calendar">calendar</a> below. <br>
-              If no drop-in classes are currently being offered, <a href="mailto:downtoearthdoglady@gmail.com">email me</a> to let me know you are interested.</strong>
-            </p>
-            <p><strong>Pricing:</strong></p>
-            <ul data-bullet="ti-star">
-              <li><strong>Single drop-in lesson: </strong>$25</li>
-              <li><strong>Package of 3 drop-in lessons: </strong>$60 <br>
-              <em>(Drop-in packages expire 3 months after date of purchase)</em></li>
-            </ul>
+      <div class="col-sm-4 text-center text-left-xs">
+        <div class="modal-container">
+          <!-- <div class="play-button btn-modal large inline"></div>
+          <div class="foundry_modal no-bg">
+            <iframe data-provider="vimeo" data-video-id="88883554" data-autoplay="1" allowfullscreen="allowfullscreen"></iframe> -->
           </div>
         </div>
-        <!--end of feature-->
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="feature feature-3 mb-xs-24 mb64">
-          <div class="left">
-            <i class="ti-medall icon-sm"></i>
-          </div>
-          <div class="right">
-            <h5 class="uppercase mb16">Multi-Week Classes</h5>
-            <p>
-              These classes are goal driven and designed to build on each other. We'll start with basics and work toward more advanced skills.
-            </p>
-            <p>
-              Each week, you'll get a homework assignment for you and your dog to work on together. The following week, we'll review the assignment and I'll give feedback on your progress.
-            </p>
-            <p>
-              Class topics vary widely from basic manners to advanced competitive obedience (Rally-O).
-            </p>
-            <p>
-              <strong>Pricing varies by class; typically costs range from $80-$120 for 4 - 6 week long classes.</strong>
-            </p>
-           <p>
-             <strong>For details, see <a href="#class-description">class descriptions</a> & <a href="#calendar">calendar</a> below. <br>
-             If you don't see a class you want, or don't see dates and times for a class listed, <a href="mailto:downtoearthdoglady@gmail.com">email me</a> to let me know you are interested.</strong>
-           </p>
-          </div>
-        </div>
-        <!--end of feature-->
+        <!--end of modal video-->
       </div>
     </div>
     <!--end of row-->
@@ -108,43 +30,9 @@ layout: default-page
   <!--end of container-->
 </section>
 
-<section class="pb0">
-  <div class="container">
-    <div class="row" id="class-description">
-      <div class="col-sm-12">
-        <h4 class="uppercase mb80">Class Descriptions</h4>
-        <div class="tabbed-content button-tabs vertical">
-          <ul class="tabs">
-            {% for post in site.categories.classes | limit:10 %}
-            <!-- <li class="active">-->
-            <li>
-              <div class="tab-title">
-                <span><a href="#{{ post.title }}" aria-controls="{{ post.title }}" role="tab" data-toggle="tab">{{ post.title }}</a></span>
-              </div>
-              <div class="tab-content" id="{{ post.title }}">
-                <h5 class="uppercase">{{ post.title }}</h5>
-                <hr>
-                <div style="display: block;" class="col-md-8">
-                  <p class="lead2" >
-                    {{ post.content }}
-                  </p>
-                </div>
-                <div style="display: block;" class="col-md-4">
-                  <img class="featurette-image img-responsive center-block" src="{{ post.image }}" alt="Generic placeholder image">
-                </div>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!--end of button tabs-->
-      </div>
-    </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
-</section>
+{{ content }}
 
+<!-- BEGIN CALENDAR & NEWSLETTER -->
 <section>
   <div class="container">
     <div class="row" id="calendar">
@@ -205,14 +93,3 @@ layout: default-page
 </section>
 
 
-
-<!-- Full size Month View -->
-<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
-  <!-- Responsive iFrame -->
-  <!-- <div id="month-cal" class="container calendar">
-    <div class="responsive-iframe-container">
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=md7s2a1e9mukl8j378fjru0b28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </div>-->
-<!-- </div> -->
-<!-- /END THE CALENDAR -->

@@ -3,7 +3,7 @@ layout: classes
 title:  Recall
 start-date: 2016-04-13 14:28:44 -0700
 end-date: 2016-04-13 14:28:44 -0700
-category: classes
+category:
 image: http://loremflickr.com/300/300
 ---
 

@@ -56,6 +56,10 @@ i {
 .ti-alert {
   font-size: 1.5em;
 }
+.green {
+  color: #47b475;
+}
+
 span.icon-name {
   line-height: 1.5;
   margin-left: 5px;
@@ -64,6 +68,11 @@ span.icon-name {
 
 .icon-container {
   padding-top: 0px;
+}
+
+#services li.active a, ul.content li.active #training-link a {
+    color: #47b475;
+    font-weight: 600;
 }
 
 /*li.list-group-item:before {
