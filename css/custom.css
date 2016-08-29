@@ -27,6 +27,10 @@ nav li a {
     opacity: 1;
 }
 
+h5#home-header.uppercase {
+  font-size: 1em;
+}
+
 /* Icons */
 /*=================================================*/
 
