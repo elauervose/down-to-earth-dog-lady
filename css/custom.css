@@ -1,5 +1,31 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+/* Nav Bar */
+/*=================================================*/
+
+nav li.active a {
+  background-color: #f5f5f5;
+  font: #292929;
+  font-weight: 800;
+  opacity: .7;
+
+}
+
+nav li a {
+  padding: 1em;
+  margin-right: .1em;
+
+}
+
+.menu > li {
+    margin-right: 1.5em;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    opacity: 1;
+}
 
 /* Icons */
 /*=================================================*/
@@ -39,8 +65,10 @@
   margin-bottom: 2em;
   margin-top: -2em;
 }
-li.active a{
+li.active div.tab-title a{
   color: white;
+  font-weight: 900;
+  font-size: 1.1em;
 }
 .tab-content-training {
   margin-left: 6em;
