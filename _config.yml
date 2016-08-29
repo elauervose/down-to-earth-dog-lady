@@ -12,7 +12,6 @@ description: > # this means to ignore newlines until "baseurl:"
   The Down to Earth Dog Lady is a local Portland, Oregon dog trainer providing adventure pack hikes, walks, and dog training! Erin is a CPDT-KA , KPCTP certified dog trainer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://downtoearthdoglady.com" # the base hostname & protocol for your site
-permalink: /404.html
 twitter_username: jekyllrb
 github_username:  jekyll
 
