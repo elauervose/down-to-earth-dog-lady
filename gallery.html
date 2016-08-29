@@ -1,23 +1,266 @@
 ---
 layout: default-page
 ---
+<section class="pt120 pb120 image-bg">
+  <div class="background-image-holder">
+    <!-- <img alt="Background" class="background-image" src="img/pack-hikes/3-dogs-water-tennis-ball-header.jpg" /> -->
+    <img alt="Background" class="background-image" src="img/pack-hikes/muppet-pack-hike-header.jpg" />
+  </div>
+  <div class="container">
+    <div class="row v-align-children">
+      <div class="col-sm-8 mb-xs-80">
+        <h2 class="mb16">Photo & Video Gallery</h2>
+        <h4 class="mb32">Photos and video of the Down to Earth Dog Lady in action!</h4>
+        <!-- <a class="btn btn-filled btn-lg mb0" href="#meet-the-pack">Meet the Pack</a> -->
+      </div>
+      <div class="col-sm-4 text-center text-left-xs">
+        <div class="modal-container">
+          <!-- <div class="play-button btn-modal large inline"></div>
+          <div class="foundry_modal no-bg">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r7oumKM5GOQ" frameborder="0" allowfullscreen></iframe>
+          </div> -->
+        </div>
+        <!--end of modal video-->
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
 
 <section>
   <div class="container">
     <div class="row">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLV5KGsPODMIPqyCUHqlrb2FaEEAfG2CXJ" frameborder="0" allowfullscreen></iframe>
+      <div class="col-sm-4 text-center">
+        <h4 class="uppercase mb16">Pack Hike Videos</h4>
+        <p class="lead mb32">
+          Dogs run and play with a trusted pack in the beautiful landscape of the Pacific Northwest. These hikes will leave your dog happy & tired!
+        </p>
+        <div class="embed-video-container embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/r7oumKM5GOQ" frameborder="0" allowfullscreen></iframe>
+        <!-- Pack-Hike Playlist: -->
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lxEBPuPnfEY?list=PLtqqRncgwzqQur8dTw0DHN-JfvludGbv2" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+        <!--end of embed video container-->
+      </div>
+      <div class="col-sm-4 text-center">
+        <h4 class="uppercase mb16">Training Videos</h4>
+        <p class="lead mb32">
+          Small Groups & Private Lessons; Socialization & Behavior classes as well as introductory competitive obedience courses.
+        </p>
+        <div class="embed-video-container embed-responsive embed-responsive-16by9">
+          <!-- Training Playlist: -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0cktg1M_lDQ?list=PLtqqRncgwzqTo2BKi05Vp6eVvZy_NES3v" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--end of embed video container-->
+      </div>
+      <div class="col-sm-4 text-center">
+        <h4 class="uppercase mb16">Pet Care Videos</h4>
+        <p class="lead mb32">
+          When your dog joins my pack, my priority is to ensure they feel loved and comfortable and get lots of love and attention.
+        </p>
+        <div class="embed-video-container embed-responsive embed-responsive-16by9">
+          <!-- Pet Care Playlist: -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PpdP9_FCr3w?list=PLtqqRncgwzqQUMMLf7M4Yesf1plI2PrXS" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--end of embed video container-->
+      </div>
     </div>
+    <!--end of row-->
   </div>
+  <!--end of container-->
 </section>
 
-You Tube Playlists:
 
+<!--
+You Tube Playlists:
+======================
 Pet Sitting:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PpdP9_FCr3w?list=PLtqqRncgwzqQUMMLf7M4Yesf1plI2PrXS" frameborder="0" allowfullscreen></iframe>
 
 Pack Hikes:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lxEBPuPnfEY?list=PLtqqRncgwzqQur8dTw0DHN-JfvludGbv2" frameborder="0" allowfullscreen></iframe>
 
-
 Training:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0cktg1M_lDQ?list=PLtqqRncgwzqTo2BKi05Vp6eVvZy_NES3v" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cktg1M_lDQ?list=PLtqqRncgwzqTo2BKi05Vp6eVvZy_NES3v" frameborder="0" allowfullscreen></iframe> -->
+
+
+
+<section class="projects p0 bg-dark">
+  <ul class="filters floating cast-shadow mb0" style="position: absolute; transform: translate3d(-50%, 0px, 0px); top: 16px; bottom: auto;">
+    <li data-filter="all" class="active">All</li>
+    <li data-filter="packhikes" class="">Pack Hikes</li>
+    <li data-filter="training" class="">Training</li>
+    <li data-filter="petcare">Pet Care</li>
+  </ul>
+  <div class="row masonry-loader fixed-center fadeOut">
+    <div class="col-sm-12 text-center">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <div class="row masonry masonryFlyIn fadeIn" style="position: relative; height: 723px;">
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="packhikes" style="position: absolute; left: 0px; top: 0px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/pack-hikes/muppet-pack-hike.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Muppet</h5>
+              <span>Pack Hike</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="training" style="position: absolute; left: 361px; top: 0px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/training/training-downtown-small.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Real-World Proofing Downtown</h5>
+              <span>Training</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="packhikes" style="position: absolute; left: 723px; top: 0px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/pack-hikes/dahlia-otis-water-run.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Otis & Dahlia running</h5>
+              <span>Pack Hike</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="petcare" style="position: absolute; left: 1084px; top: 0px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/pet-care/pet-care-home.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Throw the Ball Already!</h5>
+              <span>Pet Care</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="petcare" style="position: absolute; left: 361px; top: 241px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/pet-care/pet-care.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Chillin' at Home with the Dog Lady</h5>
+              <span>Pet Care</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="training" style="position: absolute; left: 361px; top: 0px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/training/training2.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Watch Me!</h5>
+              <span>Training</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn" data-filter="packhikes" style="position: absolute; left: 361px; top: 482px;">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="#">
+            <img alt="Pic" src="img/pack-hikes/pack-hike-group.jpg">
+            <div class="title">
+              <h5 class="uppercase mb0">Group Photo</h5>
+              <span>Pack Hike</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end of row-->
+</section>
+<hr class="mb80">
+
+
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4 class="uppercase mb16">Photo Gallery</h4>
+        <p class="lead mb64">
+          Click on a photo to see a larger image. Use Left & Right arrow keys to progress through images.
+        </p>
+      </div>
+    </div>
+    <!--end of row-->
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+          <ul>
+            <li>
+              <a href="img/pet-care/smiles2.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pet-care/smiles2.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pet-care/smiles2.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/pack-hikes/dahlia-otis-water-run.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pack-hikes/dahlia-otis-water-run.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pack-hikes/dahlia-otis-water-run.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/pack-hikes/muppet-pack-hike.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pack-hikes/muppet-pack-hike.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pack-hikes/muppet-pack-hike.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/training/training-downtown-small.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/training-downtown-small.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/training/training-downtown-small.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/pet-care/pet-care-home.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pet-care/pet-care-home.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pet-care/pet-care-home.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/pack-hikes/pack-hike-group.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pack-hikes/pack-hike-group.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pack-hikes/pack-hike-group.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/training/training2.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/training2.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/training/training2.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="img/pet-care/pet-care.jpg" data-lightbox="Gallery">
+                <div class="background-image-holder fadeIn" style="background: url(&quot;img/pet-care/pet-care.jpg&quot;);">
+                  <img alt="image" class="background-image" src="img/pet-care/pet-care.jpg" style="display: none;">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--end of lightbox gallery-->
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
