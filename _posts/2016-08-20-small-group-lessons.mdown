@@ -29,7 +29,7 @@ image: img/training/pet-care-walk-in-park-small.jpg
 
 <h5 style="margin-bottom: 10px; font-weight: 500;">Week 3: Real-World Proofing</h5>
 <p>
-  "Proofing" in dog training means making sure that your dog can follow your commands even if you aren't at home in a perfectly distraction-free environment.
+  "Proofing" in dog training means taking your dog into different environments or situations to practice commands. It's important to make sure your dog can follow your commands even if you aren't at home in a perfectly distraction-free environment.
 <br>
   This lesson takes the skills of the previous weeks to the next level. We might meet as a group in a new, near-by location or at a busier time of day or week to test and strengthen yours and your dogs skills.
 </p>

@@ -53,6 +53,42 @@ Before pushing LIVE
 * research class reservation & payment options (eventbrite?)
 
 
+CSS Things I Learned:
 
 
+/* Note for Media Queries:
+    * use only max (other wise you have to Min & max on every query)
+    * start with smallest and build upwards */
+/*=================================================*/
 
+*RESEARCH:
+=============
+  * what is "align-items" & "align-content"?
+  * Flex-box
+  *
+
+
+.v-align-children {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.v-align-children-column {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}

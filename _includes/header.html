@@ -14,54 +14,29 @@
       <div class="module-group right">
         <div class="module left">
           <ul class="menu">
-            <li>
-              <a href="/index.html">
-                Home
-              </a>
+            <li class="{% if page.url == '/index.html' %}active{% endif %}">
+              <a href="/index.html">Home</a>
             </li>
-            <li>
-              <a href="/about.html">
-                About
-              </a>
+            <li class="{% if page.url == '/about.html' %}active{% endif %}">
+              <a href="/about.html">About</a>
             </li>
-            <li>
-              <a href="pack-hikes.html">
-                Pack Hikes
-              </a>
+            <li class="{% if page.url == '/pack-hikes.html' %}active{% endif %}">
+              <a href="pack-hikes.html">Pack Hikes</a>
             </li>
-            <li>
+            <li class="{% if page.url == '/training.html' %}active{% endif %}">
               <!-- <li class="has-dropdown"> for extra pages -->
-              <a href="/training.html">
-                Training
-              </a>
+              <a href="/training.html">Training</a>
             </li>
-            <li>
+            <li class="{% if page.url == '/pet-care.html' %}active{% endif %}">
               <!-- <li class="has-dropdown"> for extra pages -->
               <a href="/pet-care.html">
-                Pet Care
-              </a>
+                Pet Care</a>
             </li>
-            <li>
-              <a href="contact.html">
-                Contact
-              </a>
+            <li class="{% if page.url == '/contact.html' %}active{% endif %}">
+              <a href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
-        <!--end of menu module-->
-        <!--search module-->
-        <!-- <div class="module widget-handle search-widget-handle left">
-          <div class="search">
-            <i class="ti-search"></i>
-            <span class="title">Search Site</span>
-          </div>
-          <div class="function">
-            <form class="search-form">
-              <input type="text" placeholder="Type Here" />
-            </form>
-          </div>
-        </div> -->
-        <!--END search module-->
       </div>
       <!--end of module group-->
     </div>

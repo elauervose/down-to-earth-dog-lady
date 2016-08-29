@@ -8,7 +8,10 @@ layout: classes
     <div class="row" id="class-description">
       <div class="col-sm-12">
         <h4 class="uppercase">Class Descriptions</h4>
-        <h5 class="mb32">I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. If you don't see what you are looking for, email me!</h5>
+        <h5>I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. If you don't see what you are looking for, email me!</h5>
+        <p class="lead mb32">
+          I have over ten years of experience working in the dog industry. I am a <a href="http://www.ccpdt.org/about-us/">certified professional dog trainer, <strong>(CCPDT)</strong></str></a>, a <a href="https://www.karenpryoracademy.com/why-choose-a-KPA-CTP">Karen Pryor clicker training partner</a>, and am certified in pet first aid.
+        </p>
         <div class="tabbed-content button-tabs vertical">
           <ul class="tabs">
             {% for post in site.categories.classes | limit:10 %}
@@ -24,7 +27,7 @@ layout: classes
 
                   {{ post.content }}
 
-                  <div class="alert alert-danger alert-dismissible" role="alert">
+                  <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
                     <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
                     For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
                   </div>

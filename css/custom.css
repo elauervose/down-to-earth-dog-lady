@@ -1,8 +1,26 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
 
-/* ? */
+/* Icons */
 /*=================================================*/
+
+.feature-2 i {
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid rgba(71, 180, 117, .015);
+    /*background-color: #fcfcfc;*/
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 5em;
+    color: #47b475;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
 
 .hover-icon {
   padding: 10px;
@@ -83,20 +101,100 @@ span.icon-name {
 }*/
 
 
-/* Pet Care Light Box Gallery */
+/* @Media Queries */
 /*=================================================*/
 
-.square-thumbs li {
-    height: 200px;
+@media all and (max-width: 991px) {
+  #contact-2-col {
+    display: none;
+  }
+  #contact-single-col {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) {
+  #contact-2-col {
+    display: block;
+  }
+  #contact-single-col {
+    display: none;
+  }
 }
 
-.lightbox-grid li {
-    width: 15%;
+/*FOOTER*/
+
+/*
+max: 400 (>0)
+min: 401 / max: 500 (>401, <500)
+min: 501 / max: 600 (>501, <600)
+min: 601 / max: 700 (>601, <700)
+min: 701 / max: 767 (>701, <767)
+min: 768 / max: 990 (>769, <990)
+======================================*/
+
+@media all  and (max-width: 400px) {
+  footer .row {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div.widget {
+    padding-left: 1em;
+    padding-right: 3em;
+  }
+}
+@media all and (min-width:401px) and (max-width: 500px) {
+  footer .row {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div.widget {
+    padding-left: 3em;
+    padding-right: 4em;
+  }
+}
+@media all and (min-width:501px) and (max-width: 600px) {
+  footer .row {
+    padding-left: 3em;
+    padding-right: 5em;
+  }
+  div.widget {
+    padding-left: 3em;
+    padding-right: 5em;
+  }
 }
 
-.lightbox-grid ul {
-    margin-left: 1%;
-    margin-right: 1%;
+@media all and (min-width:601px) and (max-width: 700px) {
+  footer .row {
+    padding-left: 3em;
+    padding-right: 5em;
+  }
+  div.widget {
+    padding-left: 7em;
+    padding-right: 8em;
+  }
+}
+@media all and (min-width:701px) and (max-width: 767px) {
+  footer .row {
+    padding-left: 3em;
+    padding-right: 5em;
+  }
+  div.widget {
+    padding-left: 7em;
+    padding-right: 12em;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 990px) {
+  footer .row {
+    padding-left: 3em;
+    padding-right: 5em;
+  }
+  div.widget {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-sm-6 {
+      width: 100%;
+  }
 }
 
 
