@@ -13,10 +13,19 @@ image: img/training/training-downtown-small.jpg
 <p>
   I can meet you downtown, at your house, or at a location you choose. We'll start with a consultation and from that, I'll create a personalized training plan for you and your dog. Then we'll work together to meet your training goals!
 </p>
-<p>Contact me directly to schedule a private lesson.</p>
 <p>
   <strong>Consultation:</strong> I like to start with a consultation to get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
 </p>
+<hr>
+
+<div class="mb32">
+  <h5 class="mb16"><em><strong>New clients</strong>, contact me directly to schedule a consultation.</em></h5>
+
+  <h5><strong>Returning clients</strong>, if you wish to schedule a downtown private lesson, click the button below to view dates and register online.</h5>
+
+  <a style="color:white;" class="btn btn-filled btn mb0" target="_blank" href="https://www.eventbrite.com/e/downtown-private-lesson-tickets-27422282786"><strong>Downtown Private Lesson Dates, Times, & Registration Details</strong></a>
+</div>
+<hr>
 <h5 style="margin-bottom: 10px; font-weight: 500;">Pricing:</h5>
 <ul data-bullet="ti-star">
   <li><strong>Consultation: FREE</strong></li>
