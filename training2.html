@@ -1,0 +1,45 @@
+<!-- BEGIN CLASS LISTINGS -->
+<section class="pb0">
+  <div class="container">
+    <div class="row" id="class-description">
+      <div class="col-sm-12">
+        <h4 class="uppercase">Class Descriptions</h4>
+        <h5>I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. If you don't see what you are looking for, email me!</h5>
+        <p class="lead mb32">
+          I have over ten years of experience working in the dog industry. I am a <a href="http://www.ccpdt.org/about-us/">certified professional dog trainer, <strong>(CCPDT)</strong></str></a>, a <a href="https://www.karenpryoracademy.com/why-choose-a-KPA-CTP">Karen Pryor clicker training partner</a>, and am certified in pet first aid.
+        </p>
+        <div class="tabbed-content button-tabs vertical">
+          <ul class="tabs">
+            {% for post in site.categories.classes | limit:10 %}
+            <!-- <li class="active">-->
+            <li>
+              <div class="tab-title">
+                <span><a href="#{{ post.title }}" aria-controls="{{ post.title }}" role="tab" data-toggle="tab">{{ post.title }}</a></span>
+              </div>
+              <div class="tab-content" id="{{ post.title }}">
+                <h5 class="uppercase">{{ post.title }}</h5>
+                <hr>
+                <div id="training-link" style="display: block;" class="col-md-8 training-link">
+
+                  {{ post.content }}
+
+                  <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
+                    <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
+                    For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
+                  </div>
+                </div>
+                <div style="display: block;" class="col-md-4">
+                  <img class="featurette-image img-responsive center-block" src="{{ post.image }}" alt="Generic placeholder image">
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!--end of button tabs-->
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>

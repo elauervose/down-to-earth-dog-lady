@@ -1,49 +1,90 @@
 ---
 layout: classes
 ---
+<style type="text/css">
+  #mc_embed_signup_scroll form, div label {
+    background: transparent;
+    color: white;
+    clear: left;
+    border: none;
+    text-align: left;
+    font: 10px;
+  }
+  #mc_embed_signup .indicates-required {
+      text-align: right;
+      font-size: 12px;
+      margin-right: 4%;
+      color: white;
+  }
+  .feature.bordered {
+    padding: 32px;
+    border: 1px solid #ccc;
+    background-color: rgba(204, 204, 204, .1);
+  }
+  div#green-btn.clear.btn-filled:hover {
+    background-color: #fff;
+    color: #fff;
+    z-index: 50;
+  }
+</style>
 
-<!-- BEGIN CLASS LISTINGS -->
-<section class="pb0">
-  <div class="container">
-    <div class="row" id="class-description">
-      <div class="col-sm-12">
-        <h4 class="uppercase">Class Descriptions</h4>
-        <h5>I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. If you don't see what you are looking for, email me!</h5>
-        <p class="lead mb32">
-          I have over ten years of experience working in the dog industry. I am a <a href="http://www.ccpdt.org/about-us/">certified professional dog trainer, <strong>(CCPDT)</strong></str></a>, a <a href="https://www.karenpryoracademy.com/why-choose-a-KPA-CTP">Karen Pryor clicker training partner</a>, and am certified in pet first aid.
-        </p>
-        <div class="tabbed-content button-tabs vertical">
-          <ul class="tabs">
-            {% for post in site.categories.classes | limit:10 %}
-            <!-- <li class="active">-->
-            <li>
-              <div class="tab-title">
-                <span><a href="#{{ post.title }}" aria-controls="{{ post.title }}" role="tab" data-toggle="tab">{{ post.title }}</a></span>
-              </div>
-              <div class="tab-content" id="{{ post.title }}">
-                <h5 class="uppercase">{{ post.title }}</h5>
-                <hr>
-                <div id="training-link" style="display: block;" class="col-md-8 training-link">
-
-                  {{ post.content }}
-
-                  <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
-                    <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
-                    For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
-                  </div>
+<hr class="mt24" style="border-color: transparent;">
+<section class="cover fullscreen image-bg overlay">
+  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/training-downtown.jpg&quot;);">
+    <img alt="image" class="background-image" src="img/training/training-downtown.jpg" style="display: none;">
+  </div>
+  <div class="container v-align-transform">
+    <div class="row" style="height: 100%;">
+      <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+        <div class="feature bordered text-center" style="margin-top: 10em; margin-bottom: 10em;">
+          <h3 class="uppercase">Check Back Soon</h3>
+          <p class="lead">
+            We'll be launching the training page in the coming weeks. In the meantime, subscribe to the mailing list to find out about training & classes. Or you can email me directly!
+          </p>
+          <!-- BEGIN MAILCHIMP Sign-up form -->
+          <div id="mc_embed_signup">
+            <form action="//gmail.us13.list-manage.com/subscribe/post?u=95d8229e12ac545d969d3a2b7&amp;id=4e1f6862de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div id="input-style" class="mc-field-group">
+                  <!-- <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                  </label> -->
+                  <input type="email" value="Email Address *" name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
-                <div style="display: block;" class="col-md-4">
-                  <img class="featurette-image img-responsive center-block" src="{{ post.image }}" alt="Generic placeholder image">
+                <div class="mc-field-group">
+                  <!-- <label for="mce-FNAME">First Name </label> -->
+                  <input type="text" value="First name" name="FNAME" class="mail-style" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                  <!-- <label for="mce-LNAME">Last Name </label> -->
+                  <input type="text" value="Last name" name="LNAME" class="mail-style" id="mce-LNAME">
+                </div>
+                <p>
+                  <a href="http://us13.campaign-archive1.com/home/?u=95d8229e12ac545d969d3a2b7&id=4e1f6862de" title="View previous campaigns">View previous campaigns.</a>
+                </p>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_95d8229e12ac545d969d3a2b7_4e1f6862de" tabindex="-1" value="">
+                </div>
+                <div class="clear btn-filled" id="green-btn">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background: #47b475; color: #fff;">
                 </div>
               </div>
-            </li>
-            {% endfor %}
-          </ul>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>
+            (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+          </script>
+          <!--End mc_embed_signup-->
         </div>
-        <!--end of button tabs-->
       </div>
     </div>
     <!--end of row-->
   </div>
   <!--end of container-->
 </section>
+
