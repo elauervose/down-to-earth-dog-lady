@@ -1,8 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '2.2.1'
+gem 'sinatra'
 
-gem 'bundler'
-gem 'jekyll'
-gem 'rack-jekyll'
-gem 'puma'
+group :development, :test do
+  gem 'shotgun', require: false
+  gem 'pry', require: false
+end

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  <%= erb :"includes/head" %>
 
   <body class="scroll-assist">
 
-    {% include header.html %}
+    <%= erb :"includes/header" %>
 
     <div class="main-container">
 
-      {{ content }}
+      <%= yield %>
 
-      {% include footer.html %}
+      <%= erb :"includes/footer" %>
 
     </div>
     <script src="/js/jquery.min.js"></script>

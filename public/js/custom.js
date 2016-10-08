@@ -33,7 +33,7 @@ function drawAstronauts() {
 
 function loadImage() {
     // Remove the loading spinner in the photo gallery.
-    $(#spinner).ready(function() {
+    $("#spinner").ready(function() {
       // Handler for .ready() called.
       $('.form-loading').removeClass('.spinner');
     });
