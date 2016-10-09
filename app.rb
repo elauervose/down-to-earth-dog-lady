@@ -3,6 +3,7 @@ require "json"
 require "sinatra/json"
 
 require "./lib/instagram_wrapper"
+require "./lib/eventbrite_wrapper"
 
 # Index page
 get "/" do
@@ -15,7 +16,7 @@ get "/about.?:format?" do
 end
 
 get "/events" do
-  json EventBriteWrapper.instance.events
+  json EventbriteWrapper.instance.events
 end
 
 # tags in use: #packhikes, #portlandpetcare, #dogtraining

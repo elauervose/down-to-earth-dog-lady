@@ -2,11 +2,6 @@ require "instagram"
 
 class InstagramWrapper
   def initialize
-    Instagram.configure do |config|
-      config.client_id      = ENV["INSTAGRAM_CLIENT_ID"]
-      config.client_secret  = ENV["INSTAGRAM_CLIENT_SECRET"]
-    end
-
     token   = ENV["INSTAGRAM_ACCESS_TOKEN"]
     @client = Instagram.client(:access_token => token)
   end
