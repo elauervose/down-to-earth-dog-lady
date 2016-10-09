@@ -4,6 +4,7 @@ gem "sinatra"
 gem "sinatra-contrib"
 gem "instagram", :github => "Aeon/instagram-ruby-gem"
 gem "typhoeus"
+gem "eventbrite"
 
 group :development, :test do
   gem "dotenv"

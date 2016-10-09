@@ -1,3 +1,3 @@
-require 'rspec'
-require 'dotenv'
+require "rspec"
+require "dotenv"
 Dotenv.load

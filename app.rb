@@ -15,7 +15,7 @@ get "/about.?:format?" do
 end
 
 get "/events" do
-
+  json EventBriteWrapper.instance.events
 end
 
 # tags in use: #packhikes, #portlandpetcare, #dogtraining

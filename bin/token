@@ -3,4 +3,13 @@
 require "dotenv"
 Dotenv.load
 
-`open "https://www.instagram.com/oauth/authorize/?client_id=#{ENV['INSTAGRAM_CLIENT_ID']}&redirect_uri=http://localhost:9393&response_type=token&scope=public_content"`
+url = <<-eos
+  https://www.instagram.com/oauth/authorize/?
+  client_id=#{ENV["INSTAGRAM_CLIENT_ID"]}&
+  redirect_uri=http://localhost:9393&
+  response_type=token&
+  scope=public_content
+eos
+url = url.split("\n  ").join.strip
+
+`open #{url}`
