@@ -5,8 +5,6 @@ describe InstagramWrapper do
   subject { described_class.instance }
 
   it "can search" do
-    expect(subject.send(:client).client_id).to_not be_nil
-    expect(subject.send(:client).client_secret).to_not be_nil
     expect(subject.send(:client).access_token).to_not be_nil
   end
 

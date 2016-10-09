@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "dotenv"
-Dotenv.load
+Dotenv.load('.env.local', '.env')
 
 url = <<-eos
   https://www.instagram.com/oauth/authorize/?
@@ -12,4 +12,6 @@ url = <<-eos
 eos
 url = url.split("\n  ").join.strip
 
-`open #{url}`
+puts "put this in your browser:"
+puts url
+# `open #{url}`
