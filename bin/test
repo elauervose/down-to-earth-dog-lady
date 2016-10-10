@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-bundle
-bundle exec rspec
+bundle exec dotenv -f .env.local,.env rspec

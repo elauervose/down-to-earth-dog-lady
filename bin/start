@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 bundle
-bundle exec dotenv shotgun
+bundle exec dotenv -f .env.local,.env shotgun

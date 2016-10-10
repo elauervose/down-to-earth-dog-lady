@@ -1,0 +1,24 @@
+Style/EachWithObject:
+  Enabled: false
+Style/AccessModifierIndentation:
+  Enabled: false
+Style/Next:
+  Enabled: false
+Style/ConstantName:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Style/Documentation:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 360
+Style/WordArray:
+  MinSize: 3
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+Documentation:
+  Enabled: false
