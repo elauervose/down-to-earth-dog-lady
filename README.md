@@ -8,6 +8,7 @@ bin/setup
 
 # Start the app (each time)
 bin/start
+
 ```
 
 ## Updating instagram tokens in heroku

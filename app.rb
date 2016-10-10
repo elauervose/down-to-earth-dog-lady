@@ -8,6 +8,8 @@ require "./lib/eventbrite_wrapper"
 # Index page
 get "/" do
   erb :index
+  # this line assumes a folder titled "layouts" exists and a layout called "events.erb" is in there.
+  # erb :index, :layout => :"layouts/events"
 end
 
 # Single page (`.?:format?` will ignore .html on urls)

@@ -2,3 +2,6 @@
 
 bundle
 bundle exec dotenv -f .env.local,.env shotgun
+
+# this is for when the env variables folder is fixed
+# bundle exec dotenv shotgun
