@@ -1,45 +1,54 @@
-<!-- BEGIN CLASS LISTINGS -->
-<section class="pb0">
-  <div class="container">
-    <div class="row" id="class-description">
-      <div class="col-sm-12">
-        <h4 class="uppercase">Class Descriptions</h4>
-        <h5>I offer a variety of small group and private socialization and behavior classes as well as some basic competitive obedience courses. If you don't see what you are looking for, email me!</h5>
-        <p class="lead mb32">
-          I have over ten years of experience working in the dog industry. I am a <a href="http://www.ccpdt.org/about-us/">certified professional dog trainer, <strong>(CCPDT)</strong></str></a>, a <a href="https://www.karenpryoracademy.com/why-choose-a-KPA-CTP">Karen Pryor clicker training partner</a>, and am certified in pet first aid.
-        </p>
-        <div class="tabbed-content button-tabs vertical">
-          <ul class="tabs">
-            {% for post in site.categories.classes | limit:10 %}
-            <!-- <li class="active">-->
-            <li>
-              <div class="tab-title">
-                <span><a href="#{{ post.title }}" aria-controls="{{ post.title }}" role="tab" data-toggle="tab">{{ post.title }}</a></span>
-              </div>
-              <div class="tab-content" id="{{ post.title }}">
-                <h5 class="uppercase">{{ post.title }}</h5>
-                <hr>
-                <div id="training-link" style="display: block;" class="col-md-8 training-link">
 
-                  {{ post.content }}
-
-                  <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
-                    <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
-                    For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
-                  </div>
-                </div>
-                <div style="display: block;" class="col-md-4">
-                  <img class="featurette-image img-responsive center-block" src="{{ post.image }}" alt="Generic placeholder image">
-                </div>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
+<script type="text/html" id="template-event">
+  <li>
+    <div class="tab-title">
+      <span><a href="" role="tab" data-toggle="tab"></a></span>
+    </div>
+    <div class="tab-content">
+      <h5 class="uppercase content-title"></h5>
+      <hr>
+      <div style="display: block;" class="col-md-8 training-link">
+        <div class="event-description">
+          <!-- "description": "html": -->
         </div>
-        <!--end of button tabs-->
+        <div class="mt32" style="font-size: 1.2em;">
+          <h6 class="uppercase mb16 event-location">Private Lesson Location: "SE Portland"</h6>
+          <ul class="mb24">
+            <li class="event-date-time">
+              <span style="margin-right: 10px; "><i class="ti-control-record"></i></span>Month Date, [<span class="event-start-date"></span>] 11:00 AM [<span class="event-start-time"></span>] - 12:00 PM [<span class="event-end-time"></span>]
+            </li>
+          </ul>
+          <div class="event-registration-url">
+            <a class="btn btn-filled btn-lg mb16" style="color: white; font-size: .9em;" href="link to event">Register for a Lesson</a>
+          </div>
+          <h5 style="color: red;">Please review my strategy for creating an href thingy in my button ... is there a better way to do this? Seems clunky....(see line 55 in custom.js)</h5>
+        </div>
+
+        <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
+          <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
+          For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
+        </div>
+        <h5 style="color: red;">
+          The duplicate event listing below is because the javascript is duplicated in scripts.js & custom.js. I tried commenting out the "tabbed Content" in scripts.js and the duplicate goes away. It also works if I comment out lines 20 - 22 in custom.js, but will this mess things up later?
+        </h5>
+      </div>
+      <div style="display: block;" class="col-md-4 event-image-holder">
+        <div class="event-image">
+          <img class="featurette-image img-responsive center-block" src="" alt="Generic placeholder image">
+        </div>
+        <h5 style="color: red;">How do I make the text "Generic placeholder image" into an actual alternative image?</h5>
+        <h5 style="color: red;">Also, the image URL breaks the whole script - think it's because it's an https URL ... how to fix? (see line 56 in custom.js)</h5>
       </div>
     </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
-</section>
+  </li>
+</script>
+
+<!-- BEGIN CLASS LISTINGS -->
+<div class="tabbed-content button-tabs vertical">
+  <ul class="tabs" id="eventTabs">
+
+    <!-- this is where the template in the script above will go-->
+
+  </ul>
+</div>
+<!--end of button tabs-->
