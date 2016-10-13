@@ -1,9 +1,12 @@
 
 <script type="text/html" id="template-event">
-  <li>
+  <li class="test">
+    <!-- Begin Tab - tab title -->
     <div class="tab-title">
       <span><a href="" role="tab" data-toggle="tab"></a></span>
     </div>
+
+    <!-- Begin Tab Content -->
     <div class="tab-content">
       <h5 class="uppercase content-title"></h5>
       <hr>
@@ -11,30 +14,53 @@
         <div class="event-description">
           <!-- "description": "html": -->
         </div>
+
+        <!-- Event Location(s), Date(s), & Time(s) -->
         <div class="mt32" style="font-size: 1.2em;">
           <h6 class="uppercase mb16 event-location">Private Lesson Location: "SE Portland"</h6>
           <h5 style="color: red;">Need New API Query for Location Data</h5>
           <ul class="mb24">
             <li class="event-date-time">
-              <span style="margin-right: 10px; "><i class="ti-control-record"></i></span><span class="event-start-date"></span>, <span class="event-start-time"></span> - <span class="event-end-time"></span>
+              <span style="margin-right: 10px; "><i class="ti-control-record"></i></span>
+              <span class="event-start-day"></span>,&nbsp;
+              <span class="event-start-date"></span>,&nbsp;
+              <span class="event-start-year"></span>;&nbsp;
+              <span class="event-start-time"></span>
+               - <span class="event-end-time"></span>
             </li>
           </ul>
           <div class="event-registration-url">
-            <a class="btn btn-filled btn-lg mb16" style="color: white; font-size: .9em;" href="link to event">Register for a Lesson</a>
+            <a class="btn btn-filled btn-md mb16" style="color: white; font-size: .9em;" href="link to event">Register for a Lesson</a>
           </div>
         </div>
 
+        <div class="package-details">
+          <!-- Package Description -->
+          <div class="package-registration-description">
+            <!-- "description": "html": -->
+          </div>
+          <div class="package-registration-url">
+            <a class="btn btn-filled btn-md mb16" style="color: white; font-size: .9em; display: none;" href="link to event">Purchase a Private Lesson Package</a>
+          </div>
+        </div>
+
+
+        <!-- Cancelation Policy -->
         <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
-          <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span><br>
+          <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span>
           For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
         </div>
       </div>
+
+      <!-- Event Image Holder -->
       <div style="display: block;" class="col-md-4 event-image-holder">
         <div class="event-image">
           <img class="featurette-image img-responsive center-block" src="" alt="Generic placeholder image">
         </div>
       </div>
+
     </div>
+    <!-- END Tab Content -->
   </li>
 </script>
 
