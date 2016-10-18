@@ -92,14 +92,16 @@ function drawEventTab() {
 
       // Find all events that are proper classes, then add them to
       // and array of events. We'll use the first to make the tab.
-      if (currentEvent.status == "live" &&
+      if ((currentEvent.status == "live" ||
+          currentEvent.status == "started") &&
           currentEvent.listed === true) {
         groups[eventName].events.push(currentEvent);
 
       // Pull out only the "package" events that we'll use to
       // signify that someone is buying a 4-pack of classes
       } else if (currentEvent.online_event === true &&
-                 currentEvent.listed === true) {
+                 currentEvent.listed === true
+                 ) {
         groups[eventName].package = currentEvent;
 
       } else {
@@ -159,6 +161,9 @@ function drawEventTab() {
       if (group.package) {
         $("div.package-details .package-registration-url a", template)
           .attr("href", group.package.url)
+          .show();
+        $("div.package-details .package-registration-description", template)
+          .attr("href", group.package.description).html
           .show();
       }
 
