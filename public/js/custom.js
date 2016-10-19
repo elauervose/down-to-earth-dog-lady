@@ -43,9 +43,38 @@ $(document).ready(function() {
 
   // Experiment with API call to make photo gallery
   drawEventTab();
-
+  drawGallery();
 
 })
+
+
+// Instagram script
+// ===============================
+
+function drawGallery() {
+  $.getJSON("/recent-photos", function(images) {
+
+    _.each(images, function(image) {
+      var template = $($("#template-gallery").html());
+
+      // this is a bunch of attributes I am using for listing events
+      $("#lightbox.lightbox", template).html(image.caption.text);
+
+      $("p.image-gallery-caption", template).html(image.caption.text);
+
+      $("a.image-url", template).attr("href", image.images.standard_resolution.url);
+      $("img.image-gallery-content", template).attr("src", image.images.low_resolution.url);
+
+
+      // _NOW_ we add this template to the training page
+      $("#galleryDogs").append(template);
+    });
+  });
+}
+
+
+
+
 
 
 // Eventbrite script
@@ -73,7 +102,7 @@ function makeTabs(){
 }
 
 function drawEventTab() {
-  $.getJSON("http://localhost:9393/events", function(data) {
+  $.getJSON("/events", function(data) {
     var groups = {};
 
     // Group all the events with common names/tags together
@@ -197,13 +226,11 @@ function drawEventTab() {
 //Erica's Guesswork
 //======================
 
-// function loadImage() {
-//     // Remove the loading spinner in the photo gallery.
-//     $("#spinner").ready(function() {
-//       // Handler for .ready() called.
-//       $('.form-loading').removeClass('.spinner');
-//     });
-// }
+// $(window).resize(function(){
+//  If($(window).width()<500){
+//   $('.fade').removeClass('fade');
+//  }
+// });
 
 
 

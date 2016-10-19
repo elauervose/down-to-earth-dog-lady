@@ -34,7 +34,7 @@ end
 # Wildcard page (must be the last route in app.rb)
 get "/:page.?:format?" do
   begin
-    erb params[:page].to_sym
+    erb params[:page].to_sym, :layout => :"layouts/layout"
   rescue Errno::ENOENT
     halt 404
   end
