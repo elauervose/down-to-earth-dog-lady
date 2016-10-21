@@ -57,22 +57,80 @@ function drawGallery() {
     _.each(images, function(image) {
       var template = $($("#template-gallery").html());
 
-      // this is a bunch of attributes I am using for listing events
-      $("#lightbox.lightbox", template).html(image.caption.text);
-
-      $("p.image-gallery-caption", template).html(image.caption.text);
-
-      $("a.image-url", template).attr("href", image.images.standard_resolution.url);
-      $("img.image-gallery-content", template).attr("src", image.images.low_resolution.url);
+      // if Instagram (or the api call or oauth stuff breaks) this if/else will tell it to insert local images
 
 
-      // _NOW_ we add this template to the training page
-      $("#galleryDogs").append(template);
+      if (image.images && image.images.standard_resolution && image.images.standard_resolution.url){
+
+        //This is the image URL for the gallery
+        $("img.image-gallery-content", template).attr("src", image.images.standard_resolution.url);
+
+        // this is the image URL for the lightbox
+        $("a.image-url", template).attr("href", image.images.standard_resolution.url);
+
+        //$("#lightbox.lightbox", template).html(image.caption.text);
+
+        $("p.image-gallery-caption", template).html(image.caption.text);
+
+        // function randomNumber(rand){
+        //   debugger;
+        //   var rand = Math.floor(Math.random() * (20) + 1);
+        //   //document.getElementById("demo").innerHTML = rand;
+        //   console.log(rand);
+        //   alert(rand);
+        // }
+
+        // var random = rand;
+        // for(var i=0 in rand) {
+        //   console.log(rand[i]);
+        // }
+
+        // var obj = {a:1, b:2, c:3};
+        // for(var i=0 in obj) {
+        //   console.log(obj[i]);
+        // }
+        // 1
+        // 2
+        // 3
+
+        // rand = randomNumber();
+        // for (var i = 0; i < rand; i++) {
+        //   rand[i] = "<p>" + rand[i] + "</p>";
+        //   console.log(rand[i]);
+        // }
+
+
+      } else {
+
+        function randomNumber() {
+          min = Math.ceil(0);
+          max = Math.floor(20);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        random = randomNumber();
+        console.log('<li class="image-li"><div class="image-gallery-tile image-tile inner-title hover-reveal text-center"><img style="background-color: #333333;" alt="Captioned Image" class="image-gallery-content" src="/public/img/gallery-back-ups/' + random + '.jpg"><div class="image-title title"><p class="image-gallery-caption insert-caption lead mb0"></p></div></div></li>');
+
+        $('li.image-li', template).html('<a href="https://www.instagram.com/the_down_to_earth_doglady/" class="image-url">')
+
+        $('a.image-url', template).html('<div class="image-gallery-tile image-tile text-center"><img style="background-color: #333333;" alt="Captioned Image" class="image-gallery-content" src="/img/gallery-back-ups/' + random + '.jpg"></div></a>')
+
+        }
+
+        //This is the image URL for the gallery
+        // $("img.image-gallery-content", template).attr("src", image.images.standard_resolution.url);
+
+        // this is the image URL for the lightbox
+        // $("a.image-url", template).attr("href", image.images.standard_resolution.url);
+
+        // $("#lightbox.lightbox", template).html(image.caption.text);
+
+        // $("p.image-gallery-caption", template).html(image.caption.text);
+
+        // _NOW_ we add this template to the training page
+        $("#galleryDogs").append(template);
     });
   });
 }
-
-
 
 
 
@@ -146,7 +204,6 @@ function drawEventTab() {
     // This is your event group. This should be commented out for
     // production
     console.log(groups);
-
 
     _.each(groups, function(group) {
       var template = $($("#template-event").html());
