@@ -112,6 +112,8 @@ DEPENDENCIES
   dotenv
   eventbrite
   instagram!
+  # Erica put this here
+  acuity
   pry
   pry-byebug
   rspec
