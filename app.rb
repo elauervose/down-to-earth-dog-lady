@@ -5,21 +5,6 @@ require "sinatra/json"
 require "./lib/instagram_wrapper"
 require "./lib/eventbrite_wrapper"
 
-# Erica put this here
-require "./lib/acuity_wrapper"
-
-#this came from here: https://developers.acuityscheduling.com/docs/webhooks
-# this is the cURL: curl -u [[app:username]]:[[app:password]] "https://acuityscheduling.com/api/v1/appointments"
-require 'openssl'
-require 'base64'
-
-def verify_message_signature(secret, body, signature)
-  hash = Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest.new('sha256'), secret, body))
-  if hash.strip() != signature
-    raise 'This message was forged!'
-  end
-end
-
 # Index page
 get "/" do
   erb :index
@@ -44,11 +29,6 @@ end
 # use #dtedl to float images to the top
 get "/recent-photos" do
   json InstagramWrapper.instance.recent
-end
-
-# Erica put this here
-get "/appointments" do
-  json AcuityWrapper.instance.recent
 end
 
 # Wildcard page (must be the last route in app.rb)
