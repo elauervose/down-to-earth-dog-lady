@@ -1,0 +1,217 @@
+[
+    {
+        "id": 1997742,
+        "name": "Consultation",
+        "description": "",
+        "duration": 30,
+        "price": "0.00",
+        "category": "Consultation",
+        "color": "#D4E3E2",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 10,
+        "paddingBefore": 15,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1992045,
+        "name": "Monday Pack Hike",
+        "description": "",
+        "duration": 180,
+        "price": "70.00",
+        "category": "Pack Hikes",
+        "color": "#61B7B8",
+        "private": false,
+        "type": "class",
+        "classSize": 4,
+        "paddingAfter": 30,
+        "paddingBefore": 0,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1992540,
+        "name": "Wednesday Pack Hike",
+        "description": "",
+        "duration": 180,
+        "price": "70.00",
+        "category": "Pack Hikes",
+        "color": "#E3DE7D",
+        "private": false,
+        "type": "class",
+        "classSize": 4,
+        "paddingAfter": 30,
+        "paddingBefore": 0,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1992568,
+        "name": "Friday Pack Hike",
+        "description": "",
+        "duration": 180,
+        "price": "70.00",
+        "category": "Pack Hikes",
+        "color": "#EA8C3A",
+        "private": false,
+        "type": "class",
+        "classSize": 4,
+        "paddingAfter": 30,
+        "paddingBefore": 0,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1991475,
+        "name": "Private Lessons SE Portland",
+        "description": "",
+        "duration": 60,
+        "price": "70.00",
+        "category": "Private Lessons",
+        "color": "#61B7B8",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 5,
+        "paddingBefore": 15,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1998688,
+        "name": "Private Lessons NE Portland",
+        "description": "",
+        "duration": 60,
+        "price": "70.00",
+        "category": "Private Lessons",
+        "color": "#469D6E",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 5,
+        "paddingBefore": 15,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1998693,
+        "name": "Private Lessons NW Portland",
+        "description": "",
+        "duration": 60,
+        "price": "70.00",
+        "category": "Private Lessons",
+        "color": "#E3DE7D",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 5,
+        "paddingBefore": 15,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1998699,
+        "name": "Private Lessons SW Portland",
+        "description": "",
+        "duration": 60,
+        "price": "70.00",
+        "category": "Private Lessons",
+        "color": "#EA8C3A",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 5,
+        "paddingBefore": 15,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1991484,
+        "name": "Puppy Socialization",
+        "description": "",
+        "duration": 120,
+        "price": "60.00",
+        "category": "Puppy Socialization",
+        "color": "#469D6E",
+        "private": false,
+        "type": "class",
+        "classSize": 4,
+        "paddingAfter": 15,
+        "paddingBefore": 0,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1992858,
+        "name": "Real-World Proofing Your Dog ~ Week 1, 2, &amp; 3",
+        "description": "&quot;Proofing&quot; in dog training means ensuring your dog will follow commands even in a distracting or challenging places. You can work on problems &amp; get feed-back &amp; moral support from other dog owners in a supportive small-group setting. Each week we'll work on different training strategies &amp; activities to find something that's fun &amp; works for you &amp; your dog.\r\nWeek 1: Impulse Control\r\nWeek 2: Social Behaviors\r\nWeek 3: Real-World Proofing",
+        "duration": 60,
+        "price": "60.00",
+        "category": "Real-World Proofing Your Dog",
+        "color": "#D8394F",
+        "private": false,
+        "type": "series",
+        "classSize": 6,
+        "paddingAfter": 0,
+        "paddingBefore": 0,
+        "calendarIDs": [
+            817821
+        ]
+    },
+    {
+        "id": 1992604,
+        "name": "Real-World Proofing Your Dog ~ Week 1: Impulse Control",
+        "description": "In week 1, we will cover the potentially life-saving &quot;Leave It&quot; command as well as longer, stronger sit/stays, &amp; recall.",
+        "duration": 60,
+        "price": "25.00",
+        "category": "Real-World Proofing Your Dog",
+        "color": "#D8394F",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 0,
+        "paddingBefore": 0,
+        "calendarIDs": null
+    },
+    {
+        "id": 1992471,
+        "name": "Real-World Proofing Your Dog ~ Week 2: Social Behaviors",
+        "description": "Work on problems &amp; get feed-back &amp; moral support from other dog owners in a supportive small-group setting. Each week we'll work on different training strategies &amp; activities to find something that's fun &amp; works well for you &amp; your dog.\nIn Week 2, we will cover critical social behaviors like greeting strangers (or just walking past) calmly, appropriate dog park play, &amp; addressing excessive barking or jumping behavior.",
+        "duration": 60,
+        "price": "25.00",
+        "category": "Real-World Proofing Your Dog",
+        "color": "#D8394F",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 0,
+        "paddingBefore": 0,
+        "calendarIDs": null
+    },
+    {
+        "id": 1992523,
+        "name": "Real-World Proofing Your Dog ~ Week 3: Real-World Proofing",
+        "description": "Work on problems &amp; get feed-back &amp; moral support from other dog owners in a supportive small-group setting. Each week we'll work on different training strategies &amp; activities to find something that's fun &amp; works well for you &amp; your dog.\nin week 3, we will take the skills of the previous weeks to the next level. We might meet as a group in a new, near-by location or at a busier time of day or week to test &amp; strengthen yours &amp; your dogs skills.",
+        "duration": 60,
+        "price": "25.00",
+        "category": "Real-World Proofing Your Dog",
+        "color": "#D8394F",
+        "private": false,
+        "type": "service",
+        "classSize": null,
+        "paddingAfter": 0,
+        "paddingBefore": 0,
+        "calendarIDs": null
+    }
+]

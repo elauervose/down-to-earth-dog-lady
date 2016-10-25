@@ -18,7 +18,7 @@ end
 # Single page (`.?:format?` will ignore .html on urls)
 get "/training.?:format?" do
   # this line assumes a folder titled "layouts" exists and a layout called "events.erb" is in there.
-  erb :training2, :layout => :"layouts/training-layout"
+  erb :training, :layout => :"layouts/training-layout"
 end
 
 get "/events" do
