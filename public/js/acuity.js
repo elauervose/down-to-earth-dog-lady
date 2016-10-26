@@ -78,6 +78,7 @@ function makeTabs(){
 function drawEventTab() {
   $.getJSON("/appointments").done( function(data) {
     var groups = {};
+    var defaultDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis felis ut risus rhoncus, sit amet rhoncus massa fringilla. Sed dictum libero ex, id posuere sapien laoreet sed. Mauris sit amet tellus leo. Quisque vehicula vel lorem a cursus. Quisque tempor facilisis neque a bibendum. Morbi euismod libero augue, et blandit nisl hendrerit laoreet. Phasellus feugiat arcu id placerat venenatis. Nunc ullamcorper sagittis dui in suscipit."
 
     // Group all the events with common names/tags together
     _.each(data, function(currentEvent) {
@@ -88,7 +89,7 @@ function drawEventTab() {
           groups[eventCategory] === null ) {
         groups[eventCategory] = {
           events: [],
-          package: null
+          category: eventCategory
         };
       }
 
@@ -107,59 +108,32 @@ function drawEventTab() {
     // production
     // console.log(groups);
 
+    // Iterate over all the groups making a tab for each one
+    // Within that tab, render a title/description/link for each event
     _.each(groups, function(group) {
-      var template = $($("#template-appointment").html());
+      var tmplCategory = $($("#template-category").html());
 
-      firstAppointment = group.events[0];
+      // Set the title on the tab on the left
+      $(".tab-title span a", tmplCategory).html(group.events[0].category);
+      // Set the title on the top of the content
+      $(".content-title", tmplCategory).html(group.events[0].category);
 
-      // this is a bunch of attributes I am using for listing events
-      $(".tab-title span a", template).html(firstAppointment.name);
+      // Iterate over the events and add them to tmplCategory
+      _.each(group.events, function (appointment) {
+        // Create a new appointment template
+        var tmplAppointment = $($("#template-appointment").html());
 
-      $(".tab-content .content-title", template).html(firstAppointment.name);
-      $(".tab-content .event-description", template).html(firstAppointment.description);
-      $(".tab-content div .event-location", template).html(firstAppointment.name);
+        // Fill in the template with the details from the API
+        $(".title", tmplAppointment).html(appointment.name);
+        $(".description", tmplAppointment).html(appointment.description || defaultDescription);
+        $(".registration-url a", tmplAppointment).attr("href", 'https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=category:' + appointment.category);
 
-
-      $(".tab-content div .event-registration-url a", template).attr("href", 'https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=category:' + firstAppointment.category);
-
-      // this is a block of stuff to make the dateTime behave
-      if (firstAppointment.time) {
-        // var startTime = moment(firstAppointment.time);
-        // var endTime = moment(firstAppointment.time + firstAppointment.duration);
-
-        // $(".tab-content .event-date-time span.event-start-day", template).text(startTime.format("dddd"));
-        // $(".tab-content .event-date-time span.event-start-date", template).text(startTime.format("MMMM Do"));
-        // $(".tab-content .event-date-time span.event-start-year", template).text(startTime.format("YYYY"));
-        // $(".tab-content .event-date-time span.event-start-time", template).text(startTime.format("h:mm a"));
-        // $(".tab-content .event-date-time span.event-end-time", template).text(endTime.format("h:mm a"));
-      } else {
-        // the .hide will make the <li> disappear if any dateTime data is missing instead of breaking the page or leaving random html laying about.
-        $('.event-date-time', template).hide();
-      }
-
-      // the page will break if there is no photo in the event - so the if/else thingy tells it to use a local image
-      if (firstAppointment.logo && firstAppointment.logo.original && firstAppointment.logo.original.url)
-      {
-        // $(".tab-content div .event-image img", template).attr("src", firstAppointment.logo.original.url);
-      } else {
-        $(".tab-content div .event-image img", template).attr("src", "/img/training/training-downtown-small.jpg");
-      }
-
-      // // Add the button to purchase a package if we were able to
-      // // find one
-      // // FIXME: This doesn't work yet because we don't have packages
-      // // that match events by name
-      // if (group.package) {
-      //   $("div.package-details .package-registration-url a", template)
-      //     .attr("href", group.package.url)
-      //     .show();
-      //   $("div.package-details .package-registration-description", template)
-      //     .attr("href", group.package.description).html
-      //     .show();
-      // }
+        // Add the appointment details to the tab content
+        $(".tab-content .details", tmplCategory).append(tmplAppointment);
+      })
 
       // _NOW_ we add this template to the training page
-      $("#eventTabs").append(template);
+      $("#eventTabs").append(tmplCategory);
     });
     makeTabs();
   });

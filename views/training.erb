@@ -1,38 +1,28 @@
-
+<!-- Event Location(s), Date(s), & Time(s) -->
 <script type="text/html" id="template-appointment">
+  <div style="font-size: 1.2em;">
+    <h6 class="title uppercase mb16"><!-- title --></h6>
+    <div class="description mb24"><!-- description --></div>
+    <div class="registration-url mb16">
+      <a class="btn btn-filled btn-md mb16" style="color: white; font-size: .9em;" href="#">Register for a Lesson</a>
+    </div>
+  </div>
+</script>
+
+<script type="text/html" id="template-category">
   <li class="test">
     <!-- Begin Tab - tab title -->
     <div class="tab-title">
-      <span><a href="" role="tab" data-toggle="tab"></a></span>
+      <span><a href="#" role="tab" data-toggle="tab"></a></span>
     </div>
 
     <!-- Begin Tab Content -->
     <div class="tab-content">
-      <h5 class="uppercase content-title"></h5>
+      <h5 class="content-title uppercase"><!-- category name --></h5>
       <hr>
       <div style="display: block;" class="col-md-8 training-link">
-        <div class="event-description">
-
-          <!-- "description": "html": -->
-
-        </div>
-
-        <!-- Event Location(s), Date(s), & Time(s) -->
-        <div class="mt32" style="font-size: 1.2em;">
-          <h6 class="uppercase mb16 event-location">Private Lesson Location: "SE Portland"</h6>
-          <ul class="mb24">
-            <li class="event-date-time">
-              <span style="margin-right: 10px; "><i class="ti-control-record"></i></span>
-              <span class="event-start-day"></span>,&nbsp;
-              <span class="event-start-date"></span>,&nbsp;
-              <span class="event-start-year"></span>;&nbsp;
-              <span class="event-start-time"></span>
-               - <span class="event-end-time"></span>
-            </li>
-          </ul>
-          <div class="event-registration-url">
-            <a class="btn btn-filled btn-md mb16" style="color: white; font-size: .9em;" href="link to event">Register for a Lesson</a>
-          </div>
+        <div class="details">
+        <!-- event details #template-appointment -->
         </div>
 
         <!-- Cancelation Policy -->
@@ -60,7 +50,7 @@
       <!-- Event Image Holder -->
       <div style="display: block;" class="col-md-4 event-image-holder">
         <div class="event-image">
-          <img class="featurette-image img-responsive center-block" src="" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="/img/training/training-downtown-small.jpg" alt="Erin walking with two loving dogs">
         </div>
       </div>
 
