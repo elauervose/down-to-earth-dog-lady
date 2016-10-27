@@ -2,9 +2,10 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "sinatra-contrib"
+gem "typhoeus" # HTTP library for instagram
 gem "instagram", :github => "Aeon/instagram-ruby-gem"
-gem "typhoeus"
-gem "eventbrite"
+gem "rdiscount" # Markdown processor
+# gem "eventbrite"
 
 group :development, :test do
   gem "dotenv"

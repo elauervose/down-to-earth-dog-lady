@@ -1,4 +1,4 @@
-#### Real World Proofing your Dog
+#### Real World Proofing Your Dog
 
 "Proofing" in dog training means taking your dog into different environments or situations to practice commands. It's important to make sure your dog can follow your commands even if you aren't at home in a perfectly distraction-free environment.
 

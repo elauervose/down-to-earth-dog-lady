@@ -40,6 +40,7 @@
  36. Spacing
 
 /*!---------- 1. GLOBAL STYLES ----------*/
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5046,6 +5047,9 @@ footer.bg-dark a {
 }
 .mb0 {
   margin-bottom: 0 !important;
+}
+.mb4 {
+  margin-bottom: 4px;
 }
 .mb8 {
   margin-bottom: 8px;

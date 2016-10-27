@@ -1,18 +1,19 @@
 require "sinatra"
 require "json"
+require "rdiscount"
 require "sinatra/json"
 
 require "./lib/instagram_wrapper"
-require "./lib/eventbrite_wrapper"
+# require "./lib/eventbrite_wrapper"
 
 # Index page
 get "/" do
-  erb :index
+  erb :index, :layout => :"layouts/layout"
 end
 
 # Single page (`.?:format?` will ignore .html on urls)
 get "/about.?:format?" do
-  erb :about
+  erb :about, :layout => :"layouts/layout"
 end
 
 # Single page (`.?:format?` will ignore .html on urls)
@@ -21,14 +22,29 @@ get "/training.?:format?" do
   erb :training, :layout => :"layouts/training-layout"
 end
 
-get "/events" do
-  json EventbriteWrapper.instance.events
-end
+# get "/events" do
+#   json EventbriteWrapper.instance.events
+# end
 
 # tags in use: #packhikes, #portlandpetcare, #dogtraining
 # use #dtedl to float images to the top
 get "/recent-photos" do
   json InstagramWrapper.instance.recent
+end
+
+get "/descriptions" do
+  categories = []
+
+  Dir.glob("erins_content_folder/category_descriptions/*.md") do |file|
+    contents = File.read(file)
+    filename = File.basename(file).gsub(/\.md/, '')
+    categories << {
+      name: filename,
+      content: RDiscount.new(contents).to_html
+    }
+  end
+
+  json categories
 end
 
 # Wildcard page (must be the last route in app.rb)

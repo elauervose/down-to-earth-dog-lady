@@ -1,10 +1,37 @@
 <!-- Event Location(s), Date(s), & Time(s) -->
 <script type="text/html" id="template-appointment">
-  <div style="font-size: 1.2em;">
-    <h6 class="title uppercase mb16"><!-- title --></h6>
-    <div class="description mb24"><!-- description --></div>
+  <div>
+    <h6 class="title uppercase mb8"><!-- title --></h6>
+    <div class="description mb4"><!-- description --></div>
+    <div class="appointment-price">
+      <p class="mb8"><strong>Cost: $<span class="cost"></span></strong><!--  per <span class="name"></span>  --></p>
+    </div>
+    <!-- <div class="appointment-date-time">
+      <ul class="date-time-list">
+      Appointment Date Time #template-dateTimeList
+      </ul>
+    </div> -->
     <div class="registration-url mb16">
-      <a class="btn btn-filled btn-md mb16" style="color: white; font-size: .9em;" href="#">Register for a Lesson</a>
+      <p class="mb4" style="font-size: .8em;"><em>To see dates and times, click the button below to go to the registration page.</em></p>
+      <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="#"><span class="regBtnType" style="color: white; font-size: 1em; font-weight: 900;"><!-- Lesson Type Name Here --></span> Registration Page</a>
+    </div>
+  </div>
+</script>
+
+<script type="text/html">
+  <li><!-- Insert Dates & Times here --></li>
+
+</script>
+
+<!-- Package Info  -->
+<script type="text/html" id="template-package">
+  <div>
+    <h6 class="title uppercase mb8"><!-- title --></h6>
+    <div class="description mb4"><!-- description --></div>
+
+    <div class="registration-url mb16">
+      <p class="mb4" style="font-size: .8em;"><em>To see dates and times, click the button below to go to the registration page.</em></p>
+      <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="#"><span class="regBtnType" style="color: white; font-size: 1em; font-weight: 900;"><!-- Lesson Type Name Here --></span> Registration Page</a>
     </div>
   </div>
 </script>
@@ -20,7 +47,18 @@
     <div class="tab-content">
       <h5 class="content-title uppercase"><!-- category name --></h5>
       <hr>
-      <div style="display: block;" class="col-md-8 training-link">
+      <div class="description col-md-8 lead mb24" style="font-size: 1.2em;"><!-- description --></div>
+      <!-- Event Image Holder -->
+      <div style="display: block;" class="col-md-4 event-image-holder">
+        <div class="event-image">
+          <img class="featurette-image img-responsive center-block" src="/img/training/training-downtown-small.jpg" alt="Erin walking with two loving dogs">
+        </div>
+      </div>
+      <div class="package-details">
+        <!-- Add Package Details -->
+      </div>
+
+      <div style="display: block;" class="col-md-12 training-link">
         <div class="details">
         <!-- event details #template-appointment -->
         </div>
@@ -47,12 +85,6 @@
         <!-- End Package Details & Registration Content -->
 
       </div>
-      <!-- Event Image Holder -->
-      <div style="display: block;" class="col-md-4 event-image-holder">
-        <div class="event-image">
-          <img class="featurette-image img-responsive center-block" src="/img/training/training-downtown-small.jpg" alt="Erin walking with two loving dogs">
-        </div>
-      </div>
 
     </div>
     <!-- END Tab Content -->
@@ -60,7 +92,10 @@
 </script>
 
 <!-- BEGIN CLASS LISTINGS -->
+<!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=1992045" width="50%" height="400" frameBorder="0"></iframe>
+<script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script> -->
 <div class="tabbed-content button-tabs vertical">
+
   <ul class="tabs class-description" id="eventTabs">
 
     <!-- this is where the template in the script above will go-->

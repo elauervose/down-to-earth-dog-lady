@@ -76,9 +76,16 @@ function makeTabs(){
 }
 
 function drawEventTab() {
-  $.getJSON("/appointments").done( function(data) {
+  $.getJSON("/appointments").done(function(data) {
     var groups = {};
-    var defaultDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis felis ut risus rhoncus, sit amet rhoncus massa fringilla. Sed dictum libero ex, id posuere sapien laoreet sed. Mauris sit amet tellus leo. Quisque vehicula vel lorem a cursus. Quisque tempor facilisis neque a bibendum. Morbi euismod libero augue, et blandit nisl hendrerit laoreet. Phasellus feugiat arcu id placerat venenatis. Nunc ullamcorper sagittis dui in suscipit."
+
+    var descriptions = {}
+    $.getJSON("/descriptions").done(function (data) {
+      _.each(data, function (category) {
+        console.log("Category text to match: " + category.name)
+        $($(".content-title:contains(" + category.name + ")").parent().find(".description")[0]).html(category.content);
+      });
+    })
 
     // Group all the events with common names/tags together
     _.each(data, function(currentEvent) {
@@ -114,9 +121,11 @@ function drawEventTab() {
       var tmplCategory = $($("#template-category").html());
 
       // Set the title on the tab on the left
-      $(".tab-title span a", tmplCategory).html(group.events[0].category);
+      $(".tab-title span a", tmplCategory).html(group.category);
       // Set the title on the top of the content
-      $(".content-title", tmplCategory).html(group.events[0].category);
+      $(".content-title", tmplCategory).html(group.category)
+
+      $(".title", tmplCategory).html(group.name);
 
       // Iterate over the events and add them to tmplCategory
       _.each(group.events, function (appointment) {
@@ -125,19 +134,24 @@ function drawEventTab() {
 
         // Fill in the template with the details from the API
         $(".title", tmplAppointment).html(appointment.name);
-        $(".description", tmplAppointment).html(appointment.description || defaultDescription);
-        $(".registration-url a", tmplAppointment).attr("href", 'https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=category:' + appointment.category);
+        $(".description", tmplAppointment).html(appointment.description);
+
+        $("div.appointment-price span.cost", tmplAppointment).html(appointment.price);
+
+        $(".registration-url a", tmplAppointment).attr("href", 'https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=' + appointment.id);
+
+        $(".registration-url a span.regBtnType", tmplAppointment).html(appointment.name);
 
         // Add the appointment details to the tab content
         $(".tab-content .details", tmplCategory).append(tmplAppointment);
-      })
+      });
 
       // _NOW_ we add this template to the training page
       $("#eventTabs").append(tmplCategory);
     });
     makeTabs();
   });
-}
+};
 
 
 
