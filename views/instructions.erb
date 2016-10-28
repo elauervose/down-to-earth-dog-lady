@@ -1,0 +1,199 @@
+<style type="text/css">
+
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    /*word-wrap: break-word; */      /* Internet Explorer 5.5+ */
+    padding: 20px;
+  }
+  .tile-left {
+    width: 15%;
+    max-height: 156px;
+    min-height: 156px;
+  }
+  .tile-right {
+    width: 85%;
+    max-height: 156px;
+    min-height: 156px;
+  }
+  .horizontal-tile {
+    height: 156px;
+  }
+  img {
+    width: 100%;
+  }
+  .title-right.description {
+    padding: 10px;
+  }
+</style>
+
+<section class="page-title page-title-4 bg-secondary">
+  <div class="container" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="uppercase mb0">Instructions for Things</h3>
+      </div>
+
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+
+<section class="">
+  <div class="container" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="mb16">Your Cheat Sheet for Creating a NEW Category Description</h4>
+        <hr>
+      </div>
+      <div style="margin-left: 20px;">
+        <ul>
+          <li><strong>Step 1: </strong>Create a new markdown file</li>
+          <li><strong>Step 2: </strong>Name the file
+          <p>use</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h6 class="text-right">Description Title Example</h6>
+
+      </div>
+      <div class="col-md-4">
+        <pre>#### Real World Proofing Your Dog
+        </pre>
+      </div>
+      <div class="col-md-4">
+        <p class="lead">The number of #hashtags indicate how big the text will be</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-2">
+            <h6 class="text-right">Description Example</h6>
+
+          </div>
+          <div class="col-md-8">
+            <pre>
+"Proofing" in dog training means taking your dog into different environments or situations to practice commands. It's important to make sure your dog can follow your commands even if you aren't at home in a perfectly distraction-free environment.
+
+These small group lessons are the perfect place to work on problems in a supportive setting where you can get feed-back and moral support from other dog owners. Each week we'll work through several different training strategies and activities to find something that is fun and works well for you and your dog.
+            </pre>
+          </div>
+          <div class="col-md-2">
+            <p class="lead">Hit "ENTER" twice to start a new paragraph.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-2">
+            <h6 class="text-right">Bold Text Example</h6>
+
+          </div>
+          <div class="col-md-6">
+            <pre>
+*Week 1: Impulse Control*
+This lesson covers the potentially life-saving "Leave It" command as well as longer, stronger sit/stays, and recall.
+            </pre>
+          </div>
+          <div class="col-md-4">
+            <p class="lead">Make text bold by putting an *asterisk* on either side of it with no spaces between the text and the *.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-2">
+            <h6 class="text-right">Adding an Image Example</h6>
+
+          </div>
+          <div class="col-md-6">
+            <pre>
+![](https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/14727530_1162849673764004_5770456469627469824_n.jpg?ig_cache_key=MTM2OTMzMzMyODMwMjE3Mzc0MQ%3D%3D.2)
+            </pre>
+          </div>
+          <div class="col-md-4">
+            <p class="lead">The last line of the template is for adding an image. To add an image, replace the hashtags with an image url from below.</p>
+          </div>
+        </div>
+      </div>
+
+<div class="col-md-2" >
+  <button id="copyButton" class="btn btn-filled btn-sm" style="font-size: .75em;">Copy the Template</button>
+  <p class="">Click the button to copy the text, then put your cursor on the new file & type "CONTROL V" to paste the template into the file.</p>
+
+</div>
+      <div class="copyTemplate col-md-9">
+        <pre id="copyTarget">
+#### TITLE
+
+Description
+
+*optional bold text if you need it*
+
+![](####)
+        </pre>
+      </div>
+    </div>
+
+
+
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+
+
+<!-- Begin Photo Gallery Section -->
+<script type="text/html" id="template-imageList">
+  <div class="horizontal-tile">
+    <div class="tile-left">
+      <a class="image-url-link" href="#">
+        <div class="">
+          <img class="image-url" alt="image" src="https://scontent.cdninstagram.com/t51.2885-15/s150x150/e15/14549904_1747145358865663_1039342670717124608_n.jpg?ig_cache_key=MTM2OTg0OTk1MDQ0ODMxNzM4NA%3D%3D.2" />
+        </div>
+      </a>
+    </div>
+    <div class="tile-right bg-secondary">
+      <div class="description" style="padding-top: 10px; padding-bottom: 10px;padding-left: 15px;">
+        <h6 class="small-size"><span class="uppercase"></span><span class="small-size-url" style="font-weight: 900;"></span></h6>
+        <h6 class="medium-size" ><span class="uppercase"></span><span class="medium-size-url" style="font-weight: 900;"></span></h6>
+        <h6 class="large-size" ><span class="uppercase"></span><span class="large-size-url" style="font-weight: 900;"></span></h6>
+      </div>
+    </div>
+  </div><!--end of horizontal tile-->
+</script>
+
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+        <h4 class="uppercase mb16">Contained Tiles <span class="label">New in v1.9</span></h4>
+        <p class="lead mb80">
+          These multipurpose tiles make ideal presentations for project showcases or as links to auxilary pages around your site.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="image-url-list" class="col-md-12 col-sm-12">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- End Photo Gallery Section -->
+<% content_for :footer_js do %>
+  <script src="/js/vendor/copyToClipboard.js"></script>
+  <script src="/js/instructions.js"></script>
+<% end %>

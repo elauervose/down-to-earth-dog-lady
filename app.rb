@@ -2,6 +2,7 @@ require "sinatra"
 require "json"
 require "rdiscount"
 require "sinatra/json"
+require "sinatra/content_for"
 
 require "./lib/instagram_wrapper"
 # require "./lib/eventbrite_wrapper"
