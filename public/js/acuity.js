@@ -48,7 +48,18 @@ function drawEventTab(data) {
   $.getJSON("/descriptions").done(function (data) {
     _.each(data, function (category) {
       console.log("Category text to match: " + category.name)
-      $($(".content-title:contains(" + category.name + ")").parent().find(".description")[0]).html(category.content);
+
+      // Find the tab body that has the same title as the filename from the markdown file.
+      var $tabContent = $(".content-title:contains(" + category.name + ")").parent()
+
+      // Replace the description with the one from the markdown file
+      $tabContent.find(".description").first().html(category.content);
+
+      // Find the first image in the description and remove it
+      var $detachedImage = $tabContent.find(".description img").first().detach();
+
+      // Replace the upper-left image with the src from the detached image
+      $tabContent.find("img").first().attr("src", $detachedImage.attr("src"));
     });
   })
 

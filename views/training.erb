@@ -1,4 +1,17 @@
 <!-- Event Location(s), Date(s), & Time(s) -->
+
+<style type="text/css">
+  .float-box {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .tab-image {
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+  }
+</style>
+
 <script type="text/html" id="template-appointment">
   <div>
     <h6 class="title uppercase mb8"><!-- title --></h6>
@@ -47,30 +60,35 @@
     <div class="tab-content">
       <h5 class="content-title uppercase"><!-- category name --></h5>
       <hr>
-      <div class="description col-md-8 lead mb24" style="font-size: 1.2em;"><!-- description --></div>
+
       <!-- Event Image Holder -->
-      <div style="display: block;" class="col-md-4 event-image-holder">
+      <div style="display: block;" class="event-image-holder tab-image">
         <div class="event-image">
           <img class="featurette-image img-responsive center-block" src="/img/training/training-downtown-small.jpg" alt="Erin walking with two loving dogs">
         </div>
       </div>
-      <div class="package-details">
+
+      <div class="description mb24 float-box" style="font-size: 1.1em;">
+        <!-- Category description -->
+      </div>
+
+      <div class="package-details float-box">
         <!-- Add Package Details -->
       </div>
 
-      <div style="display: block;" class="col-md-12 training-link">
+      <div style="display: block;" class="training-link float-box">
         <div class="details">
         <!-- event details #template-appointment -->
         </div>
 
         <!-- Cancelation Policy -->
-        <div style="margin-top: 1em;" class="alert alert-danger alert-dismissible" role="alert">
+        <div style="margin-top: 1em; width: 50%;" class="alert alert-danger alert-dismissible float-box" role="alert">
           <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span>
           For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
         </div>
 
         <!-- Begin Package Details & Registration Content -->
-        <div class="package-details" style="display: none;">
+        <div class="package-details float-box" style="display: none;">
           <span class="package-description-title">
             <p class="lead">Purchase a Private Lesson Package</p>
           </span>
