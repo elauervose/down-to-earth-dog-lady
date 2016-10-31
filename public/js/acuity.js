@@ -58,7 +58,7 @@ function drawEventTab(data) {
       // Find the first image in the description and remove it
       var $detachedImage = $tabContent.find(".description img").first().detach();
 
-      // Replace the upper-left image with the src from the detached image
+      // Replace the upper-right image with the src from the detached image
       $tabContent.find("img").first().attr("src", $detachedImage.attr("src"));
     });
   })

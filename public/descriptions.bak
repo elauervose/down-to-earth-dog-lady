@@ -1,0 +1,38 @@
+[
+    {
+        "category": "Consultation",
+        "categoryDescription": "",
+        "imageUrl": "",
+        "imageAltText": ""
+    },
+    {
+        "category": "Pack Hikes",
+        "categoryDescription": "<p>Send your dog on an adventure  in the beautiful landscape of the Pacific Northwest. These hikes will leave your dog happy, tired, and well trained!</p> <p>Please only schedule a Monday Pack Hike if you have gotten the OK from Erin to do so.  Each pack member is carefully selected to create a balanced pack with the right energy level and dynamics. If you are new to Pack Hikes, please contact Erin and schedule prep-lessons instead.</p>",
+        "imageUrl": "",
+        "imageAltText": ""
+    },
+    {
+        "category": "Private Lessons",
+        "categoryDescription": "Does your dog have particular behavior issues you'd like to work on with a trainer one-on-one? Jumping, greeting new people, seeing other dogs on leash? For one hour you and I can closely work together with your dog on approaching these issues with positive and effective techniques!",
+        "imageUrl": "",
+        "imageAltText": ""
+    },
+    {
+        "category": "Puppy Socialization",
+        "categoryDescription": "",
+        "imageUrl": "",
+        "imageAltText": ""
+    },
+    {
+        "category": "Real-World Proofing Your Dog",
+        "categoryDescription": "",
+        "imageUrl": "",
+        "imageAltText": ""
+    },
+    {
+        "category": "Space Rental",
+        "categoryDescription": "",
+        "imageUrl": "",
+        "imageAltText": ""
+    }
+]

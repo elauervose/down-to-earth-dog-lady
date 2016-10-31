@@ -1,5 +1,30 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+/* Edit Image */
+/*=================================================*/
+
+.edit {
+  opacity: .2;
+}
+.edit a img {
+  width: 30px;
+  margin-left: 20px;
+}
+.edit:hover {
+  opacity: .7;
+}
+
+.help {
+  opacity: .2;
+}
+.help a img {
+  width: 30px;
+  margin-left: 20px;
+}
+.help:hover {
+  opacity: .7;
+}
+
 
 /* Training Tabs Styles */
 /*=================================================*/
