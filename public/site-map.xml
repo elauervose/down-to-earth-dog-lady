@@ -43,7 +43,21 @@
 
       <lastmod>2016-11-01</lastmod>
 
+      <changefreq>monthly</changefreq>
+
       <priority>0.2</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://downtoearthdoglady.com/gallery</loc>
+
+      <lastmod>2016-11-01</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
 
    </url>
 
@@ -52,6 +66,8 @@
       <loc>http://downtoearthdoglady.com/about</loc>
 
       <lastmod>2016-11-01</lastmod>
+
+      <changefreq>monthly</changefreq>
 
       <priority>0.3</priority>
 
@@ -63,6 +79,8 @@
 
       <lastmod>2016-11-01</lastmod>
 
+      <changefreq>monthly</changefreq>
+
       <priority>0.6</priority>
 
    </url>
@@ -72,6 +90,8 @@
       <loc>http://downtoearthdoglady.com/privacy-policy</loc>
 
       <lastmod>2016-11-01</lastmod>
+
+      <changefreq>monthly</changefreq>
 
       <priority>0.1</priority>
 

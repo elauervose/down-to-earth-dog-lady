@@ -1,0 +1,85 @@
+To DO:
+========
+
+  (FOR LATER:
+    > change all tabs (Pack Hike, Training, & Pet care) to accordion for small screens/mobile for
+  )
+
+
+
+Passwords:
+  erin loves otis and dhalia forever
+
+Calendars
+  Add Google to ipad & Phone
+  Add Acuity Schedule App to ipad & Phone
+
+  Add client schedule page to to ipad & Phone
+  ---------------------------------------------------
+    Private Lessons: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040594
+
+    Packages: https://app.acuityscheduling.com/catalog.php?owner=12895365
+
+    Monday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040876
+
+    Wednesday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040904
+
+    Friday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040909
+
+    Consultations: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040828
+
+Make Note about Loyal Client Coupon Codes
+--------------------------------------------
+Loyal Client Pack Hike Discount: 16% discount - unlimited uses
+  codes:
+    DAHLIA-PACKHIKE
+    JAX-PACKHIKE
+    MIA-PACKHIKE
+    MUPPET-PACKHIKE
+    OTIS-PACKHIKE
+    SKULLY-PACKHIKE
+    TATER-PACKHIKE
+
+
+Loyal Client Private Lesson Discount: 16% discount - unlimited uses
+  codes:
+    DAHLIA-LESSON
+    JAX-LESSON
+    MIA-LESSON
+    MUPPET-LESSON
+    OTIS-LESSON
+    SKULLY-LESSON
+    TATER-LESSON
+
+
+With Erin:
+================
+
+Clients
+  Add frequent clients to client list
+
+Payments
+  Add Payment Types to Acuity
+
+Review Scheduled Dates
+  Private lessons
+  Consultations
+  Pack Hikes
+
+FYI:
+  *notifications from calendar*
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+  Google Analytics
+
+  Send events about scheduled appointments to Google Analytics.
+
+  Read more about creating goals in Google Analytics. You can create goals based on these events to track conversions, events will look like:
+
+  Category: acuity
+  Action: appointment-completed or order-completed
+  Label: name of appointment type, blank if product order
+  Value: the total price of appointments scheduled or order
+
+
