@@ -12,45 +12,8 @@
   }
 </style>
 
-<script type="text/html" id="template-appointment">
-  <div>
-    <h6 class="title uppercase mb8"><!-- title --></h6>
-    <div class="description mb4"><!-- description --></div>
-    <div class="appointment-price">
-      <p class="mb8"><strong>Cost: $<span class="cost"></span></strong><!--  per <span class="name"></span>  --></p>
-    </div>
-    <!-- <div class="appointment-date-time">
-      <ul class="date-time-list">
-      Appointment Date Time #template-dateTimeList
-      </ul>
-    </div> -->
-    <div class="registration-url mb16">
-      <p class="mb4" style="font-size: .8em;"><em>To see dates and times, click the button below to go to the registration page.</em></p>
-      <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="#"><span class="regBtnType" style="color: white; font-size: 1em; font-weight: 900;"><!-- Lesson Type Name Here --></span> Registration Page</a>
-    </div>
-  </div>
-</script>
-
-<script type="text/html">
-  <li><!-- Insert Dates & Times here --></li>
-
-</script>
-
-<!-- Package Info  -->
-<script type="text/html" id="template-package">
-  <div>
-    <h6 class="title uppercase mb8"><!-- title --></h6>
-    <div class="description mb4"><!-- description --></div>
-
-    <div class="registration-url mb16">
-      <p class="mb4" style="font-size: .8em;"><em>To see dates and times, click the button below to go to the registration page.</em></p>
-      <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="#"><span class="regBtnType" style="color: white; font-size: 1em; font-weight: 900;"><!-- Lesson Type Name Here --></span> Registration Page</a>
-    </div>
-  </div>
-</script>
-
 <script type="text/html" id="template-category">
-  <li class="test">
+  <li>
     <!-- Begin Tab - tab title -->
     <div class="tab-title">
       <span><a href="#" role="tab" data-toggle="tab"></a></span>
@@ -76,9 +39,21 @@
         <!-- Add Package Details -->
       </div>
 
-      <div style="display: block;" class="training-link float-box">
+      <div class="training-link float-box">
         <div class="details">
-        <!-- event details #template-appointment -->
+          <div class="registration-url mb16">
+            <p class="mb4" style="font-size: .8em;">
+              <em>To see dates and times, click the register button below to go to the registration page.</em>
+            </p>
+            <p>
+              <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="mailto:downtoearthdoglady@gmail.com">
+                Contact Erin
+              </a>
+              <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="https://app.acuityscheduling.com/schedule.php?owner=12855510">
+                Register online
+              </a>
+            </p>
+          </div>
         </div>
 
         <!-- Cancelation Policy -->
@@ -97,7 +72,7 @@
             <!-- "description": "html": -->
           </div>
           <div class="package-registration-url">
-            <a class="btn btn-filled btn-sm mb16" href="link to event">Purchase a Private Lesson Package</a>
+            <a class="btn btn-filled btn-sm mb16" href="https://app.acuityscheduling.com/schedule.php?owner=12855510">Purchase a Private Lesson Package</a>
           </div>
         </div>
         <!-- End Package Details & Registration Content -->
