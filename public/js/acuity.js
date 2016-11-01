@@ -48,6 +48,10 @@ function drawEventTab(data) {
     // Set the body of the appointment
     $(".description", $tmplCategory).html(category.content);
 
+    // Lists need an extra class in this theme, but there's no easy way
+    // to do that in the markdown parser.
+    $(".description ul", $tmplCategory).addClass("bullets");
+
     // Find the first image in the description and detach it
     var $descriptionImage = $tmplCategory.find(".description img").first()
     var $keyImage = $tmplCategory.find("img").first()
