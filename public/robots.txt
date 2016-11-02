@@ -1,6 +1,5 @@
 # robots.txt for http://downtoearthdoglady.com/
 
 User-agent: *
-Disallow: /app.acuityscheduling.com/
 Disallow: /downtoearthdoglady.com/instructions
 
