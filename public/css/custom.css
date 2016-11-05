@@ -1,17 +1,22 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
-.select-group {
-  border: 0px solid #e3e3e3;
-}
-.select {
-    margin-bottom: 15px;
-    padding: 0;
-    width: 80%;
-    border: 0px solid #e3e3e3;
-}
-.select-label {
-   background-color: #f8f8f8
 
-}
+/* InLine Video */
+/*=================================================*/
+
+  .local-video-container video {
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+      height: 380px;
+  }
+  .player {
+    padding-left: 1em;
+  }
+  #press iframe#mbYTP_press {
+    width: 700px!important;
+    left: 145!important;
+  }
+
+
+
 /* Edit Image */
 /*=================================================*/
 

@@ -3,97 +3,72 @@
 <urlset xmlns="http://downtoearthdoglady.com/site-map.xml">
 
    <url>
-
-      <loc>http://downtoearthdoglady.com/</loc>
-
-      <lastmod>2016-11-01</lastmod>
-
-      <changefreq>monthly</changefreq>
-
-      <priority>0.7</priority>
-
-   </url>
-
-   <url>
-
       <loc>http://downtoearthdoglady.com/pack-hikes</loc>
-
       <changefreq>monthly</changefreq>
-
-      <priority>0.9</priority>
-
+      <priority>1</priority>
    </url>
 
    <url>
-
       <loc>http://downtoearthdoglady.com/training</loc>
-
       <lastmod>2016-11-01</lastmod>
-
       <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+   </url>
 
+   <url>
+      <loc>http://downtoearthdoglady.com/</loc>
+      <lastmod>2016-11-01</lastmod>
+      <changefreq>monthly</changefreq>
       <priority>0.8</priority>
-
    </url>
 
    <url>
-
-      <loc>http://downtoearthdoglady.com/pet-care</loc>
-
-      <lastmod>2016-11-01</lastmod>
-
-      <changefreq>monthly</changefreq>
-
-      <priority>0.2</priority>
-
-   </url>
-
-   <url>
-
-      <loc>http://downtoearthdoglady.com/gallery</loc>
-
-      <lastmod>2016-11-01</lastmod>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.5</priority>
-
-   </url>
-
-   <url>
-
-      <loc>http://downtoearthdoglady.com/about</loc>
-
-      <lastmod>2016-11-01</lastmod>
-
-      <changefreq>monthly</changefreq>
-
-      <priority>0.3</priority>
-
-   </url>
-
-   <url>
-
       <loc>http://downtoearthdoglady.com/contact</loc>
-
       <lastmod>2016-11-01</lastmod>
-
       <changefreq>monthly</changefreq>
-
-      <priority>0.6</priority>
-
+      <priority>0.7</priority>
    </url>
 
    <url>
-
-      <loc>http://downtoearthdoglady.com/privacy-policy</loc>
-
+      <loc>http://downtoearthdoglady.com/gallery</loc>
       <lastmod>2016-11-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.6</priority>
+   </url>
 
+   <url>
+      <loc>http://downtoearthdoglady.com/about</loc>
+      <lastmod>2016-11-01</lastmod>
       <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
 
+   <url>
+      <loc>http://downtoearthdoglady.com/pet-care</loc>
+      <lastmod>2016-11-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.4</priority>
+   </url>
+
+   <url>
+      <loc>http://downtoearthdoglady.com/privacy-policy</loc>
+      <lastmod>2016-11-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.3</priority>
+   </url>
+
+   <url>
+      <loc>http://downtoearthdoglady.com/press</loc>
+      <lastmod>2016-11-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.2</priority>
+   </url>
+
+   <url>
+      <loc>http://downtoearthdoglady.com/release-form.pdf</loc>
+      <lastmod>2016-11-01</lastmod>
+      <changefreq>monthly</changefreq>
       <priority>0.1</priority>
-
    </url>
 
 </urlset>
