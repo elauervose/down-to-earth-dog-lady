@@ -1,12 +1,23 @@
 To DO:
 ========
-Media page
-Releaseform Page
+
+Release form
+  - add photo release
+
+All pages:
+  Small screen - <br> tags on contact page
   (FOR LATER:
     > change all tabs (Pack Hike, Training, & Pet care) to accordion for small screens/mobile for
   )
 
+Press page
+  margin left on press page
+  move Pack hike" summary to top and a"about" to bottom on press page
 
+
+
+** how to get payment from clients who schedule by phone?
+**double check reminder links
 
 Passwords:
   erin loves otis and dhalia forever
@@ -17,17 +28,7 @@ Calendars
 
   Add client schedule page to to ipad & Phone
   ---------------------------------------------------
-    Private Lessons: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040594
-
-    Packages: https://app.acuityscheduling.com/catalog.php?owner=12895365
-
-    Monday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040876
-
-    Wednesday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040904
-
-    Friday Pack Hike: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040909
-
-    Consultations: https://app.acuityscheduling.com/schedule.php?owner=12895365&appointmentType=2040828
+  * general client one & admin one for now
 
 Make Note about Loyal Client Coupon Codes
 --------------------------------------------
@@ -55,6 +56,73 @@ Loyal Client Private Lesson Discount: 16% discount - unlimited uses
 
 With Erin:
 ================
+practice tasks
+--------------
+Overview & Finding Help
+-----------------------------
+  Tutorial covers:
+    1. Client View for Scheduling Appointments
+    2. Service Provider view for Scheduling Appointments
+    3. Client Scheduling Page
+    4. Business Settings
+    5. Finding Help
+
+Client Info & Communication
+-----------------------------
+  Tutorial covers:
+    1. Adding a new Client & updating existing client info
+    2. Communicating with Clients: confirmations, reminders, & cancellations
+  add a client  (edit a client's info)
+  view confirmation page
+  Find client scheduling page & send link
+
+  ** (need to set up payments first) collect payment
+
+Schedule Appointments
+-----------------------------
+  Tutorial covers:
+    1. Scheduling a new appointment (over the phone or email)
+    2. Editing, canceling, or rescheduling an existing appointment
+    3. Troubleshooting & calendar conflicts
+    4. viewing your appointments on your google calendar app
+
+
+Set Availability:
+-----------------------------
+  Tutorial covers:
+    1. Adding availability
+    2. Editing availability or changing settings for an appointment type
+    3. Troubleshooting & calendar conflicts
+    4. View client scheduling page (and send link)
+    5. block off time for vacation or other
+
+** block off time in acuity (& block off time in google calendar?)
+
+
+Packages
+  find/make packages
+  edit packages
+
+Coupons
+  find/make coupons in appointments & packages
+  edit coupons in appointments & packages
+
+
+
+
+  Acuity tutorial: https://help.acuityscheduling.com/hc/en-us/articles/219149937-Set-what-times-you-re-available
+    Set regular availablility
+    How to block off time
+    *can override setting by clicking on calendar
+
+  Acuity Tutorial (bottom of page): https://help.acuityscheduling.com/hc/en-us/articles/219149317-Different-availability-for-types
+    add a new time slot to existing appointment type
+    edit existing appointment time slots
+    automatically prevents double booking (privates and consultations)
+
+
+
+
 
 Clients
   Add frequent clients to client list
@@ -66,6 +134,19 @@ Review Scheduled Dates
   Private lessons
   Consultations
   Pack Hikes
+
+Media page
+  about info
+  pack-hike summary
+  logos (branding)
+
+
+Release form Page
+  - add photo release?
+  -review & ok break out pages & questions (things that got combined to make it shorter)
+
+
+
 
 FYI:
   *notifications from calendar*
