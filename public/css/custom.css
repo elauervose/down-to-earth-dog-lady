@@ -355,6 +355,34 @@
 
 }
 
+/* Trainer Space */
+/*=================================================*/
+
+
+@media all and (max-width: 600px) {
+  div.tile-left.space-image,
+  div.tile-right.space-image{
+    width: 82%;
+    float: none; 
+  }
+  div.tile-left.space-image.space-description,
+  div.tile-right.space-image.space-description{
+    min-height: 150px;
+  }
+}
+
+@media all and (min-width: 601px) {
+  div.tile-left.space-image,
+  div.tile-right.space-image{
+    width: 50%;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    min-height: 300px;
+    position: relative;
+  }
+}
+
 /* Nav Bar */
 /*=================================================*/
 

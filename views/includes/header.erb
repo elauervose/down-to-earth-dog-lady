@@ -32,7 +32,10 @@
               <a href="/pet-care">Pet Care</a>
             </li>
             <li class="<%= @request.path == '/gallery' && "active" %>">
-              <a href="/gallery">Photo & Video Gallery</a>
+              <a href="/gallery">Gallery</a>
+            </li>
+            <li class="<%= @request.path == '/trainer-space' && "active" %>">
+              <a href="/trainer-space">Rent the Training Space</a>
             </li>
             <li class="<%= @request.path == '/contact' && "active" %>">
               <a href="contact">Contact</a>
