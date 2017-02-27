@@ -55,17 +55,30 @@
       width: 32%;
       margin-bottom: 15px;
     }
-    /*.text-tabs .tab-title span {
-        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: .9em;
-        line-height: .3em;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 700;
-    }*/
   }
-  
+
+  input[type="submit"], button[type="submit"] {
+      height: 28px;
+      line-height: .3em;
+      /*border: 2px solid #47b475;*/
+      background: #47b475;
+      color: #fff;
+      width: 100%;
+      font-size: .9em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-radius: 0 !important;
+  }
+
+  form#passwordSubmit.form-inline {
+      min-width: 100%
+    } 
+
+  div.btn.btn-sm.btn-filled.btn-submit {
+    width: 100%;
+  }
+
 </style>
 <section class="pt120 pb48 image-bg overlay">
   <div class="background-image-holder">
@@ -332,24 +345,44 @@
               <div class="tab-content">
 
                 <!-- BEGIN PASSWORD INPUT FIELD -->
-                <!-- <div class="row">
-                  <div class="col-md-12 col-sm-12" style="text-align: left; padding-left: 0px;">
-                    <div style="float: left; display: inline-block;">
-                      <h5 class="uppercase" style="margin-bottom: 5px;">Current Trainers & Renters: </h5>
+                <div class="row" id="passwordSubmitWrapper">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="col-md-4 col-sm-6">
+                      <h5 class="uppercase text-left" style="margin-bottom: 5px; font-size: 1em;">Current Trainers & Renters: </h5>
                     </div>
-                    <div style="float: left; display: inline-block; min-width: 50%">
-                      <input style="max-height: 30px; margin-left: 20px; margin-bottom: 5px;" type="password" placeholder="Password"> <span><p style="margin-left: 20px;">Enter the password you received in your email to view the reservation page.</p></span></input>
+                    <div class="col-md-8 col-xs-12 text-left" style="padding-left: 0px;">
+
+                      <form id="passwordSubmit" class="form-inline" style="float: left; margin-left: 0px; padding-left: 0px;">
+                        <div class="" style="padding-left: 0px;">
+                          <div class="form-group col-md-9 col-xs-9" style="padding-right: 5px;">
+                            <input style="max-height: 30px; margin-left: 0px; margin-bottom: 5px; padding-right: 0px;" type="password" placeholder="Password" id="passwordField">
+                              
+                            
+                            <span><p style="margin-left: 0px; font-size: .9em;">Enter the password you received in your email to view the reservation page.</p></input></span>
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-xs-3 form-group" style="padding: 0px;">
+                          <div class="btn btn-sm btn-filled btn-submit">
+                            <input type="submit"></input>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <div style="float: left; display: inline-block;">
                   </div>
+
                   <hr>
-                </div> -->
+                </div>
+
+              
                 <!-- END PASSWORD INPUT FIELD -->
 
                 <!-- BEGIN NEW RENTER "PAGE" -->
 
                 <div class="row">
                   <div class="col-md-12 col-sm-12">
+
+                    <!-- BEGIN NEW RENTER "PAGE" -->
                     <div id="new-renter">
 
                       <!-- BEGIN RENTAL PROCESS -->
@@ -395,6 +428,7 @@
                           </ol>
 
                           <h4>Rental Fees:</h4>
+
                           <table class="table table-hover lead fee-table" style="margin: 10px;">
                             <th>Rental Fee Schedule:</th>
                             <th>Hourly Rate:</th>
@@ -420,6 +454,7 @@
                               <td>$50 for 4 hours ($12.50/hour)</td>
                             </tr>
                           </table>
+                          <em><p>* A limited number of monthly memberships are available for $200/month. Members get unlimited access.</p></em>
 
                         </div>
                         <div class="col-md-5 col-sm-12">
@@ -430,7 +465,6 @@
                           </div>
                         </div>
                       </div><!-- END NEW RENTER INFO --><!--end of row-->
-
                     </div><!-- END NEW RENTER "PAGE" -->
 
                     <!-- BEGIN CURRENT RENTER "PAGE" -->
@@ -448,10 +482,44 @@
                         <div class="col-md-8 col-sm-12">
                           <h4>Training Schedule & Availability</h4>
                           <p class="lead text-left">
-                            You can check facility availablility here to see what's going on and when the space is free. For easy access to this information, click the button in the bottom right corner to add this calendar to your google account. 
+                            Check facility availablility here. To add this calendar to your google account, click the button in the bottom right corner. 
                           </p>
-                          <iframe src="https://calendar.google.com/calendar/embed?title=Training%20Space%20Rental%20Schedule&amp;showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=md7s2a1e9mukl8j378fjru0b28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+                          <iframe src="https://calendar.google.com/calendar/embed?title=Training%20Space%20Rental%20Schedule&amp;showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=md7s2a1e9mukl8j378fjru0b28%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="550" frameborder="0" scrolling="no"></iframe>
+
+                          <div class="text-left mt32">
+                            <h4 style="margin-bottom: .25em;">Rental Fees:</h4>
+                            <em><p>* A limited number of monthly memberships are available for $200/month. Members get unlimited access. To purchase a membership or a package, visit the <a href="https://app.acuityscheduling.com/catalog.php?owner=12895365" target="_blank">Down to Earth Dog Lady Store</a>.</p></em>
+                            <table class="table table-hover lead fee-table" style="margin: 10px;">
+                              <th>Rental Fee Schedule:</th>
+                              <th>Hourly Rate:</th>
+                              <th>Daily Rate:</th>
+                              <th>4 Hour <br>Package Deal:</th>
+                              <tr>
+                                <td><strong>Weekday </strong><br><em>(Non-Prime)</em> <br>6:00am - 5:30pm</td>
+                                <td>$12/hour</td>
+                                <td>$50/day</td>
+                                <td>$40 for 4 hours ($10/hour)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Weekday <br>Prime Time</strong> 
+                                <br>5:30pm - 9:30pm</td>
+                                <td>$15/hour</td>
+                                <td>$55/evening</td>
+                                <td>$100 for 8 hours ($12.50/hour)</td>
+                              </tr>
+                              <tr>
+                                <td><strong>Weekend</strong> <br><em>(all day)</em></td>
+                                <td>$15/hour</td>
+                                <td>$70/day</td>
+                                <td>$50 for 4 hours ($12.50/hour)</td>
+                              </tr>
+                            </table>
+                            
+                          </div>
+
                         </div> <!-- END GOOGLE CALENDAR FRAME -->
+
+
 
                       </div> <!-- end of row -->
                     </div> <!-- END CURRENT RENTER "PAGE" -->
