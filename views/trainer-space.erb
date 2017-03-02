@@ -80,6 +80,39 @@
   }
 
 </style>
+<!-- Google Code for Facility Rental Application Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 869325900;
+    w.google_conversion_label = "nHFqCOH9-G4QzLjDngM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 <section class="pt120 pb48 image-bg overlay">
   <div class="background-image-holder">
     <img alt="Background" class="background-image" src="img/trainer-space/trainer-space-header.jpg" />
@@ -338,7 +371,7 @@
             <!-- END "RECORDING TUTORIALS" TAB -->
 
             <!-- BEGIN "RENTING" TAB -->
-            <li>
+            <li onclick="goog_report_conversion">
               <div class="tab-title">
                 <span>Renting</span>
               </div>
@@ -384,7 +417,6 @@
 
                     <!-- BEGIN NEW RENTER "PAGE" -->
                     <div id="new-renter">
-
                       <!-- BEGIN RENTAL PROCESS -->
                       <div class="mb32 text-left">
                         <h4>Rental Process:</h4>
@@ -463,6 +495,9 @@
                           <div>
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScl08mWeLxO0Lp5_0kUs3T9ebBTQG-bcfaXb9Ml3fDnDbqwdg/viewform?embedded=true" width="100%" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                           </div>
+
+
+
                         </div>
                       </div><!-- END NEW RENTER INFO --><!--end of row-->
                     </div><!-- END NEW RENTER "PAGE" -->
