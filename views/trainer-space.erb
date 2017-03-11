@@ -78,63 +78,26 @@
   div.btn.btn-sm.btn-filled.btn-submit {
     width: 100%;
   }
-
+  .foundry_modal {
+    /*padding: 15px 48px;*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #mc_embed_signup form {
+      padding: 1em;
+  }
+  #mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+  }
+  .foundry_modal *:not(.background-image-holder):not(.close-modal) {
+      z-index: 3;
+      position: relative;
+  }
 </style>
-<!-- Google Code for Facility Rental Application Conversion Page
-In your html page, add the snippet and call
-goog_report_conversion when someone clicks on the
-chosen link or button. -->
-<script type="text/javascript">
-  /* <![CDATA[ */
-  goog_snippet_vars = function() {
-    var w = window;
-    w.google_conversion_id = 869325900;
-    w.google_conversion_label = "nHFqCOH9-G4QzLjDngM";
-    w.google_remarketing_only = false;
-  }
-  // DO NOT CHANGE THE CODE BELOW.
-  goog_report_conversion = function(url) {
-    goog_snippet_vars();
-    window.google_conversion_format = "3";
-    var opt = new Object();
-    opt.onload_callback = function() {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  }
-  var conv_handler = window['google_trackConversion'];
-  if (typeof(conv_handler) == 'function') {
-    conv_handler(opt);
-  }
-}
-/* ]]> */
-</script>
-<script type="text/javascript"
-  src="//www.googleadservices.com/pagead/conversion_async.js">
-</script>
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '803754536439351'); // Insert your pixel ID here.
-  // fbq('track', 'ViewContent');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=803754536439351&ev=PageView&noscript=1"/>
-</noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
-
-
-<script type="text/javascript">
-  $('#rentSpace').click(function() {
-    fbq('track', 'ViewContent');  
-  });
-</script>
 
 <section class="pt120 pb48 image-bg overlay">
   <div class="background-image-holder">
@@ -142,33 +105,83 @@ chosen link or button. -->
   </div>
   <div class="container">
     <div class="row v-align-children">
-      <div class="col-sm-8 mb-xs-80 mb48">
+      <div class="col-sm-8 pb-xs-80">
         <h2 class="mb16">Rent a Flexible Training Space</h2>
-        <h4 class="mb32">Because you don't always need indoor training space <br> and when you do; it's there, ready and waiting!</h4>
         <!-- <hr> -->
-        <a class="btn btn btn-filled mb40" href="/contact">Contact Us</a>
+        <h4 class="mb32">Because you don't always need indoor training space <br> and when you do; it's there, ready and waiting!</h4>
+
+        
+        <div class="col-sm-6 col-xs-2">
+          <div class="modal-container">
+            <a class="btn btn-filled mb40 btn-modal" href="#" modal-link="0">Sign Up Now</a>
+            <div class="foundry_modal">
+              <!-- Begin MailChimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+              <div id="mc_embed_signup">
+                <form action="//gmail.us13.list-manage.com/subscribe/post?u=95d8229e12ac545d969d3a2b7&amp;id=414a2766fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <h2>Sign up to Rent the Training Space</h2>
+                    <p class="lead">Yeay! We're so excited you're interested in renting the training space! We'll contact you shortly to set up a tour or answer any questions you might have.</p>
+                    <p class="lead">You can also get started right away by going to the "Renting" tab on this page and completing the "New Renter Registration" form.</p>
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required
+                    </div>
+                     <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name </label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name </label>
+                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                      <input type="text" name="b_95d8229e12ac545d969d3a2b7_414a2766fe" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                      <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                  </div>
+                </form>
+              </div>
+               <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+               <!--End mc_embed_signup-->
+            </div>
+          </div>
+          <!--end modal-->
+        </div>
+        <!-- <a class="btn btn btn-filled mb40" href="/contact">Contact Us</a> -->
         <!-- <h5 class="uppercase" style="margin-bottom: 10px;">Dog Trainer Survey</h5>
         <h5 style="margin-bottom: 10px;">Help us make the Down to Earth Dog Lady training space a truly collaborative, supportive community of dog trainers by taking a moment to fill out our survey and share your thoughts.<br><em>Trainers who complete the survey get 50% off their first 5 rentals!</em></h5> -->
         <!-- <h5 style="margin-bottom: 10px;">The Down to Earth Dog Lady is collaborating with business partners to explore ways for dog trainers to share training space and create a collaborative, supportive dog training community.  Help make this dream a reality by taking a moment to fill out our survey and share your thoughts.</h5> -->
         <!-- <a class="btn btn-filled btn-sm mb24" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfIGuYDRjwPXIZt7ssocohA22b-SyceTjTwGbPc_nr-QhdnYA/viewform">Go to Survey >></a> -->
         <!-- <a class="btn btn-filled btn-lg mb80" href="https://docs.google.com/forms/d/e/1FAIpQLSfIGuYDRjwPXIZt7ssocohA22b-SyceTjTwGbPc_nr-QhdnYA/viewform">Take the Trainer Survey >></a> -->
       </div>
-      <div class="col-sm-4 text-left-xs mt80">
-        <!-- <div class="modal-container">
-          <div class="play-button btn-modal large inline"></div>
-          <div class="foundry_modal no-bg">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BcmUUlhald0" frameborder="0" allowfullscreen></iframe></iframe>
-          </div>
-        </div> -->
-        <!--end of modal video-->
+      <div class="col-sm-4 text-center text-left-xs pt-xs-80">
+        <div class="text-center text-left-xs">
+          
+          <!-- <div class="modal-container">
+            <div class="play-button btn-modal large inline" data-toggle="tooltip" data-placement="top" style="left: 15px; float: left;" title="Click to see a video of the training space in use"></div>
+            <p class="lead" style="padding-left: 1em;">Click play to see a video of <br>the training space in use!</p>
+            <div class="foundry_modal no-bg">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uB07gMMq4FU" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div> -->
+        <!--end of modal video -->
+        
       </div>
-    </div>
-    <!--end of row-->
-    <div class="row v-align-children">
-      <div class="col-sm-10">
+        <!--end of modal video-->
         
       </div>
     </div>
+    <!--end of row-->
   </div>
   <!--end of container-->
 </section>
@@ -193,6 +206,32 @@ chosen link or button. -->
                     <p class="lead">
                       These photos and descriptions below give a general sense of what the training space is like. <br> Please contact us if you have any questions or want to set up a tour.
                     </p>
+                   
+                    <div class="horizontal-tile">
+                      <div class="tile-left space-image">
+                        <!-- <a href="#"> -->
+                          <div class="background-image-holder">
+                            
+                            <div class="embed-video-container embed-responsive embed-responsive-16by9" style="height: 400px;">
+                               <iframe width="533" height="400" src="https://www.youtube.com/embed/uB07gMMq4FU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!--end of embed video container-->
+                          </div>
+                        <!-- </a> -->
+                      </div>
+                      <div class="tile-right space-image bg-secondary space-description">
+                        <div class="description">
+                          <h4 class="mb8">See the Training Space in Use</h4>
+                          <!-- <h6 class="uppercase">
+                            Fashion Photography
+                          </h6> -->
+                          <p>
+                            This is a recording of a Rally practice session to give you an idea of what the space is like to work in. 
+                          </p>
+                        </div>
+                      </div>
+                    </div><!--end of horizontal tile-->
+
                     <div class="horizontal-tile">
                       <div class="tile-left space-image bg-secondary space-description">
                         <div class="description">
@@ -203,6 +242,7 @@ chosen link or button. -->
                           <p>
                             This cozy dog training space is 300 square feet divided into two separate rooms with dimensions of 9 feet wide by 16 feet long.
                           </p>
+                          <p>Click the play button to see a rally practice session in the training space!</p>
                         </div>
                       </div>
                       <div class="tile-right space-image">
