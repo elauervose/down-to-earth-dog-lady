@@ -28,6 +28,7 @@ function drawInstagramGallery(posts) {
 
       //This is the image URL for the gallery
       $("img.image-gallery-content", template).attr("src", post.images.standard_resolution.url);
+      $("div.image-gallery-content", template).attr("style", "background: url(" + post.images.standard_resolution.url + ");" );
 
       // this is the image URL for the lightbox
       $("a.image-url", template).attr("href", post.images.standard_resolution.url);

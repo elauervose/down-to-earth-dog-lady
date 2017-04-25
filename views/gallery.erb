@@ -100,14 +100,21 @@ Training:
 <script type="text/html" id="template-gallery">
 
   <li class="image-li">
-    <a href="*" class="image-url" data-lightbox="Gallery">
+    <!-- <a href="*" class="image-url" data-lightbox="Gallery">
       <div class="image-gallery-tile image-tile inner-title hover-reveal text-center">
         <img style="background-color: #333333;" alt="Captioned Image" class="image-gallery-content" src="*">
         <div class="image-title title">
           <p class="image-gallery-caption insert-caption lead mb0"></p>
         </div>
       </div>
+    </a> -->
+    <!--  -->
+    <a href="*" data-lightbox="Gallery" class="image-url">
+      <div class="background-image-holder fadeIn image-title image-gallery-content" style="background: url(*);">
+        <img alt="image" class="background-image image-gallery-content" src="*" style="display: none;">
+      </div>
     </a>
+    <!--  -->
   </li>
 </script>
 
