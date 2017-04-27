@@ -1,0 +1,79 @@
+#experiment {
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 200px;
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 200px;
+  perspective: 800px;
+  perspective-origin: 50% 200px;
+}
+
+#cube1, #cube2, #cube3 {
+  position: relative;
+  margin: 100px auto;
+  height: 300px;
+  width: 300px;
+  -webkit-transition: -webkit-transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: -moz-transform 2s linear;
+  -moz-transform-style: preserve-3d;
+  transition: transform 2s linear;
+  transform-style: preserve-3d;
+}
+
+.face{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  background-color: rgba( 41,  41,  41, .6);
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+.face:hover {
+  background-color: rgba( 41,  41,  41, .8);
+}
+.face:focus {
+  background-color: rgba( 71,  180, 117, 1);
+}
+div.face h3, div.face h4 {
+  color: #fff;
+}
+
+#cube1 .one, #cube2 .one, #cube3 .one   {
+  -webkit-transform: rotateX(90deg) translateZ(150px);
+  -moz-transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+#cube1 .two, #cube2 .two, #cube3 .two {
+  -webkit-transform: translateZ(150px);
+  -moz-transform: translateZ(150px);
+  transform: translateZ(150px);
+}
+
+#cube1 .three, #cube2 .three, #cube3 .three {
+  -webkit-transform: rotateY(90deg) translateZ(150px);
+  -moz-transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+#cube1 .four, #cube2 .four, #cube3 .four {
+  -webkit-transform: rotateY(180deg) translateZ(150px);
+  -moz-transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+#cube1 .five, #cube2 .five, #cube3 .five {
+  -webkit-transform: rotateY(-90deg) translateZ(150px);
+  -moz-transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+#cube1 .six, #cube2 .six, #cube3 .six {
+  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
+  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
+}
