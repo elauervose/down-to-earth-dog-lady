@@ -1,0 +1,287 @@
+<style>
+
+  /** { margin: 0; padding: 0; }
+  html { background: #fff3c9; }
+  body { font: 14px/1.4 Georgia, serif; color: #2d2d2d; }
+
+  article, aside, figure, footer, header, hgroup,
+  menu, nav, section { display: block; }
+
+  #page-wrap { width: 960px; margin: 80px auto; }
+
+  h1 { font: bold 36px Helvetica, Arail, Sans-Serif; letter-spacing: -1px; }
+  h1, p { margin: 0 0 20px 0; }
+
+  /**/*/
+
+
+  #rotator {
+    /*width: 920px;
+    height: 280px;*/
+    position: relative;
+    /*background: white;
+    padding: 20px;*/
+  }
+  /*#block-1 { background: #d5fcff; }
+  #block-2 { background: #e1ffd5; }
+  #block-3 { background: #ffffd8; }*/
+  #rotator > div {
+    position: absolute;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+  /*#rotator > div > div {
+    padding: 20px;
+  }
+  #rotator > div > div img {
+    float: right;
+    margin: 0 0 2px 10px;
+  }*/
+  #rotator .active {
+    top: 20%;
+    left: 0%;
+    width: 70%;
+    height: 100%;
+  }
+  #rotator .non-active-top {
+    top: 20%;
+    left: 70%;
+    height: auto;
+    width: 35%;
+  }
+  #rotator .non-active-bottom {
+    top: 40%;
+    left: 70%;
+    height: auto;
+    width: 35%;
+  }
+
+</style>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+
+<!--
+  Thought of using jQuery UI's .addClass transitions as fallback (or primary) but doesn't work as well
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+-->
+
+<script>
+  // DOM Ready
+  $(function() {
+
+    var current;
+
+    function rotate() {
+
+      // This seems like a sucky way to do it, but you can't select by classes because they execute in order
+
+      if (current == 1) {
+        $("#block-1").removeClass().addClass("active answer col-sm-8");
+        $("div.feature").removeClass("bordered").addClass("boxed")
+
+        $("#block-2").removeClass().addClass("non-active-top question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+        $("#block-3").removeClass().addClass("non-active-bottom question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+      } else if (current == 2) {
+        $("#block-1").removeClass().addClass("non-active-bottom question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+        $("#block-2").removeClass().addClass("active answer col-sm-8");
+        $("div.feature").removeClass("bordered").addClass("boxed")
+
+        $("#block-3").removeClass().addClass("non-active-top question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+      } else {
+        $("#block-1").removeClass().addClass("non-active-top question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+        $("#block-2").removeClass().addClass("non-active-bottom question col-sm-4");
+        $("div.feature").removeClass("boxed").addClass("bordered")
+
+        $("#block-3").removeClass().addClass("active answer col-sm-8");
+        $("div.feature").removeClass("bordered").addClass("boxed")
+
+      }
+
+    }
+
+    $("#rotator div").click(function() {
+
+      // Enables reversing, idea via Andrea Canton: https://twitter.com/andreacanton/status/24954634279849985
+      current = this.id.substr(6);
+      rotate();
+
+    });
+
+  });
+</script>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4 class="uppercase mb16">Large Left</h4>
+        <p class="lead mb64">
+          Alter appearance with '.bordered' and '.boxed' classes.
+        </p>
+      </div>
+    </div>
+    <!--end of row-->
+    <div class="row" style="height: 900px;">
+      <div id="rotator">
+
+        <div class="col-sm-8 answer active" id="block-1">
+          <div class="feature feature-3 feature-4 bordered">
+            <div class="question-box">
+              <h3>My dog's problem ...</h3>
+            </div>
+            <div class="answer-box">
+              <div class="left">
+                <i class="ti-panel icon-lg"></i>
+              </div>
+              <div class="right">
+                <h4 class="uppercase mb16">Recall Training</h4>
+                <p class="lead">How we work on resource guarding...</p>
+                <p class="lead">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                </p>
+                <div class="col-sm-4 text-center">
+                  <div class="modal-container">
+                    <a class="btn btn-lg btn-modal" href="#" modal-link="5">
+                      <i class="ti-layout-width-default"></i> See this training in action!</a>
+                    <div class="foundry_modal text-center iframe-modal">
+                      <iframe src="" frameborder="0" allowfullscreen="allowfullscreen" data-src="https://www.youtube.com/embed/dmgomCutGqc"></iframe>
+                    </div>
+                  </div>
+                  <!--end modal-->
+                </div>
+                <hr>
+
+                <h4>Ready to start training?</h4>
+                <h5></h5>
+                <p class="lead">
+                  <strong>Schedule a consultation with me.</strong> I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
+                </p>
+                <a class="btn btn-filled" href="/contact">Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 question non-active-top" id="block-2">
+          <div class="feature feature-3 feature-4 boxed">
+            <div class="question-box">
+              <h3>My dog's problem ...</h3>
+            </div>
+            <div class="answer-box">
+              <div class="left">
+                <i class="ti-panel icon-lg"></i>
+              </div>
+              <div class="right">
+                <h4 class="uppercase mb16">Recall Training</h4>
+                <p class="lead">How we work on resource guarding...</p>
+                <p class="lead">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                </p>
+                <div class="col-sm-4 text-center">
+                  <div class="modal-container">
+                    <a class="btn btn-lg btn-modal" href="#" modal-link="5">
+                      <i class="ti-layout-width-default"></i> See this training in action!</a>
+                    <div class="foundry_modal text-center iframe-modal">
+                      <iframe src="" frameborder="0" allowfullscreen="allowfullscreen" data-src="https://www.youtube.com/embed/dmgomCutGqc"></iframe>
+                    </div>
+                  </div>
+                  <!--end modal-->
+                </div>
+                <hr>
+
+                <h4>Ready to start training?</h4>
+                <h5></h5>
+                <p class="lead">
+                  <strong>Schedule a consultation with me.</strong> I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
+                </p>
+                <a class="btn btn-filled" href="/contact">Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 question non-active-bottom" id="block-3">
+          <div class="feature feature-3 feature-4 boxed">
+            <div class="question-box">
+              <h3>My dog's problem ...</h3>
+            </div>
+            <div class="answer-box">
+              <div class="left">
+                <i class="ti-panel icon-lg"></i>
+              </div>
+              <div class="right">
+                <h4 class="uppercase mb16">Recall Training</h4>
+                <p class="lead">How we work on resource guarding...</p>
+                <p class="lead">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                </p>
+                <div class="col-sm-4 text-center">
+                  <div class="modal-container">
+                    <a class="btn btn-lg btn-modal" href="#" modal-link="5">
+                      <i class="ti-layout-width-default"></i> See this training in action!</a>
+                    <div class="foundry_modal text-center iframe-modal">
+                      <iframe src="" frameborder="0" allowfullscreen="allowfullscreen" data-src="https://www.youtube.com/embed/dmgomCutGqc"></iframe>
+                    </div>
+                  </div>
+                  <!--end modal-->
+                </div>
+                <hr>
+
+                <h4>Ready to start training?</h4>
+                <h5></h5>
+                <p class="lead">
+                  <strong>Schedule a consultation with me.</strong> I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
+                </p>
+                <a class="btn btn-filled" href="/contact">Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+
+<style type="text/css">
+
+
+  .question {
+    float: right;
+    clear: right;
+  }
+  .question .feature:hover {
+      border: .5px solid rgba(204, 204, 204, .3);
+      cursor: pointer;
+      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+    }
+
+  .col-sm-4.question .answer-box {
+    display: none;
+  }
+
+  .col-sm-8.answer .question-box {
+    display: none;
+  }
+
+</style>

@@ -7,7 +7,7 @@
   perspective-origin: 50% 200px;
 }
 
-#cube1, #cube2, #cube3 {
+#cube1, #cube2, #cube3, #cube4, #cube5, #cube6 {
   position: relative;
   margin: 100px auto;
   height: 300px;
@@ -20,60 +20,185 @@
   transform-style: preserve-3d;
 }
 
-.face{
+.face {
   position: absolute;
   height: 300px;
   width: 300px;
   padding: 20px;
-  background-color: rgba( 41,  41,  41, .6);
+  background-color: rgba(248, 248, 248, 1);
+  font-size: 1em;
+  line-height: 1.5em;
+  /*color: #fff;*/
+  border: 1px solid rgba(41, 41, 41, .2);
+  border-radius: 2px;
+}
+
+.face.green {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(71,  180, 117, 1);
   font-size: 1em;
   line-height: 1.5em;
   color: #fff;
-  border: 1px solid #555;
-  border-radius: 3px;
+  border: 1px solid #A3D9BA;
+  border-radius: 2px;
 }
-.face:hover {
-  background-color: rgba( 41,  41,  41, .8);
-}
-.face:focus {
-  background-color: rgba( 71,  180, 117, 1);
-}
+
+
 div.face h3, div.face h4 {
+  color: rgba(71,  180, 117, 1);
+  font-weight: 400;
+}
+div.face p {
+  color: rgba(41, 41, 41, 1);
+}
+
+div.face.green h3, div.face.green h4 {
+  color: #fff;
+  font-weight: 400;
+}
+div.face.green p {
   color: #fff;
 }
 
-#cube1 .one, #cube2 .one, #cube3 .one   {
+#cube1 .one, #cube2 .one, #cube3 .one, #cube4 .one, #cube5 .one, #cube6 .one      {
   -webkit-transform: rotateX(90deg) translateZ(150px);
   -moz-transform: rotateX(90deg) translateZ(150px);
   transform: rotateX(90deg) translateZ(150px);
 }
 
-#cube1 .two, #cube2 .two, #cube3 .two {
+#cube1 .two, #cube2 .two, #cube3 .two, #cube4 .two, #cube5 .two, #cube6 .two {
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
   transform: translateZ(150px);
 }
 
-#cube1 .three, #cube2 .three, #cube3 .three {
+#cube1 .three, #cube2 .three, #cube3 .three, #cube4 .three, #cube5 .three, #cube6 .three {
   -webkit-transform: rotateY(90deg) translateZ(150px);
   -moz-transform: rotateY(90deg) translateZ(150px);
   transform: rotateY(90deg) translateZ(150px);
 }
 
-#cube1 .four, #cube2 .four, #cube3 .four {
+#cube1 .four, #cube2 .four, #cube3 .four, #cube4 .four, #cube5 .four, #cube6 .four {
   -webkit-transform: rotateY(180deg) translateZ(150px);
   -moz-transform: rotateY(180deg) translateZ(150px);
-  transform: rotateY(180deg) translateZ(150px);
+  transform: rotateY(180deg) translateZ(150px) rotate(180deg);
+
 }
 
-#cube1 .five, #cube2 .five, #cube3 .five {
+#cube1 .five, #cube2 .five, #cube3 .five, #cube4 .five, #cube5 .five, #cube6 .five {
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
   transform: rotateY(-90deg) translateZ(150px);
 }
 
-#cube1 .six, #cube2 .six, #cube3 .six {
+#cube1 .six, #cube2 .six, #cube3 .six, #cube4 .six, #cube5 .six, #cube6 .six {
   -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
-  transform: rotateX(-90deg) rotate(180deg) translateZ(150px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(150px) rotate(180deg);
+}
+
+.flipbox-icon {
+  color: rgba(71,  180, 117, 1);
+  padding: .5em;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.flipbox-icon.white {
+  color: #fff;
+}
+
+.flipbox-icon:hover {
+  color: rgba(71,  180, 117, 1);
+  font-weight: 600;
+}
+
+.flipbox-icon.white:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.flipbox-frame {
+  padding: 22.3% 12.5% 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+.flipbox-frame.training {
+  background-image: url(/img/training/training-downtown-small.jpg);
+  }
+
+.flipbox-frame .flipbox-icon {
+  color: white;
+}
+
+div.flipbox-tooltip.flipbox-image:hover p {
+  color: white;
+}
+
+div.flipbox-tooltip {
+  color: rgba(71,  180, 117, 0.0);
+  padding: .5em;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+div.flipbox-tooltip.white {
+  color: rgba(255,  255, 255, 0.0);
+  padding: .5em;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+div.flipbox-tooltip p {
+  color: rgba(71,  180, 117, 0.0);
+}
+
+div.flipbox-tooltip.white p {
+  color: rgba(255,  255, 255, 0.0);
+}
+
+div.flipbox-tooltip:hover p {
+  color: rgba(71,  180, 117, 1);
+  font-weight: 600;
+}
+
+div.flipbox-tooltip:hover p {
+  padding: 1.5em;
+  color: rgba(71,  180, 117, 1);
+  font-size: .75em;
+  margin-bottom: 5px;
+  padding-right: 5em;
+  line-height: 1.25em;
+}
+
+div.flipbox-tooltip.white:hover p {
+  color: rgba(255,  255, 255, 1);
+  font-weight: 600;
+}
+
+div.flipbox-tooltip.white:hover p {
+  padding: 1.5em;
+  color: rgba(255,  255, 255, 1);
+  font-size: .75em;
+  margin-bottom: 5px;
+  padding-right: 5em;
+  line-height: 1.25em;
 }

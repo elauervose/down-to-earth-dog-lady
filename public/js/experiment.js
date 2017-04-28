@@ -35,4 +35,10 @@ $('body').keydown(function(evt) {
     document.getElementById('cube2').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 
     document.getElementById('cube3').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+
+    document.getElementById('cube4').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+
+    document.getElementById('cube5').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+
+    document.getElementById('cube6').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 });
