@@ -1,391 +1,308 @@
-<!-- <style type="text/css">
-  .parallax > .background-image-holder, .parallax .slides li > .background-image-holder {
-      height: 100vh;
-      top: 0vh;
-      transition: all 0s ease !important;
-      transition: opacity 0.3s ease !important;
-      -webkit-transform-style: preserve-3d;
+<style type="text/css">
+  .tile-top {
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
   }
-</style> -->
-<meta name="author" content="Paul Hayes" />
-<link rel="canonical" href="https://paulrhayes.com/experiments/cube-3d/" />
-<link rel="stylesheet" href="/css/experiment.css" />
+  .tile-bottom {
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+  }
+  .tile-top .description,
+  .tile-bottom .description {
+    padding: 48px;
+  }
+  .tile-top:hover .background-image-holder {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  @media all and (max-width: 767px) {
+    .tile-left,
+    .tile-right {
+      width: 100%;
+      float: none;
+    }
+  }
 
-<section>
-  <div class="">
+  #training .flip {
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    height: 400px;
+    position: relative;
+  }
+  #training .flip .card.flipped {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  #training .flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #training .flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  #training .flip .card .front {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #training .flip .card .back {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotateY(-180deg);
+    cursor: pointer;
+  }
 
-    <!--end of row-->
+  #training .face {
+    -webkit-filter: drop-shadow(none);
+    filter: drop-shadow(none);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
 
-    <div class="row">
+  #training .face:hover  {
+    -webkit-filter: drop-shadow(4px 5px 6px rgba(10, 35, 35, 0.3));
+    filter: drop-shadow(4px 5px 6px rgba(0,0,0,0.3));
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+</style>
 
-      <div class="col-sm-3" style="margin-left: 8%;">
-        <div class="wrapper">
-          <div id="experiment">
+<div id="training">
 
-            <div id="cube1">
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn btn-filled" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip">
-                  <div class="flipbox-tooltip">
-                    <p>Click to find out how <br> training can help</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="face three">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four flipbox-frame training">
-                <div class="flipbox-tooltip flipbox-image">
-                  <p>Ready to start training?</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                </div>
-              </div>
-
-              <div class="face five">
-                5
-              </div>
-
-              <!-- Roll up: Second Face to show -->
-              <div class="face six">
-                <h4>Recall Training</h4>
-                <p class="lead">How we work on recall training...</p>
-                <div class="flipbox-tooltip">
-                  <p>See this training in action</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="wrapper">
-          <div id="experiment">
-            <div id="cube2">
-
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn btn-filled" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip">
-                  <p>Click to find out how <br> training can help</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                </div>
-              </div>
-
-              <div class="face three">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four flipbox-frame training">
-                <div class="flipbox-tooltip flipbox-image">
-                  <p>Ready to start training?</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                </div>
-              </div>
-
-              <div class="face five">
-                5
-              </div>
-
-              <!-- Roll up: Fourth Face to show (upside down) -->
-              <div class="face six">
-                <h4>Resource Guarding Training</h4>
-                <p class="lead">How we work on resource guarding...</p>
-                <div class="flipbox-tooltip">
-                    <p>See this training in action</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3" style="margin-right: 8%;">
-        <div class="wrapper">
-          <div id="experiment">
-            <div id="cube3">
-
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn btn-filled" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip">
-                    <p>Click to find out how <br> training can help</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                  </div>
-              </div>
-
-              <div class="face three">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four flipbox-frame training">
-                <div class="flipbox-tooltip flipbox-image">
-                    <p>Ready to start training?</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                  </div>
-              </div>
-
-              <div class="face five">
-                5
-              </div>
-
-              <!-- Roll up: Fourth Face to show (upside down) -->
-              <div class="face six">
-                <h4>Reactivity</h4>
-                <p class="lead">How we work on reactivity...</p>
-                <div class="flipbox-tooltip">
-                    <p>See this training in action</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon"></i>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
+  <!-- Begin Page Header -->
+  <section class="pt120 pb120 image-bg">
+    <div class="background-image-holder">
+      <!-- <img alt="Background" class="background-image" src="img/pack-hikes/3-dogs-water-tennis-ball-header.jpg" /> -->
+      <img alt="Background" class="background-image" src="img/pack-hikes/muppet-pack-hike-header.jpg" />
     </div>
-    <!--end of row-->
-
-  </div>
-  <!--end of container-->
-</section>
-
-<section class="image-bg overlay parallax">
-  <div class="background-image-holder fadeIn" style="transform: translate3d(0px, 371.5px, 0px); background: url(/img/training/training-downtown.jpg);">
-    <img alt="Background" class="background-image" src="/img/training/training-downtown.jpg" style="display: none;">
-  </div>
-
-  <div class="">
-
-    <!--end of row-->
-
-    <div class="row">
-
-      <div class="col-sm-3" style="margin-left: 8%;">
-        <div class="wrapper">
-          <div id="experiment">
-
-            <div id="cube4">
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one green">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two green">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip">
-                  <div class="flipbox-tooltip white">
-                    <p>Click to find out how <br> training can help</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="face three green">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four green flipbox-frame training">
-                <div class="flipbox-tooltip white flipbox-image">
-                  <p>Ready to start training?</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                </div>
-              </div>
-
-              <div class="face five green">
-                5
-              </div>
-
-              <!-- Roll up: Second Face to show -->
-              <div class="face six green">
-                <h4>Recall Training</h4>
-                <p class="lead">How we work on recall training...</p>
-                <div class="flipbox-tooltip white">
-                  <p>See this training in action</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                </div>
-              </div>
-
-            </div>
+    <div class="container">
+      <div class="row v-align-children">
+        <div class="col-sm-8 mb-xs-80">
+          <h2 class="mb16">Training</h2>
+          <h4 class="mb32">Training with the Dog Lady</h4>
+          <!-- <a class="btn btn-filled btn-lg mb0" href="#meet-the-pack">Meet the Pack</a> -->
+        </div>
+        <div class="col-sm-4 text-center text-left-xs">
+          <div class="modal-container">
+            <!-- <div class="play-button btn-modal large inline"></div>
+            <div class="foundry_modal no-bg">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/r7oumKM5GOQ" frameborder="0" allowfullscreen></iframe>
+            </div> -->
           </div>
+          <!--end of modal video-->
         </div>
       </div>
-
-      <div class="col-sm-4">
-        <div class="wrapper">
-          <div id="experiment">
-            <div id="cube5">
-
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one green">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two green">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip white">
-                  <p>Click to find out how <br> training can help</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                </div>
-              </div>
-
-              <div class="face three green">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four flipbox-frame training">
-                <div class="flipbox-tooltip white flipbox-image">
-                  <p>Ready to start training?</p>
-                  <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                </div>
-              </div>
-
-              <div class="face five green">
-                5
-              </div>
-
-              <!-- Roll up: Fourth Face to show (upside down) -->
-              <div class="face six green">
-                <h4>Resource Guarding Training</h4>
-                <p class="lead">How we work on resource guarding...</p>
-                <div class="flipbox-tooltip white">
-                    <p>See this training in action</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3" style="margin-right: 8%;">
-        <div class="wrapper">
-          <div id="experiment">
-            <div id="cube6">
-
-              <!-- Roll up: Fourth Face to show -->
-              <div class="face one green">
-                <h4>Schedule a consultation</h4>
-                <p>
-                  I offer free 30 minute consultations so I can get to know you and your dog. We'll discuss your needs and goals and then go over my training methods so we can begin to construct a training plan together!
-                </p>
-                <a class="btn" href="/contact">Contact me</a>
-              </div>
-
-              <!-- First Face to show -->
-              <div class="face two green">
-                <h3>My training problem... </h3>
-                <div class="flipbox-tooltip white">
-                    <p>Click to find out how <br> training can help</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                  </div>
-              </div>
-
-              <div class="face three green">
-                <p>
-                  3
-                </p>
-              </div>
-
-              <!-- Roll up: Third Face to show (upside down) -->
-              <div class="face four green flipbox-frame training">
-                <div class="flipbox-tooltip white flipbox-image">
-                    <p>Ready to start training?</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                  </div>
-              </div>
-
-              <div class="face five green">
-                5
-              </div>
-
-              <!-- Roll up: Fourth Face to show (upside down) -->
-              <div class="face six green">
-                <h4>Reactivity</h4>
-                <p class="lead">How we work on reactivity...</p>
-                <div class="flipbox-tooltip white">
-                    <p>See this training in action</p>
-                    <i class="ti-angle-double-down icon-sm flipbox-icon white"></i>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <!--end of row-->
     </div>
-    <!--end of row-->
+    <!--end of container-->
+  </section>
+  <!-- End Page Header -->
 
-  </div>
-  <!--end of container-->
-</section>
+  <!-- Begin Flip Cards -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+          <h4 class="uppercase mb16">Contained Tiles
+            <span class="label">New in v1.9</span>
+          </h4>
+          <p class="lead mb80">
+            These multipurpose tiles make ideal presentations for project showcases or as links to auxilary pages around your site.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 flip">
+          <div class="card">
+            <!-- START FRONT -->
+            <div class="face front">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Card 1</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END FRONT -->
+
+            <!-- START BACK -->
+            <div class="face back">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Back</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 flip">
+          <div class="card">
+            <!-- START FRONT -->
+            <div class="face front">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Card 2</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END FRONT -->
+
+            <!-- START BACK -->
+            <div class="face back">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Back</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 flip">
+          <div class="card">
+            <!-- START FRONT -->
+            <div class="face front">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Card 3</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END FRONT -->
+
+            <!-- START BACK -->
+            <div class="face back">
+              <div class="horizontal-tile">
+                <div class="tile-top">
+                  <div class="background-image-holder fadeIn" style="background: url(&quot;img/training/puppy-play-group.jpg&quot;);">
+                    <img alt="image" class="background-image" src="img/training/puppy-play-group.jpg" style="display: none;">
+                  </div>
+                </div>
+                <div class="tile-bottom bg-secondary">
+                  <div class="description">
+                    <h4 class="mb8">Back</h4>
+                    <h6 class="uppercase">
+                      Graphic Design
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--end of horizontal tile-->
+            </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Flip Cards -->
+
+</div>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="/js/experiment.js"></script>
 
+
+
+
+<script type="text/javascript">
+  $('.flip').on('click', function(event) {
+    $(event.target).parents('.card').toggleClass('flipped');
+  });
+</script>
