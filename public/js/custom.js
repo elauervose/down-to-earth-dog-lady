@@ -33,6 +33,10 @@ $(document).ready(function() {
   	return false;
   });
 
+  $('.flip').on('click', function(event) {
+    $(event.target).parents('.card').toggleClass('flipped');
+  });
+
 });
 
 
