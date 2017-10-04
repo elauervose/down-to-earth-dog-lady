@@ -4,6 +4,33 @@
 /*=================================================*/
 /*See in-page styles*/
 
+/* Team Page */
+/*=================================================*/
+/*@media (min-width: 1200px){
+  #team .container {
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 992px){
+  #team .container {
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 768px){
+  #team .container {
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}*/
+
+
 /* InLine Video */
 /*=================================================*/
 
@@ -367,7 +394,7 @@
   div.tile-left.space-image,
   div.tile-right.space-image{
     width: 82%;
-    float: none; 
+    float: none;
   }
   div.tile-left.space-image.space-description,
   div.tile-right.space-image.space-description{
@@ -491,14 +518,14 @@ i {
   padding-left: 2em;
 }
 
-.ti-arrow-right {
+/*.ti-arrow-right {
   color: #47b475;
   font-size: 1em;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 10px;
   line-height: 1.5;
-}
+}*/
 .ti-alert {
   font-size: 1.5em;
 }

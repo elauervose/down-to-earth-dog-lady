@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Puppy Training",
+        "question": "Ready to welcome your new canine family member into your home?",
+        "back1": "Set your new pup and your family up for success with training for everyone.",
+        "back2": "We’ll work on good behavior in all situations; with kids, at home, in the park, meeting new people, and more!",
+        "back3": "I can engage the whole family in fun training games for all ages!",
+        "back4": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "image": "puppy-play-group.jpg"
+    },
+    {
+        "name": "Recall-1",
+        "question": "Had a scary moment when your dog ran off and you couldn’t call her back?",
+        "back1": "Build confidence that your dog will respond to you no matter what the distraction.",
+        "back2": "We’ll start by setting up a safe, controlled environment to begin working on ignoring distractions and to building stronger recall using positive training techniques.",
+        "back5": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "image": "puppy-play-group.jpg"
+    },
+    {
+        "name": "Recall-2",
+        "question": "Is your dog more interested in chasing squirrels (or anything else) than you?",
+        "back1": "Build confidence that your dog will respond to you no matter what the distraction.",
+        "back3": "We’ll work on ignoring distractions starting with little distractions and build up to bigger challenges.",
+        "back4": "We’ll also engage the whole family by playing fun recall games for all ages!",
+        "back5": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "image": "puppy-play-group.jpg"
+    },
+    {
+        "name": "Excited-Aggression",
+        "question": "Is your dog so excited about the world he just can’t control himself?",
+        "back1": "Together we’ll work on building self-control and practice calming techniques ",
+        "back2": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "back3": "",
+        "back4": "",
+        "image": "puppy-play-group.jpg"
+    },
+    {
+        "name": "Fearful-Aggression1",
+        "question": "Wish you could just relax and enjoy walking your dog?",
+        "back1": "Let me help you take the fear and frustration out of walks.",
+        "back2": "Together we’ll work on greeting people calmly and curb barking, lunging, and growling behaviors.",
+        "back3": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "back4": "",
+        "image": "puppy-play-group.jpg"
+    },
+    {
+        "name": "Fearful-Aggression2",
+        "question": "Does your dog have specific triggers that cause problem behaviors like barking or growling?",
+        "back1": "We’ll work together to desensitize those triggers in a safe, controlled environment.",
+        "back2": "We’ll take baby steps together so everyone experiences success",
+        "back3": "Contact me to set up a consultation and together we’ll build a custom training program.",
+        "back4": "",
+        "image": "puppy-play-group.jpg"
+    }
+]

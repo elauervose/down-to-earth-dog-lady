@@ -18,10 +18,10 @@ get "/about.?:format?" do
 end
 
 # Single page (`.?:format?` will ignore .html on urls)
-get "/training.?:format?" do
+# get "/training.?:format?" do
   # this line assumes a folder titled "layouts" exists and a layout called "events.erb" is in there.
-  erb :training, :layout => :"layouts/training-layout"
-end
+#   erb :training, :layout => :"layouts/training-layout"
+# end
 
 # get "/events" do
 #   json EventbriteWrapper.instance.events
