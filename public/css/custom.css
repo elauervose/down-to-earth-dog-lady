@@ -6,29 +6,12 @@
 
 /* Team Page */
 /*=================================================*/
-/*@media (min-width: 1200px){
-  #team .container {
-    width: 95%;
-    margin-left: 3%;
-    margin-right: 3%;
+
+@media (max-width: 767px) {
+  #team img.team {
+    max-width: 80%;
   }
 }
-
-@media (min-width: 992px){
-  #team .container {
-    width: 95%;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-}
-
-@media (min-width: 768px){
-  #team .container {
-    width: 95%;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-}*/
 
 
 /* InLine Video */
