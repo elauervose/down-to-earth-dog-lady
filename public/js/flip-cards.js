@@ -28,7 +28,10 @@ function drawFlipCard(cards) {
     $(".back4", $tmplFlipCard).html(card.back4);
     $(".back5", $tmplFlipCard).html(card.back5);
 
-    // $keyImage.attr("src", $descriptionImage.attr("src"));
+
+
+
+    $("img.background-image", $tmplFlipCard).attr("src", "img/training/" + card.image);
 
     // _NOW_ we add this template to the training page
     $("#flipCardList").append($tmplFlipCard);

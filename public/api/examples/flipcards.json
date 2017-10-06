@@ -14,7 +14,7 @@
         "back1": "Build confidence that your dog will respond to you no matter what the distraction.",
         "back2": "We’ll start by setting up a safe, controlled environment to begin working on ignoring distractions and to building stronger recall using positive training techniques.",
         "back5": "Contact me to set up a consultation and together we’ll build a custom training program.",
-        "image": "puppy-play-group.jpg"
+        "image": "recall1.jpg"
     },
     {
         "name": "Recall-2",
@@ -23,7 +23,7 @@
         "back3": "We’ll work on ignoring distractions starting with little distractions and build up to bigger challenges.",
         "back4": "We’ll also engage the whole family by playing fun recall games for all ages!",
         "back5": "Contact me to set up a consultation and together we’ll build a custom training program.",
-        "image": "puppy-play-group.jpg"
+        "image": "recall2.jpg"
     },
     {
         "name": "Excited-Aggression",
@@ -32,7 +32,7 @@
         "back2": "Contact me to set up a consultation and together we’ll build a custom training program.",
         "back3": "",
         "back4": "",
-        "image": "puppy-play-group.jpg"
+        "image": "self-control.jpg"
     },
     {
         "name": "Fearful-Aggression1",
@@ -41,7 +41,7 @@
         "back2": "Together we’ll work on greeting people calmly and curb barking, lunging, and growling behaviors.",
         "back3": "Contact me to set up a consultation and together we’ll build a custom training program.",
         "back4": "",
-        "image": "puppy-play-group.jpg"
+        "image": "walk-dog.png"
     },
     {
         "name": "Fearful-Aggression2",
@@ -50,6 +50,6 @@
         "back2": "We’ll take baby steps together so everyone experiences success",
         "back3": "Contact me to set up a consultation and together we’ll build a custom training program.",
         "back4": "",
-        "image": "puppy-play-group.jpg"
+        "image": "dog-triggers.png"
     }
 ]
