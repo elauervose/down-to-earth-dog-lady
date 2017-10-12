@@ -2,94 +2,14 @@ Notes:
 
 Photos to Get
 --------------
-* Photo of pet sitting dogs at your house where they are in the foreground (most look like they are in the back - behind your dogs)
 
-* Pack Hike landscape photo where the scenic horizon is almost parallel to dogs heads (so I can crop them the a few inches tall and as wide as the page)
-
-* Better photo of Skully closeup, looking at the camera
-
-* Photo(s) of Kim and Skully on a Pack hike (for Kim's profile/team pic)
-
-* Photo of each stage of the pack hike (loading the car, walking on leash, drinking water, playing frizbee, new or small dog in float-coat/lifejacket - already have lots near water - )
 
 
 Erin's TO DO:
 =============
-* Upload all new photos to google drive at highest quality you have - sorted by category (Pack Hikes, Training, Pet Sitting, Misc)
 
-* Review all text on the site & give feedback/changes/additions etc.
-
-* Review design implementation & give feedback
-
-* Upload all videos to You Tube & make/add to playlist(s)
-  (All Videos, Training , Pack Hikes, Homework)
 
 Erica's TO DO:
 =============
-Before pushing LIVE
--------------------
-* add mini mailing list sign up to footer
-* √ fix 404 page
-* Add contact information to 404/500
-* check mobile responsiveness
-* Make Mailchimp newsletter/mailinglist sign up form
-* design class listing layout (w/ tags)- cost, type, dates/days/times, link to sign up.
-* incorporate Logo into site (more)
-* fix logos
-  - clean up edges
-  - make a vector version
-  - make a round version
-  - make a square version
-  - make multiple sizes
-  - make t-shirt & bandanna versions
-  -
-* make jekyll tags for header
-* fine tune layouts for easier editing
-* API for instagram
-* research editing options for Erin to maintain content
-* create video & photo gallery
-* Create class "homework" blog feeds
-* check SEO
-* make press page
-* research class reservation & payment options (eventbrite?)
 
 
-CSS Things I Learned:
-
-
-/* Note for Media Queries:
-    * use only max (other wise you have to Min & max on every query)
-    * start with smallest and build upwards */
-/*=================================================*/
-
-*RESEARCH:
-=============
-  * what is "align-items" & "align-content"?
-  * Flex-box
-  *
-
-
-.v-align-children {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-}
-.v-align-children-column {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-}

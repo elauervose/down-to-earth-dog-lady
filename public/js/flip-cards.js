@@ -2,7 +2,7 @@ $(document).ready(function() {
   "use strict";
 
   // Experiment with API call to make photo gallery
-  $.getJSON("/api/examples/flipcards.json")
+  $.getJSON("/api/flipcards.json")
     .done(drawFlipCard)
 });
 

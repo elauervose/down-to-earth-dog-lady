@@ -29,24 +29,7 @@ heroku config:set INSTAGRAM_CLIENT_SECRET=<client secret>
 
 # API Info
 ---------------------------------
-## Training Page
 
-### API Grouping Tags
-1. Private Lessons SE Portland: #pl #plse
-1. Private Lessons SW Portland: #pl #plsw
-1. Private Lessons NE Portland: #pl #plne
-1. Private Lessons NW Portland: #pl #plnw
-1. Private Lesson Package of 4: #pl-pkg
-1. Puppy Play Group: #ppg
-1. Puppy Play Group Package of 4: #ppg-pkg
-1. Training & Socialization Lessons: #tsl
-1. Training & Socialization Package of 4 Lessons: #tsl-pkg
-1. Pack Hike Prep Lesson Package of 4: #phpl-pkg
-1. Real-World Proofing Your Dog: #rwp
-1. Other classes not on the list:
-  1. #misc1
-  1. #misc2
-  1. #misc3
 
 
 
