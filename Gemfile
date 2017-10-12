@@ -5,6 +5,7 @@ gem "sinatra-contrib"
 gem "typhoeus" # HTTP library for instagram
 gem "instagram", :github => "Aeon/instagram-ruby-gem"
 gem "rdiscount" # Markdown processor
+gem 'newrelic_rpm'
 # gem "eventbrite"
 
 group :development, :test do

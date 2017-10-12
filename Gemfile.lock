@@ -33,6 +33,7 @@ GEM
     method_source (0.8.2)
     multi_json (1.11.3)
     multipart-post (2.0.0)
+    newrelic_rpm (4.2.0.334)
     parser (2.3.1.4)
       ast (~> 2.2)
     powerpack (0.1.1)
@@ -96,6 +97,7 @@ DEPENDENCIES
   awesome_print
   dotenv
   instagram!
+  newrelic_rpm
   pry
   pry-byebug
   rdiscount
@@ -107,4 +109,4 @@ DEPENDENCIES
   typhoeus
 
 BUNDLED WITH
-   1.13.2
+   1.15.1
