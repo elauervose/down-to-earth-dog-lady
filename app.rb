@@ -48,6 +48,10 @@ get "/descriptions" do
   json categories
 end
 
+get "/training2.?:format?" do
+  redirect "/training/", 301
+end
+
 # Wildcard page (must be the last route in app.rb)
 get "/:page.?:format?" do
   begin

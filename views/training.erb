@@ -1,99 +1,340 @@
+<style type="text/css">
+  .tile-top {
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+  }
+  .tile-bottom {
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .tile-back {
+    width: 100%;
+    float: none;
+    display: block;
+    overflow: hidden;
+    height: 500px;
+    padding: 3em;
+    background-color: #47b475;
+    margin-bottom: 20px;
+  }
 
-<!-- Event Location(s), Date(s), & Time(s) -->
-<script type="text/html" id="template-category">
-  <li>
-    <!-- Begin Tab - tab title -->
-    <div class="tab-title">
-      <span><a href="#" role="tab" data-toggle="tab"></a></span>
+  .tile-back h4, .tile-back h5, .tile-back h6  {
+    color: white;
+    font-weight: bold;
+  }
+  .tile-top .description,
+  .tile-bottom .description {
+    padding: 40px;
+  }
+  .front:hover .background-image-holder {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  @media all and (max-width: 767px) {
+    .tile-left,
+    .tile-right {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  #training .flip {
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    height: 500px;
+    position: relative;
+    margin-bottom: 5em;
+  }
+  #training .flip .card.flipped {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  #training .flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #training .flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+  #training .flip .card .front {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #training .flip .card .back {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotateY(-180deg);
+    cursor: pointer;
+  }
+
+  #training .face {
+    -webkit-filter: drop-shadow(none);
+    filter: drop-shadow(none);
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  #training .face:hover  {
+    -webkit-filter: drop-shadow(4px 5px 6px rgba(10, 35, 35, 0.3));
+    filter: drop-shadow(4px 5px 6px rgba(0,0,0,0.3));
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  #training h5 {
+    font-size:14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+   }
+
+   #training h3 {
+       font-size: 24px;
+       line-height: 40px;
+   }
+
+   #training h5.contact {
+    font-size:12px;
+    line-height: 22px;
+    margin-bottom: 16px;
+   }
+
+
+  @media (max-width: 991px) and (min-width: 768px){
+    div.card.container {
+     width: 768px;
+   }
+  }
+
+  @media (max-width: 1200px) and (min-width: 768px){
+   h3 {
+    font-size: 22px;
+   }
+   h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 18px;
+   }
+   h5 {
+    font-size:14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+   }
+  }
+
+  @media (max-width: 767px) and (min-width: 450px){
+   h3 {
+    font-size: 22px;
+    line-height:44px;
+   }
+  }
+
+   @media (max-width: 600px) and (min-width: 551px){
+    div.card.container {
+     width: 70%!important;
+   }
+  }
+
+   @media (max-width: 767px) and (min-width: 601px){
+    div.card.container {
+     width: 60%!important;
+   }
+  }
+
+   @media (max-width: 550px){
+    div.card.container {
+     width: 90%;
+   }
+  }
+
+  @media (max-width: 991px) and (min-width: 768px){
+    .col-sm-6 {
+      width: 50%;
+    }
+  }
+
+  .ti-arrow-right {
+    color: #47b475;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    opacity: .75;
+  }
+
+  #training .face:hover .ti-arrow-right {
+    color: #47b475;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    opacity: 1;
+    -webkit-filter: drop-shadow(0px 1px 1px rgba(10, 35, 35, 0.3));
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .ti-arrow-right:before {
+    content: none;
+  }
+
+  .ti-arrow-right:after {
+      content: "\e628";
+  }
+
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-top: 5px;
+    bottom: 10px;
+  }
+
+  div.col-md-4.col-sm-6.flip {
+    margin-bottom: 20px;
+  }
+
+  .background-image-holder img {
+    display: block;
+}
+
+</style>
+
+<div id="training">
+
+  <script type="text/html" id="templateFlipCard">
+
+    <div class="col-md-4 col-sm-6 flip">
+      <div class="card" data-cardname="" >
+        <!-- START FRONT -->
+        <div class="face front">
+          <div class="horizontal-tile">
+            <div class="tile-top">
+              <div class="background-image-holder fadeIn" >
+                <img alt="image" class="background-image" src="">
+              </div>
+            </div>
+            <div class="tile-bottom bg-secondary">
+              <div class="description">
+                <h3 class="mb8 question"></h3>
+                <i class="ti-arrow-right">Click to learn more</i>
+              </div>
+            </div>
+
+          </div>
+          <!--end of horizontal tile-->
+        </div>
+
+        <!-- END FRONT -->
+
+        <!-- START BACK -->
+        <div class="face back">
+          <div class="tile-back bg-secondary">
+            <div class="description">
+              <h4 class="mb16 back1"></h4>
+              <h5 class="back2"></h5>
+              <h5 class="back3"></h5>
+              <h5 class="back4"></h5>
+              <h5 class="back5 contact"></h5>
+              <a style="float: right;" class="btn btn-sm btn-white" href="/contact">Contact Erin</a>
+            </div>
+
+          </div>
+          <!--end of horizontal tile-->
+        </div>
+        <!-- END BACK -->
+
+      </div>
     </div>
 
-    <!-- Begin Tab Content -->
-    <div class="tab-content">
-      <h5 class="content-title uppercase"><!-- category name --></h5>
-      <hr>
+  </script>
 
-      <!-- Event Image Holder -->
-      <div style="display: block;" class="event-image-holder tab-image">
-        <div class="event-image">
-          <img class="featurette-image img-responsive center-block" src="/img/training/training-downtown-small.jpg" alt="Erin walking with two loving dogs">
+
+
+  <!-- Begin Page Header -->
+  <section class="pt120 pb120 image-bg overlay">
+    <div class="background-image-holder">
+      <img alt="Background" class="background-image" src="img/pack-hikes/muppet-pack-hike-header.jpg" />
+    </div>
+    <div class="container" style="margin-left: 6em;">
+      <div class="row v-align-children">
+        <div class="col-sm-8 mb-xs-80">
+          <h2 class="mb16">Training with the Dog Lady</h2>
+          <h4 class="mb32">Highly focused and personalized training to meet yours and your dogs specific needs.</h4>
+          <a class="btn btn-filled btn-sm mb0" href="/contact">Contact Erin</a>
         </div>
-      </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2 text-center text-left-xs" style="margin-left: 10em;">
+          <div class="modal-container">
+            <div class="play-button btn-modal large inline"></div>
+            <div class="foundry_modal no-bg">
 
-      <div class="description mb24 float-box" style="font-size: 1.1em;">
-        <!-- Category description -->
-      </div>
-
-      <div class="package-details float-box">
-        <!-- Add Package Details -->
-      </div>
-
-      <div class="training-link float-box">
-        <div class="details">
-          <div class="registration-url mb16"">
-            <!-- <p class="mb4" style="font-size: .8em;">
-              <em>To see dates and times, click the register button below to go to the registration page.</em>
-            </p> -->
-              <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="mailto:downtoearthdoglady@gmail.com">
-                Contact Erin
-              </a>
-              <!-- <a class="btn btn-filled btn-sm mb16" style="color: white; font-size: .9em; font-weight: 600;" href="https://app.acuityscheduling.com/schedule.php?owner=12855510">
-                Register online
-              </a> -->
-              <!-- <a href="/release-form.pdf" target="_blank" >
-                <span style="font-size: .7em; padding-left: 10px; padding-right: 10px;" class="btn btn-sm" type="submit">Download Release Form</span>
-              </a> -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10">
-            <div class="alert alert-danger alert-dismissible float-box" role="alert">
-              <p><span style="font-weight: 500; font-size: 1.2em;"><strong>Cancellation Policy: </strong></span>
-              For full refund, lessons must be canceled at least two business days prior to scheduled day.</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-njuHjokI5U" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
-          <!-- Cancelation Policy -->
-
-          <div class="col-md-2">
-
-          </div>
+          <!--end of modal video-->
         </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <!-- End Page Header -->
 
 
-        <!-- Begin Package Details & Registration Content -->
-        <div class="package-details float-box" style="display: none;">
-          <span class="package-description-title">
-            <p class="lead">Purchase a Private Lesson Package</p>
-          </span>
-          <!-- Package Description -->
-          <div class="package-registration-description package-description-text">
-            <!-- "description": "html": -->
-          </div>
-          <div class="package-registration-url">
-            <a class="btn btn-filled btn-sm mb16" href="https://app.acuityscheduling.com/schedule.php?owner=12855510">Purchase a Private Lesson Package</a>
-          </div>
+
+  <!-- Begin Flip Cards -->
+  <section id="flipcardsection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+          <h4  class="uppercase mb16">Private Lessons</h4>
+          <p class="lead mb16">
+            Whether you need to work on new skill, refresh an old one, or solve a behavior problem, contact me to set up a lesson and together we’ll build a custom training program for you and your dog.
+            <a class="btn btn btn-lg mb12 mt16" href="#flipcardsection">Click on the boxes below to learn more</a>
+          </p>
+          <h5 class="uppercase mb24">
+            <span class="label"></span>
+          </h5>
         </div>
-        <!-- End Package Details & Registration Content -->
+      </div>
+    </div>
+
+      <!-- BEGIN FLIP CARDS -->
+      <div class="card container" id="flipCardList">
 
       </div>
+      <!-- END FLIP CARDS-->
 
     </div>
-    <!-- END Tab Content -->
-  </li>
-</script>
+  </section>
+  <!-- End Flip Cards -->
 
-<script type="text/html" id="template-backup">
-  <iframe src="https://app.acuityscheduling.com/schedule.php?owner=12855510&appointmentType=1992045" width="50%" height="400" frameBorder="0"></iframe>
-  <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
-</script>
-
-<!-- BEGIN CLASS LISTINGS -->
-<div id="page-training" class="tabbed-content button-tabs vertical">
-
-  <ul class="tabs class-description" id="eventTabs">
-
-    <!-- this is where the template in the script above will go-->
-
-  </ul>
 </div>
-<!--end of button tabs-->
 
