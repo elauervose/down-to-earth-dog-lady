@@ -2,12 +2,19 @@
   .firstcharacter {
     color: #47b475;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 28px;
     font-weight: 500;
     padding-top: 4px;
     padding-right: 4px;
     padding-left: 3px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .accordion-2 .title {
+    padding: 10px 0;
   }
   .accordion-2 .content p {
       padding: 16px 0;
@@ -16,42 +23,60 @@
       padding-bottom: 0px;
       padding-left: 0px;
   }
-  .accordion-2 .content p.pblast {
-      padding: 16px 0;
+  /*.accordion-2 .content p.pblast {
+
       padding-top: 16px;
       padding-right: 0px;
       padding-bottom: 16px;
       padding-left: 0px;
-  }
+  }*/
   li span.bullets, li.bullets {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
   }
-  /*.ti-arrow-right {
-    font-size:16px;
-  }*/
+  div.content {
+    padding-left: 25px;
+  }
+  p, p.mb0, ul  {
+    line-height: 1.5;
+    /*margin-left: 5px;*/
+    transition: .3s;
+    font-size: 16px;
+  }
+  strong.sectionTitle {
+    line-height: 2.5;
+  }
+  .accordion li.active .content {
+    max-height: 100%;
+}
+hr.endcontent {
+  border: none;
+  border-top: 1px solid rgba(204, 204, 204, .4);
+  margin: 24px 0 24px 0;
+  width: 100%;
+}
 </style>
 
 <section class="pt120 pb120 image-bg overlay">
   <div class="background-image-holder">
-     <img alt="Background" class="background-image" src="img/pack-hikes/3-dogs-water-tennis-ball-header.jpg" />
-    <img alt="Background" class="background-image" src="img/pack-hikes/3-dogs-water-frisbee-header.jpg" />
+     <img alt="Background" class="background-image" src="img/pack-hikes/dtedl05.jpg" />
+    <img alt="Background" class="background-image" src="img/pack-hikes/dtedl05.jpg" />
   </div>
   <div class="container">
     <div class="row v-align-children">
-      <div class="col-sm-8 mb-xs-80">
+      <div class="col-sm-6 mb-xs-80 pt80">
         <h2 class="mb16">Pack Hikes with the Dog Lady</h2>
-        <h4 class="mb32">Dogs run and play with a trusted pack in the beautiful landscape of the Pacific Northwest. These hikes will leave your dog happy, tired, and well trained!</h4>
+        <h4 class="mb0">Dogs run and play with a trusted pack in the beautiful landscape of the Pacific Northwest. These hikes will leave your dog happy, tired, and well trained!</h4>
         <!-- <a class="btn btn-filled btn-lg mb0" href="#meet-the-pack">Meet the Pack</a> -->
       </div>
-      <div class="col-sm-4 text-center text-left-xs">
-        <div class="modal-container">
+      <div class="col-sm-6 text-center text-left-xs">
+        <!-- <div class="modal-container">
           <div class="play-button btn-modal large inline"></div>
           <div class="foundry_modal no-bg">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/lGMKkCY71iE" frameborder="0" allowfullscreen></iframe>
           </div>
-        </div>
+        </div> -->
         <!--end of modal video -->
       </div>
     </div>
@@ -60,7 +85,7 @@
   <!--end of container-->
 </section>
 
-<section>
+<section id="packhike">
   <div>
     <div class="row">
       <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
@@ -73,7 +98,7 @@
               <div class="tab-content tab-content-training text-left col-md-10 col-sm-10">
                 <div class="row">
                   <div class="col-sm-10 col-sm-offset-1">
-                    <ul class="accordion accordion-2 one-open">
+                    <ul class="accordion accordion-2">
                       <li>
                         <div class="title">
                           <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat is a Pack Hike?</h4>
@@ -83,18 +108,21 @@
                             A pack hike is an alternative way to exercise and socialize your dog.  Pack Hikes give your dog a chance to have a change in scenery once or twice a week, have a group of friends that only consists of five to seven dogs, and the ability to play and run in a way few daycare facilities can provide.
                           </p>
                           <p class="mb0">
-                            Training throughout the whole hike is an important part of the Pack Hike, it provides mental stimulation and teaches critical skills like; recall, proper ways to  meet new dogs, manners for  meeting strangers, and appropriate play amongst the pack members.
+                            Training throughout the whole hike is an important part of the Pack Hike, it provides mental stimulation and teaches critical skills like; recall, proper ways to  meet new dogs, manners for meeting strangers, and appropriate play amongst the pack members.
                           <p class="mb0 pblast">
                             With the freedom to run and play with a trusted pack in the beautiful landscape of the Pacific Northwest, these hikes will leave your dog happy, tired, and well trained!
                           </p>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
                         <div class="title">
-                          <h4 class="inline-block mb0"><span class="firstcharacter">W</span>ho are Pack Hikes for?</h4>
+                          <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat are the benefits of a Pack Hike?</h4>
                         </div>
                         <div class="content">
-                          <p class="lead mb0"><strong>Pack Hikes are for every dog!</strong></p>
+                          <p class="mb0">
+                            Pack hikes give dogs an opportunity to be themselves in a positive and organized way.
+                          </p>
                           <p class="mb0">
                             Some dogs may find the Pack Hike fits their needs or provides that critical break from routine that can make all the difference in their behavior and energy levels.
                           </p>
@@ -104,6 +132,7 @@
                           <p>
                             The Pack Hike is a great outlet for dogs to burn off extra energy and an easier place to socialize and make friends in an intimate, small group setting.
                           </p>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
@@ -111,29 +140,48 @@
                           <h4 class="inline-block mb0"><span class="firstcharacter">H</span>ow do you handle all those dogs?</h4>
                         </div>
                         <div class="content">
-                          <p>
-                            Answer.
+                          <p class="mb0">
+                            To ensure that everyone has a fun, positive experience on the Pack Hike, we make sure to follow a few simple (but critical) rules and procedures:
                           </p>
+                            <ul data-bullet="ti-star">
+                              <strong class="sectionTitle">Before the Hike:</strong>
+                              <li>
+                                All dogs prepare for their first pack hike by completing 4 consecutive training sessions. These Pack Hike Prep sessions cover recall, leash handling, clicker training, and establishing a bond between your dog and Erin.
+                              </li>
+                              <strong class="sectionTitle">During the Hike:</strong>
+                              <li>
+                                Pack hikes always include Erin and at least one other person so that the ratio of dogs to humans does not exceed 4:1.
+                              </li>
+                              <li>
+                                We always carry a backpack with safety gear that includes a first aid kit for dogs (and humans), extra water, water bowls, treats, and spare dog gear.
+                              </li>
+                              <li>
+                                During each Pack hike, we adhere to a well-structured, predictable routine that the dogs get to know and help each other reinforce along the way. Examples of this include: Coming back when they hear the whistle, walking calmly together during on-leash portions of the hike, and focusing on the Pack Hike trainers when passing other hikers.
+                              </li>
+                            </ul>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
                         <div class="title">
-                          <h4 class="inline-block mb0"><span class="firstcharacter">C</span>an my dog join a pack hike if she/he has reactivity issues?</h4>
+                          <h4 class="inline-block mb0"><span class="firstcharacter">C</span>an my dog join a Pack Hike if she/he has reactivity issues?</h4>
                         </div>
                         <div class="content">
                           <p>
                             Unfortunately, we are unable to accommodate dogs with dog aggression issues on the Pack Hikes, but they are very welcome for private sessions. Please contact Erin if you have any questions about this.
                           </p>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
                         <div class="title">
-                          <h4 class="inline-block mb0"><span class="firstcharacter">W</span>here do you go on a Pack Hike?</h4>
+                          <h4 class="inline-block mb0"><span class="firstcharacter">W</span>here do you go on Pack Hikes?</h4>
                         </div>
                         <div class="content">
                           <p>
-                            Answer.
+                            We take very low-traffic, quiet trails on mount Hood. Erin used to live on Mount Hood and is very familiar with the area - she has hiked many beautiful hidden gems and is skilled at finding the perfect trail for each Pack Hike.
                           </p>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
@@ -141,9 +189,13 @@
                           <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat happens when weather is bad?</h4>
                         </div>
                         <div class="content">
-                          <p>
-                            Answer.
+                          <p class="mb0">
+                            We do not hike in weather conditions above 100*F or any extreme ice, snow or cold conditions.
                           </p>
+                          <p>
+                            We will be in communication with all pack hike participants’ humans prior to the hike - ideally the night before - if it looks like we may have any limiting or extreme weather conditions
+                          </p>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
@@ -151,37 +203,93 @@
                           <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat safety precautions do you take?</h4>
                         </div>
                         <div class="content">
-                          <p>
-                            Answer.
+                          <p class="mb0">
+                            We take Pack Hike safety and preparation very seriously. To ensure that everyone has a fun, positive experience on the Pack Hike, we adhere to the following safety procedures:
                           </p>
+                          <ul data-bullet="ti-star" class="pt16">
+                            <li> <strong>4:1 Dog to Human Ratio:</strong> Pack hikes always include Erin and at least one other person. We do not hike with more than 4 dogs per human</li>
+                            <li>
+                              <strong>Safety Gear:</strong> We always carry a backpack with safety gear that includes a first aid kit for dogs (and humans), extra water, water bowls, treats, and spare dog gear
+                            </li>
+
+                            <li>
+                              <strong>Trail Safety:</strong> We hike with dogs on Mount Hood trails we know very well. We take care to ensure the trails we use are low-traffic, quiet trails. <em>Erin used to live on Mount Hood and is very familiar with the area - she has hiked many beautiful hidden gems and is skilled at finding the perfect trail for each Pack Hike.</em>
+                            </li>
+                            <li>
+                              <strong>Weather conditions:</strong> We do not hike in weather conditions above 100*F or when there are any extreme ice, snow or cold conditions. We will be in communication with all pack hike participants’ humans prior to the hike - ideally the night before - if it looks like we may have any limiting or extreme weather conditions
+                            </li>
+                          </ul>
+                          <hr class="endcontent">
                         </div>
                       </li>
                       <li>
                         <div class="title">
+                          <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat does a typical pack hike schedule look like?</h4>
+                        </div>
+                        <div class="content">
+                          <p class="mb0">
+                            A pack hike includes pickup, a drive to a specific well-known Mount Hood trail, an group hike lasting about 1-2 hour(s), and a ride home for drop off. Most hikes include some on leash and some off leash time, however, this can vary depending on the pack, trail conditions, and the number of other hikers on the trail.
+                          </p>
+                          <ul data-bullet="ti-star" class="pt16">
+                            <strong class="sectionTitle">A typical pack hike schedule:</strong>
+                            <li>
+                              <strong>7:00 - 8:00am:</strong>  Pickup
+                            </li>
+                            <li>
+                              <strong>9:00am:</strong>  arrive at the trail
+                            </li>
+                            <li>
+                              <strong>12:00 - 12:30pm:</strong>  drop off back home (return time can vary depending on traffic and weather)
+                            </li>
+                          </ul>
+                          <hr class="endcontent">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">
+                          <h4 class="inline-block mb0"><span class="firstcharacter">D</span>o I have to schedule a pack hike for every single week?</h4>
+                        </div>
+                        <div class="content">
+                          <p class="mb0">
+                            Pack Hikes can be scheduled on a weekly or bi-weekly basis
+                          </p>
+                          <p>
+                            We have found that scheduling Pack Hikes less frequently than twice/month doesn’t work well. This is because dogs tend to forget the training work we put in to ensure a safe, cohesive pack and a positive experience for all involved.
+                          </p>
+                          <hr class="endcontent">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="title">
+                          <h4 class="inline-block mb0"><span class="firstcharacter">H</span>ow do you minimize the ecological impact of a Pack Hike?</h4>
+                        </div>
+                        <div class="content">
+                          <p class="mb0">
+                            We take protecting the environment seriously and always hike responsibly. To keep Oregon’s trails beautiful for future generations, we keep dogs on the trail and adhere to “leave no trace” practices.
+                          </p>
+                          <p>
+                            This is not only good for the environment, but great impulse-control practice for all the dogs!
+                          </p>
+                          <hr class="endcontent">
+                        </div>
+                      </li>
+                      <!-- <li>
+                        <div class="title">
                           <h4 class="inline-block mb0"><span class="firstcharacter">Q</span>uestion?</h4>
                         </div>
                         <div class="content">
+                          <p class="mb0">
+                            Answer.
+                          </p>
                           <p>
                             Answer.
                           </p>
                         </div>
-                      </li>
+                      </li> -->
                     </ul>
                     <!--end of accordion-->
                   </div>
                 </div>
-
-                <!-- <p class="lead"><strong>Why Pack Hikes?</strong></p>
-                <p>
-                  When I started pack hikes it was only with my two dogs and my girlfriend’s dog. The whole purpose of it at first was to get them out as a pack together so that they would get used to each other.
-                </p>
-                <p>
-                  Little did we know, the amazing impact it would really have. It changed our dogs from not being friendly to one another, to now being best friends. It gave us the ability to consistently work on recall and have it actually stick. They would go into a pack mentality and began doing everything together.
-                </p>
-                <p>
-                  We now have three dogs that love one another, and have fantastic recall.. The fact that I can bring this joy and happiness to other people and their dogs makes this one of the best careers I could have ever chosen to do.
-                </p> -->
-
               </div>
             </li>
             <li>
@@ -200,38 +308,53 @@
                   <li><strong>12:00 - 12:30 PM:  </strong>Dogs are dropped off back home. Drop off times may vary depending on traffic and weather.</li>
                 </ul>
 
-                <hr class="mb0" style="margin-top:2em; padding-bottom:2em; opacity: .4;">
-                <p class="lead"><strong>During the ON-LEASH Portion of the Pack Hike:</strong></p>
-                <p>
-                  All dogs are on-leash until we arrive safely to off-leash area.
-                  This part of the Pack Hike is where we really work with the dogs to train critical trail skills like greeting other people and dogs, recall, and  appropriate play with other dogs.
-                </p>
-                <p>
-                  We use a box clicker and a variety of treats ( string cheese, a non grain treat, or a hot dogs) during training. I am familiar with dog allergies as well - talk to me if you have any concerns about this.
-                </p>
+                <!-- BEGIN Old Content saved here for future reference -->
+                <div>
+                  <!-- <p class="lead"><strong>Why Pack Hikes?</strong></p>
+                  <p>
+                    When I started pack hikes it was only with my two dogs and my girlfriend’s dog. The whole purpose of it at first was to get them out as a pack together so that they would get used to each other.
+                  </p>
+                  <p>
+                    Little did we know, the amazing impact it would really have. It changed our dogs from not being friendly to one another, to now being best friends. It gave us the ability to consistently work on recall and have it actually stick. They would go into a pack mentality and began doing everything together.
+                  </p>
+                  <p>
+                    We now have three dogs that love one another, and have fantastic recall.. The fact that I can bring this joy and happiness to other people and their dogs makes this one of the best careers I could have ever chosen to do.
+                  </p> -->
+                  <!-- <hr class="mb0" style="margin-top:2em; padding-bottom:2em; opacity: .4;">
+                  <p class="lead"><strong>During the ON-LEASH Portion of the Pack Hike:</strong></p>
+                  <p>
+                    All dogs are on-leash until we arrive safely to off-leash area.
+                    This part of the Pack Hike is where we really work with the dogs to train critical trail skills like greeting other people and dogs, recall, and  appropriate play with other dogs.
+                  </p>
+                  <p>
+                    We use a box clicker and a variety of treats ( string cheese, a non grain treat, or a hot dogs) during training. I am familiar with dog allergies as well - talk to me if you have any concerns about this.
+                  </p>
 
-                <p class="lead"><strong>During the OFF-LEASH Portion of the Pack Hike:</strong></p>
-                </p>
-                <p>
-                  During the off-leash portion of the day, we stay as a close pack.  We head to our first open space for play time. There are a few open fields we like to go to first where we throw ball, toss a frisbee, or interact with them to get the pack to play and really stretch their legs.
-                </p>
-                <p>
-                  Once we see happy faces and flopping tongues we have a water break. We always provide plenty of water breaks and carry water and multiple travel bowls with us at all times.
-                </p>
+                  <p class="lead"><strong>During the OFF-LEASH Portion of the Pack Hike:</strong></p>
+                  </p>
+                  <p>
+                    During the off-leash portion of the day, we stay as a close pack.  We head to our first open space for play time. There are a few open fields we like to go to first where we throw ball, toss a frisbee, or interact with them to get the pack to play and really stretch their legs.
+                  </p>
+                  <p>
+                    Once we see happy faces and flopping tongues we have a water break. We always provide plenty of water breaks and carry water and multiple travel bowls with us at all times.
+                  </p> -->
 
-                <!-- <p class="lead"><strong>At the River (summer only):</strong></p>
-                <p>
-                  Next it’s time for the river. We only spend about 30 minutes at the river depending on the energy of the day.
-                </p>
-                <p>
-                  All new dogs wear a life vest for safety, and all dogs under 20 pounds must wear one at all times while at the river.
-                </p>
-                <p>
-                  This is where we allow our pack to  interact with dogs already at the river  in a controlled manner.  With a smaller pack and the  strong recall work along with the trust and respect already developed during the first part of the Pack Hike, we are able to ensure the interactions are controlled and safe.
-                </p>
-                <p>
-                 If, for any reason, the leader of the pack decides the river is unfit for that pack of the day, we will spend more time hiking or throwing ball in the field.
-                </p> -->
+                  <!-- <p class="lead"><strong>At the River (summer only):</strong></p>
+                  <p>
+                    Next it’s time for the river. We only spend about 30 minutes at the river depending on the energy of the day.
+                  </p>
+                  <p>
+                    All new dogs wear a life vest for safety, and all dogs under 20 pounds must wear one at all times while at the river.
+                  </p>
+                  <p>
+                    This is where we allow our pack to  interact with dogs already at the river  in a controlled manner.  With a smaller pack and the  strong recall work along with the trust and respect already developed during the first part of the Pack Hike, we are able to ensure the interactions are controlled and safe.
+                  </p>
+                  <p>
+                   If, for any reason, the leader of the pack decides the river is unfit for that pack of the day, we will spend more time hiking or throwing ball in the field.
+                  </p> -->
+                </div>
+                <!-- END Old Content saved here for future reference -->
+
               </div>
             </li>
             <li>
@@ -257,9 +380,9 @@
                 </ul>
                 <h4 class="mt32">Getting ready to go out on a Pack Hike:</h4>
                 <ul data-bullet="ti-check">
-                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Treats: </span> I provide treats, however, if your dog has a particular food allergy you will need to provide proper treats.</li>
-                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Gear: </span> You may want to send your dog with a rain coat or jacket if it is especially wet or cold and if your dog has a thin or very short coat.</li>
-                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Safety: </span> I carry extra water, bowls, treats, and first aid gear at all times on every Pack Hike. If your dog has any special needs, please discuss these with me prior to the first Pack Hike.</li>
+                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Treats: </span> <span class="icon-name">I provide treats, however, if your dog has a particular food allergy you will need to provide proper treats.</span></li>
+                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Gear: </span> <span class="icon-name">You may want to send your dog with a rain coat or jacket if it is especially wet or cold and if your dog has a thin or very short coat.</span></li>
+                  <li class="bullets"><span style="font-size: 1.1em; font-weight: 600;">Safety: </span> <span class="icon-name">I carry extra water, bowls, treats, and first aid gear at all times on every Pack Hike. If your dog has any special needs, please discuss these with me prior to the first Pack Hike.</span></li>
               </div>
             </li>
             <li>
@@ -270,7 +393,7 @@
                 <h4>Pack Hike Pricing:</h4>
                 <ul data-bullet="ti-star">
                   <li><span class="bullets">$50/Pack Hike</span> <em>*Pack Hikes can be purchased in packages of 4 or 6 and can be used weekly weekly or bi-weekly</em></li>
-                  <li><span class="bullets">$280 for a Pack Hike Prep package consisting of 4 lessons </span><em>*Get a discount off the $75/lesson when you purchase a package.</em></li>
+                  <li><span class="bullets">$280 for a Pack Hike Prep package consisting of 4 lessons </span><em>*Get a discount off the $75/lesson price when you purchase a package.</em></li>
                 </ul>
                 <br>
                 <div class="alert alert-danger alert-dismissible" role="alert">
@@ -301,90 +424,3 @@
     <hr class="mb0" style="width:90%; margin-left:5%; margin-right: 5%; opacity: .5;">
     <hr class="mb0">
   </div>
-
-  <section>
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-12 text-center">
-                  <h4 class="uppercase mb80">Text Accordions</h4>
-              </div>
-          </div>
-          <!--end of row-->
-          <div class="row">
-              <div class="col-sm-6">
-                  <h5 class="uppercase mb40">One At A Time</h5>
-                  <ul class="accordion accordion-2 one-open">
-                      <li class="active">
-                          <div class="title">
-                              <span>Simple Panels</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="title">
-                              <span>Toggle Information</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="title">
-                              <span>Nice Touch</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                  </ul>
-                  <!--end of accordion-->
-              </div>
-              <div class="col-sm-6">
-                  <h5 class="uppercase mb40">Multiple Open</h5>
-                  <ul class="accordion accordion-2">
-                      <li>
-                          <div class="title">
-                              <span>Simple Panels</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="title">
-                              <span>Toggle Information</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="title">
-                              <span>Nice Touch</span>
-                          </div>
-                          <div class="content">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              </p>
-                          </div>
-                      </li>
-                  </ul>
-                  <!--end of accordion-->
-              </div>
-          </div>
-          <!--end of row-->
-      </div>
-      <!--end of container-->
-  </section>
