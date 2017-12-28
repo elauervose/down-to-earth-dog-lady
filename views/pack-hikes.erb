@@ -23,13 +23,6 @@
       padding-bottom: 0px;
       padding-left: 0px;
   }
-  /*.accordion-2 .content p.pblast {
-
-      padding-top: 16px;
-      padding-right: 0px;
-      padding-bottom: 16px;
-      padding-left: 0px;
-  }*/
   li span.bullets, li.bullets {
     font-size: 16px;
     line-height: 24px;
@@ -50,12 +43,79 @@
   .accordion li.active .content {
     max-height: 100%;
 }
-hr.endcontent {
-  border: none;
-  border-top: 1px solid rgba(204, 204, 204, .4);
-  margin: 24px 0 24px 0;
-  width: 100%;
-}
+  hr.endcontent {
+    border: none;
+    border-top: 1px solid rgba(204, 204, 204, .4);
+    margin: 24px 0 24px 0;
+    width: 100%;
+  }
+  @media all and (max-width: 890px) and (min-width: 670px){
+    h4 {
+      font-size: 18px;
+    }
+    .firstcharacter {
+        color: #47b475;
+        float: left;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-left: 3px;
+    }
+  }
+   @media all and (max-width: 767px) and (min-width: 670px){
+    ul.packhikecontent {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+   }
+
+  @media all and (min-width: 501px) and (max-width: 669px){
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .firstcharacter {
+        color: #47b475;
+        float: left;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-left: 3px;
+    }
+    ul.packhikecontent {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  @media all and (max-width: 500px){
+    h4 {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .firstcharacter {
+        color: #47b475;
+        float: left;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        padding-top: 4px;
+        padding-right: 2px;
+        padding-left: 3px;
+    }
+    /*@media (max-width: 460px){
+    li.active div.tab-content-packhike {
+        margin-left: 5px;
+        margin-right: 5px;
+    }*/
+    .accordion-2 .title:before {
+        font-size: .75em;
+    }
+  }
 </style>
 
 <section class="pt120 pb120 image-bg overlay">
@@ -95,10 +155,10 @@ hr.endcontent {
               <div class="tab-title">
                 <span>FAQ</span>
               </div>
-              <div class="tab-content tab-content-training text-left col-md-10 col-sm-10">
+              <div class="tab-content tab-content-packhike text-left col-md-10 col-sm-10">
                 <div class="row">
-                  <div class="col-sm-10 col-sm-offset-1">
-                    <ul class="accordion accordion-2">
+                  <div class="col-sm-10 col-sm-offset-2">
+                    <ul class="accordion accordion-2 packhikecontent">
                       <li>
                         <div class="title">
                           <h4 class="inline-block mb0"><span class="firstcharacter">W</span>hat is a Pack Hike?</h4>
@@ -164,7 +224,7 @@ hr.endcontent {
                       </li>
                       <li>
                         <div class="title">
-                          <h4 class="inline-block mb0"><span class="firstcharacter">C</span>an my dog join a Pack Hike if she/he has reactivity issues?</h4>
+                          <h4 class="inline-block mb0"><span class="firstcharacter">C</span>an my dog join a Hike if she/he has reactivity issues?</h4>
                         </div>
                         <div class="content">
                           <p>
@@ -261,7 +321,7 @@ hr.endcontent {
                       </li>
                       <li>
                         <div class="title">
-                          <h4 class="inline-block mb0"><span class="firstcharacter">H</span>ow do you minimize the ecological impact of a Pack Hike?</h4>
+                          <h4 class="inline-block mb0"><span class="firstcharacter">H</span>ow do you minimize the ecological impact of a Hike?</h4>
                         </div>
                         <div class="content">
                           <p class="mb0">
