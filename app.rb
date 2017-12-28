@@ -49,7 +49,7 @@ get "/descriptions" do
 end
 
 get "/training2.?:format?" do
-  redirect "/training/", 301
+  redirect "/training", 301
 end
 
 # Wildcard page (must be the last route in app.rb)
