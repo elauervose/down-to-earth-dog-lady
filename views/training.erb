@@ -63,7 +63,6 @@
     height: 100%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   #training .flip .card .face {
@@ -86,19 +85,14 @@
   }
 
   #training .face {
-    -webkit-filter: drop-shadow(none);
-    filter: drop-shadow(none);
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
+    filter: none;
     transition: all .5s ease;
   }
 
   #training .face:hover  {
-    /*-webkit-filter: drop-shadow(4px 5px 6px rgba(10, 35, 35, 0.3));*/
-    filter: drop-shadow(4px 5px 6px rgba(0,0,0,0.3));
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    box-shadow: 4px 5px 6px rgba(10, 35, 35, 0.4);
+    height: 0;
+    width: 0;
   }
 
   #training h5 {
@@ -192,10 +186,7 @@
     bottom: 15px;
     right: 30px;
     opacity: 1;
-    -webkit-filter: drop-shadow(0px 1px 1px rgba(10, 35, 35, 0.3));
     filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
     transition: all .5s ease;
   }
 
