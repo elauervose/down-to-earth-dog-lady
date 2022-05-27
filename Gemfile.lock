@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/Aeon/instagram-ruby-gem.git
+  remote: https://github.com/Aeon/instagram-ruby-gem.git
   revision: 7a7b3b4ecf74208c7707c9519b9e1d3293d1aab9
   specs:
     instagram (1.1.6)
@@ -26,13 +26,13 @@ GEM
       ffi (>= 1.3.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.10.0)
-      faraday (>= 0.7.4, < 0.10)
+    faraday_middleware (0.10.1)
+      faraday (>= 0.7.4, < 1.0)
     ffi (1.11.1)
     hashie (3.4.6)
     method_source (0.8.2)
     multi_json (1.11.3)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     newrelic_rpm (4.2.0.334)
     parser (2.3.1.4)
       ast (~> 2.2)
@@ -44,7 +44,7 @@ GEM
     pry-byebug (1.3.3)
       byebug (~> 2.7)
       pry (~> 0.10)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
